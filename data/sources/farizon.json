@@ -1,0 +1,63 @@
+{
+  "brand": "Farizon",
+  "brandSlug": "farizon",
+  "publisher": "Farizon Auto Australia (Geely Group)",
+  "sourceUrls": [
+    "https://www.farizonauto.au/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Farizon Auto (a Geely-group commercial vehicle brand) has launched electric vans in Australia: the SV van range (multiple body/roof/wheelbase configurations) and the V7E van. No confirmed AUD pricing could be found for the SV range from any source, so priceAud is null for those variants. The V7E has a reported drive-away price range of approx. $49,990-$53,990 depending on configuration; the lower figure is used as the base/entry price with the range noted in priceBasis. The Farizon H9E was identified in sourcing as a 'Light Truck' model; its GVM could not be confirmed against the 4.5-tonne inclusion threshold used in this dataset, so it has been excluded pending verification rather than guessed into or out of scope.",
+  "variants": [
+    {
+      "model": "SV",
+      "variant": "Van (configuration unspecified — multiple body/roof/wheelbase variants exist)",
+      "bodyType": "van",
+      "segment": "van",
+      "batteryUsableKwh": null,
+      "batteryGrossKwh": null,
+      "rangeKm": null,
+      "rangeCycle": null,
+      "consumptionWhPerKm": null,
+      "acChargeKw": null,
+      "dcChargeKw": null,
+      "drive": "FWD",
+      "powerKw": null,
+      "torqueNm": null,
+      "zeroTo100s": null,
+      "seats": null,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": null,
+      "priceBasis": "No AUD pricing found from any source for the SV range as of Sept 2026.",
+      "availability": "current",
+      "fieldSources": {},
+      "lowConfidenceFields": ["priceAud", "batteryUsableKwh", "rangeKm", "powerKw", "torqueNm", "drive"]
+    },
+    {
+      "model": "V7E",
+      "variant": "Van (base configuration)",
+      "bodyType": "van",
+      "segment": "van",
+      "batteryUsableKwh": null,
+      "batteryGrossKwh": null,
+      "rangeKm": null,
+      "rangeCycle": null,
+      "consumptionWhPerKm": null,
+      "acChargeKw": null,
+      "dcChargeKw": null,
+      "drive": "FWD",
+      "powerKw": null,
+      "torqueNm": null,
+      "zeroTo100s": null,
+      "seats": null,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 49990,
+      "priceBasis": "Drive-away pricing reported to range approx. $49,990-$53,990 depending on configuration; base/entry figure used here",
+      "availability": "current",
+      "fieldSources": {},
+      "lowConfidenceFields": ["priceAud", "batteryUsableKwh", "rangeKm", "powerKw", "torqueNm", "drive"]
+    }
+  ]
+}

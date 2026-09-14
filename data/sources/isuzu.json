@@ -1,0 +1,12 @@
+{
+  "brand": "Isuzu",
+  "brandSlug": "isuzu",
+  "publisher": "Isuzu UTE Australia",
+  "sourceUrls": [
+    "https://www.isuzuute.com.au/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Isuzu does not currently sell a battery-electric vehicle in Australia as of September 2026. The Isuzu D-Max EV (battery-electric dual-cab ute) has been confirmed by Isuzu as planned for the Australian market, and has appeared in various global/regional launches, but multiple 2025 reports indicate no confirmed Australian on-sale date, with local timing reportedly linked to New Vehicle Efficiency Standard (NVES) policy settings and light commercial vehicle CO2 targets. No Isuzu BEV is currently orderable new in Australia.",
+  "variants": []
+}

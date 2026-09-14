@@ -1,0 +1,43 @@
+{
+  "brand": "Honda",
+  "brandSlug": "honda",
+  "publisher": "Honda Australia",
+  "sourceUrls": [
+    "https://www.honda.com.au/cars/honda-super-one-eoi.html",
+    "https://www.goauto.com.au/new-models/honda/super-one/honda-reveals-super-one-pricing/2026-08-10/100047.html"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "The Honda Super-ONE is Honda's first BEV for the Australian market, a Kei-class city car sold initially via an Expression of Interest (EOI)/pre-order process rather than a standard dealer order book; treated as 'current' since pricing and specs are confirmed and pre-orders are open. Range-cycle conflict: Honda's own EOI page states 'up to 253km range (NEDC)' while GoAuto's August 2026 pricing-confirmation article (citing Honda's own final pricing announcement) states a WLTP range of 206km for the same car - these are not the same test cycle and are recorded separately rather than merged; the more recent WLTP 206km figure accompanying final pricing is used as the primary rangeKm/rangeCycle, with the NEDC 253km figure noted as a low-confidence alternate in fieldSources. Power rating is dual-mode: 47kW standard, up to 70kW/162Nm in 'BOOST Mode' (a temporary boost via a simulated 7-speed transmission) - powerKw records the peak 70kW boost figure per common EV convention, with the 47kW continuous rating flagged as an alternate in notes.",
+  "variants": [
+    {
+      "model": "Super-ONE",
+      "variant": "Super-ONE",
+      "bodyType": "hatch",
+      "segment": "light",
+      "batteryUsableKwh": null,
+      "batteryGrossKwh": null,
+      "rangeKm": 206,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": null,
+      "dcChargeKw": null,
+      "drive": "FWD",
+      "powerKw": 70,
+      "torqueNm": 162,
+      "zeroTo100s": null,
+      "seats": 4,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 36900,
+      "priceBasis": "Drive-away",
+      "availability": "current",
+      "fieldSources": {
+        "rangeKm": ["https://www.honda.com.au/cars/honda-super-one-eoi.html (states 253km NEDC - a different, non-comparable cycle)", "https://www.goauto.com.au/new-models/honda/super-one/honda-reveals-super-one-pricing/2026-08-10/100047.html"],
+        "powerKw": "Standard/continuous output is 47kW; 70kW/162Nm applies only in temporary 'BOOST Mode'",
+        "priceAud": "https://carsauce.com/news/honda-super-one-australia-price-confirmed-36900-driveaway"
+      },
+      "lowConfidenceFields": ["rangeKm", "rangeCycle", "powerKw", "torqueNm", "batteryUsableKwh"]
+    }
+  ]
+}

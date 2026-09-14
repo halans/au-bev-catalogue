@@ -1,0 +1,12 @@
+{
+  "brand": "Mahindra",
+  "brandSlug": "mahindra",
+  "publisher": "Mahindra Australia (mahindra.com.au)",
+  "sourceUrls": [
+    "https://www.mahindra.com.au/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Mahindra Australia sells ZERO battery-electric vehicles as of September 2026. The current retail lineup is exclusively internal-combustion: Scorpio (diesel), XUV3XO (petrol), XUV700 (petrol/diesel), plus an upcoming diesel-only Lifestyler dual-cab ute - none of these are electrified. AU press (carsales.com.au, 2026-09-02; Drive.com.au, 2026-09-02; GoAuto, 2026-08-18) reports Mahindra is evaluating a trio of EVs (XEV 9e, XEV 9S, BE 6) for possible future Australian launch - a single XEV 9e demonstrator has been imported on temporary plates for internal dealer display, and Australian trademark filings exist for 'XEV 9E' and 'BE 6' - but none has a confirmed launch date, Australian specification, or pricing. This does not meet the bar for 'announced' status (which requires a confirmed AU launch), so no variants are listed. Revisit this brand as these EVs progress toward a firm Australian launch commitment.",
+  "variants": []
+}

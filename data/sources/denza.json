@@ -1,0 +1,130 @@
+{
+  "brand": "Denza",
+  "brandSlug": "denza",
+  "publisher": "Denza Australia (denza.com/au, BYD's premium sub-brand)",
+  "sourceUrls": [
+    "https://www.denza.com/au/car/d9",
+    "https://www.denza.com/au/car/z9gt",
+    "https://www.denza.com/au/find-store",
+    "https://www.carexpert.com.au/car-news/2026-denza-d9-price-and-specs",
+    "https://www.carexpert.com.au/car-news/denza-d9-luxury-electric-people-mover-on-sale-in-australia",
+    "https://www.carsales.com.au/editorial/details/denza-d9-confirmed-and-priced-for-australia-151499/",
+    "https://thebeep.com.au/car-reviews/2026-denza-d9-review",
+    "https://evdrives.com.au/ev/denza-d9/",
+    "https://www.carexpert.com.au/car-news/2026-denza-z9-gt-850kw-electric-gt-confirmed-for-australia",
+    "https://www.carexpert.com.au/car-news/denza-z9-gt-plug-in-hybrid-power-could-join-850kw-tri-motor-ev-in-australia",
+    "https://www.carexpert.com.au/car-reviews/2027-denza-z9-gt-review-quick-drive",
+    "https://www.chasingcars.com.au/news/car-industry/denza-z9-gt-2026-bonkers-tri-motor-850kw-electric-car-with-nine-minute-charging-bound-for-oz-in-q3-this-year/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Denza is BYD's premium sub-brand, sold new in Australia through its own showroom network (denza.com/au). Denza Australia's line-up as of Sept 2026 is: B5 and B8 (large PHEV off-road SUVs, launched late 2025 - out of scope, not BEV), D9 (electric 7-seat people-mover, on sale since March 2026 - BEV, in scope) and Z9GT (electric performance grand tourer/shooting-brake, confirmed for Australia and debuted at the April 2026 Melbourne Motor Show, with local deliveries reported for around September 2026). Multiple sources (CarExpert, TheBeep) explicitly confirm Australia skips the Chinese-market D9 PHEV entirely - every D9 sold locally is the 103.36kWh BEV, so both D9 variants below are BEV. The Z9GT is sold overseas in both BEV and PHEV ('DM') form, but Denza Australia has confirmed it is launching only the BEV Z9GT initially and is still 'evaluating' whether to bring the PHEV DM version to Australia - so the PHEV Z9GT is NOT in the Australian market and is excluded. As of the Sept 2026 fetch date, Australian pricing for the Z9GT had not yet been publicly confirmed (a CarExpert review dated 28 Aug 2026 states 'Australian pricing... has yet to be confirmed'), so priceAud is null and availability is recorded as 'announced' rather than 'current'. Z9GT range is reported inconsistently between an AU-specific CLTC claim (Denza Australia via CarExpert, 'no less than 1036km') and a Euro-spec WLTP claim (600km) in a later CarExpert quick-drive review of the Euro/pre-AU-launch car; the CLTC figure attributed directly to Denza Australia is used here and the WLTP conflict is flagged as low-confidence. DC charge rate caveat: the Z9GT's 1,500 kW figure is BYD's published FLASH Charging ceiling, achievable only on BYD's own China-market connector and charger. No Australian public charger can deliver it; on CCS2 infrastructure here the practical peak is far lower. Other sources quote 1,100 kW (evkx.net) for this pack and 270 kW for the 100 kWh Z9GT EV, so treat it as a platform claim rather than an Australian real-world rate.",
+  "variants": [
+    {
+      "model": "D9",
+      "variant": "FWD",
+      "bodyType": "people-mover",
+      "segment": "luxury",
+      "batteryUsableKwh": 103.36,
+      "batteryGrossKwh": 103.36,
+      "rangeKm": 520,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 200,
+      "drive": "FWD",
+      "powerKw": 230,
+      "torqueNm": null,
+      "zeroTo100s": 9.0,
+      "seats": 7,
+      "towingBrakedKg": 0,
+      "v2l": true,
+      "priceAud": 85990,
+      "priceBasis": "MSRP before on-road costs",
+      "availability": "current",
+      "fieldSources": {
+        "priceAud": "https://www.carexpert.com.au/car-news/2026-denza-d9-price-and-specs",
+        "batteryUsableKwh": "https://thebeep.com.au/car-reviews/2026-denza-d9-review",
+        "rangeKm": "https://evdrives.com.au/ev/denza-d9/",
+        "zeroTo100s": "https://evdrives.com.au/ev/denza-d9/",
+        "acChargeKw": "https://www.carexpert.com.au/car-news/denza-d9-luxury-electric-people-mover-on-sale-in-australia",
+        "towingBrakedKg": "carried over from prior source file, attributed to ElectricCarAdvice Australia detailed spec page - not independently re-verified this pass"
+      },
+      "lowConfidenceFields": [
+        "towingBrakedKg",
+        "dcChargeKw"
+      ]
+    },
+    {
+      "model": "D9",
+      "variant": "AWD",
+      "bodyType": "people-mover",
+      "segment": "luxury",
+      "batteryUsableKwh": 103.36,
+      "batteryGrossKwh": 103.36,
+      "rangeKm": 480,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 200,
+      "drive": "AWD",
+      "powerKw": 275,
+      "torqueNm": null,
+      "zeroTo100s": 7.9,
+      "seats": 7,
+      "towingBrakedKg": 0,
+      "v2l": true,
+      "priceAud": 95990,
+      "priceBasis": "MSRP before on-road costs",
+      "availability": "current",
+      "fieldSources": {
+        "priceAud": "https://www.carexpert.com.au/car-news/2026-denza-d9-price-and-specs",
+        "batteryUsableKwh": "https://thebeep.com.au/car-reviews/2026-denza-d9-review",
+        "rangeKm": "https://evdrives.com.au/ev/denza-d9/",
+        "zeroTo100s": "https://evdrives.com.au/ev/denza-d9/",
+        "towingBrakedKg": "carried over from prior source file, attributed to ElectricCarAdvice Australia detailed spec page - not independently re-verified this pass"
+      },
+      "lowConfidenceFields": [
+        "towingBrakedKg",
+        "dcChargeKw"
+      ]
+    },
+    {
+      "model": "Z9GT",
+      "variant": "Tri-Motor AWD",
+      "bodyType": "wagon",
+      "segment": "sports",
+      "batteryUsableKwh": 122.49,
+      "batteryGrossKwh": 122.49,
+      "rangeKm": 1036,
+      "rangeCycle": "CLTC",
+      "consumptionWhPerKm": null,
+      "acChargeKw": null,
+      "dcChargeKw": 1500,
+      "drive": "AWD",
+      "powerKw": 850,
+      "torqueNm": 1210,
+      "zeroTo100s": 2.7,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": null,
+      "priceBasis": null,
+      "availability": "announced",
+      "fieldSources": {
+        "rangeKm": "https://www.carexpert.com.au/car-news/2026-denza-z9-gt-850kw-electric-gt-confirmed-for-australia (attributed directly to Denza Australia)",
+        "batteryUsableKwh": "https://www.carexpert.com.au/car-reviews/2027-denza-z9-gt-review-quick-drive",
+        "powerKw": "https://www.carexpert.com.au/car-reviews/2027-denza-z9-gt-review-quick-drive",
+        "torqueNm": "https://www.carexpert.com.au/car-reviews/2027-denza-z9-gt-review-quick-drive",
+        "zeroTo100s": "https://www.carexpert.com.au/car-news/2026-denza-z9-gt-850kw-electric-gt-confirmed-for-australia",
+        "dcChargeKw": "https://www.carexpert.com.au/car-news/denza-z9-gt-plug-in-hybrid-power-could-join-850kw-tri-motor-ev-in-australia"
+      },
+      "lowConfidenceFields": [
+        "rangeKm",
+        "seats",
+        "batteryUsableKwh",
+        "dcChargeKw"
+      ]
+    }
+  ]
+}

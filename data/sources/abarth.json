@@ -1,0 +1,70 @@
+{
+  "brand": "Abarth",
+  "brandSlug": "abarth",
+  "publisher": "Abarth Australia (Stellantis / FCA Australia)",
+  "sourceUrls": [
+    "https://www.fiat.com.au/abarth/500e-electric",
+    "https://www.fiat.com.au/fiat/offers",
+    "https://www.carsales.com.au/research/abarth/500e/2025/turismo/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "The official Abarth Australia 500e page contains no numeric spec table, only navigation/offer links, so specs are sourced from carsales.com.au and CarSorted (secondary, medium confidence). CarExpert (25 Jul 2025) reported that global 500e production (the donor car for the Abarth 500e) was halted in 2024 amid slow sales, and Fiat's own offers page ('DRIVE AWAY FROM $43,990... while stocks last') plus a driveaway promotion reported by thebeep.com.au running 10 Jul 2025 to 30 Sep 2026 both point to clearance/run-out stock rather than an ongoing, freshly-produced model line; availability is therefore marked 'runout' for both variants rather than 'current'. Only 219 Scorpionissima units were allocated to Australia out of a global 1949-unit run, reinforcing the limited/run-out nature of that variant. AC charge rate could not be confirmed from any source and is left null.",
+  "variants": [
+    {
+      "model": "500e",
+      "variant": "Turismo",
+      "bodyType": "hatch",
+      "segment": "light",
+      "batteryUsableKwh": 42,
+      "batteryGrossKwh": null,
+      "rangeKm": 253,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": null,
+      "dcChargeKw": 85,
+      "drive": "FWD",
+      "powerKw": 114,
+      "torqueNm": 235,
+      "zeroTo100s": 7.0,
+      "seats": 4,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 58900,
+      "priceBasis": "MSRP before on-road costs",
+      "availability": "runout",
+      "fieldSources": {
+        "rangeKm": "https://www.carsorted.ai/cars/abarth-500e",
+        "zeroTo100s": "https://www.carsales.com.au/research/abarth/500e/2025/turismo/"
+      },
+      "lowConfidenceFields": ["rangeKm", "acChargeKw"]
+    },
+    {
+      "model": "500e",
+      "variant": "Scorpionissima",
+      "bodyType": "hatch",
+      "segment": "light",
+      "batteryUsableKwh": 42,
+      "batteryGrossKwh": null,
+      "rangeKm": 253,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": null,
+      "dcChargeKw": 85,
+      "drive": "FWD",
+      "powerKw": 114,
+      "torqueNm": 235,
+      "zeroTo100s": 7.0,
+      "seats": 4,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 60500,
+      "priceBasis": "MSRP before on-road costs",
+      "availability": "runout",
+      "fieldSources": {
+        "rangeKm": "https://www.carsorted.ai/cars/abarth-500e"
+      },
+      "lowConfidenceFields": ["rangeKm", "acChargeKw"]
+    }
+  ]
+}

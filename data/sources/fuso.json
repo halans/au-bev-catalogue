@@ -1,0 +1,38 @@
+{
+  "brand": "Fuso",
+  "brandSlug": "fuso",
+  "publisher": "Fuso Trucks Australia (Daimler Truck)",
+  "sourceUrls": [
+    "https://www.fuso.com.au/trucks/ecanter"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Fuso's eCanter range spans multiple GVM classes from 4.5 tonnes up to 8.55 tonnes. Per this dataset's scope rule excluding vehicles above 4.5 tonne GVM, only the smallest variant (e515 City Cab, 4.5t GVM) is included; all higher-GVM eCanter variants (6.0t, 7.49t, 8.55t) are excluded as out of scope. Fuso does not publish a retail RRP for the eCanter: the vehicle is explicitly marketed as 'available for lease' with pricing varying per customer/fleet agreement, so priceAud is null.",
+  "variants": [
+    {
+      "model": "eCanter",
+      "variant": "e515 City Cab (4.5t GVM)",
+      "bodyType": "van",
+      "segment": "van",
+      "batteryUsableKwh": 41.3,
+      "batteryGrossKwh": null,
+      "rangeKm": null,
+      "rangeCycle": null,
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 70,
+      "drive": "RWD",
+      "powerKw": 110,
+      "torqueNm": null,
+      "zeroTo100s": null,
+      "seats": null,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": null,
+      "priceBasis": "No RRP published; Fuso explicitly offers eCanter for lease only, with pricing determined per customer/fleet agreement",
+      "availability": "current",
+      "fieldSources": {},
+      "lowConfidenceFields": ["rangeKm", "seats", "torqueNm"]
+    }
+  ]
+}

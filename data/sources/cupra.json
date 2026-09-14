@@ -1,0 +1,128 @@
+{
+  "brand": "Cupra",
+  "brandSlug": "cupra",
+  "publisher": "Cupra Australia",
+  "sourceUrls": [
+    "https://www.cupraofficial.com.au/cars/tavascan",
+    "https://www.cupraofficial.com.au/cars/born"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Cupra's only currently orderable BEV in Australia is the Tavascan (SUV/coupe-SUV on VW Group's MEB platform). The Cupra Born (electric hatch) is NOT currently orderable: the official cupraofficial.com.au/cars/born page states 'Currently unavailable to order in Australia. Now sold out.' as of this Sept 2026 fetch, so it is excluded from variants per the orderable-now criterion. The live-scraped official Tavascan page shows 'TWO CUPRA TAVASCAN VARIANTS' (Endurance and VZ), but a third, cheaper 'V' variant (RWD, LFP battery, lower power/range) is corroborated by multiple 2026 Australian press sources (CarExpert, evcentral.com.au, carsales.com.au, GoAuto) reporting a MY26 range update that added an entry-level V grade and revised Endurance/VZ range and pricing. Because this V variant and the MY26 Endurance/VZ figures are not confirmed by a fresh read of the official brand page itself, all three variants carry lowConfidenceFields flags on the affected fields (mainly range, price and availability), with press URLs cited via fieldSources. AC charge rate (11kW) is assumed at VW Group's standard onboard charger rate, not separately confirmed per variant, and is flagged low-confidence throughout. V2L capability is not confirmed by any source sighted for any Tavascan variant, so it is recorded as null rather than guessed.",
+  "variants": [
+    {
+      "model": "Tavascan",
+      "variant": "V",
+      "bodyType": "suv",
+      "segment": "suv-medium",
+      "batteryUsableKwh": 58,
+      "batteryGrossKwh": null,
+      "rangeKm": 414,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 105,
+      "drive": "RWD",
+      "powerKw": 140,
+      "torqueNm": 350,
+      "zeroTo100s": 8.6,
+      "seats": 5,
+      "towingBrakedKg": 1000,
+      "v2l": null,
+      "priceAud": 55490,
+      "priceBasis": "MSRP before on-road costs, as reported by AU motoring press covering the MY26 Tavascan range update; not independently confirmed on the official brand site at time of fetch",
+      "availability": "current",
+      "fieldSources": [
+        {
+          "field": "rangeKm",
+          "url": "https://www.carexpert.com.au/cupra/tavascan/2026-v-suv-rwd-electric-jskawogk20260630"
+        },
+        {
+          "field": "priceAud",
+          "url": "https://www.carexpert.com.au/cupra/tavascan/2026-v-suv-rwd-electric-jskawogk20260630"
+        },
+        {
+          "field": "batteryUsableKwh",
+          "url": "https://www.carexpert.com.au/cupra/tavascan/2026-v-suv-rwd-electric-jskawogk20260630"
+        },
+        {
+          "field": "powerKw",
+          "url": "https://www.carexpert.com.au/cupra/tavascan/2026-v-suv-rwd-electric-jskawogk20260630"
+        },
+        {
+          "field": "dcChargeKw",
+          "url": "https://www.carsales.com.au/cupra/tavascan/"
+        }
+      ],
+      "lowConfidenceFields": ["rangeKm", "priceAud", "availability", "acChargeKw", "torqueNm", "zeroTo100s", "towingBrakedKg", "consumptionWhPerKm"]
+    },
+    {
+      "model": "Tavascan",
+      "variant": "Endurance",
+      "bodyType": "suv",
+      "segment": "suv-medium",
+      "batteryUsableKwh": 77,
+      "batteryGrossKwh": null,
+      "rangeKm": 520,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 135,
+      "drive": "RWD",
+      "powerKw": 210,
+      "torqueNm": 545,
+      "zeroTo100s": 6.8,
+      "seats": 5,
+      "towingBrakedKg": 1000,
+      "v2l": null,
+      "priceAud": 66490,
+      "priceBasis": "MSRP before on-road costs; updated MY26 figure per evcentral.com.au (2026-06-30), which reported a lower entry price alongside reduced range/power vs the prior official-site figures (531km / $60,990-era)",
+      "availability": "current",
+      "fieldSources": [
+        {
+          "field": "rangeKm",
+          "url": "https://evcentral.com.au/cheaper-cupra-tavascan-arrives-new-entry-level-ev-cuts-entry-price-but-loses-range-and-power/"
+        },
+        {
+          "field": "priceAud",
+          "url": "https://evcentral.com.au/cheaper-cupra-tavascan-arrives-new-entry-level-ev-cuts-entry-price-but-loses-range-and-power/"
+        }
+      ],
+      "lowConfidenceFields": ["rangeKm", "priceAud", "acChargeKw", "towingBrakedKg", "consumptionWhPerKm"]
+    },
+    {
+      "model": "Tavascan",
+      "variant": "VZ",
+      "bodyType": "suv",
+      "segment": "suv-medium",
+      "batteryUsableKwh": 77,
+      "batteryGrossKwh": null,
+      "rangeKm": 509,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 135,
+      "drive": "AWD",
+      "powerKw": 250,
+      "torqueNm": 545,
+      "zeroTo100s": 5.5,
+      "seats": 5,
+      "towingBrakedKg": 1200,
+      "v2l": null,
+      "priceAud": 75490,
+      "priceBasis": "MSRP before on-road costs; updated MY26 figure per evcentral.com.au (2026-06-30), which conflicts with the official site's prior-generation figures (505km / $74,490-era)",
+      "availability": "current",
+      "fieldSources": [
+        {
+          "field": "rangeKm",
+          "url": "https://evcentral.com.au/cheaper-cupra-tavascan-arrives-new-entry-level-ev-cuts-entry-price-but-loses-range-and-power/"
+        },
+        {
+          "field": "priceAud",
+          "url": "https://evcentral.com.au/cheaper-cupra-tavascan-arrives-new-entry-level-ev-cuts-entry-price-but-loses-range-and-power/"
+        }
+      ],
+      "lowConfidenceFields": ["rangeKm", "priceAud", "acChargeKw", "torqueNm", "towingBrakedKg", "consumptionWhPerKm"]
+    }
+  ]
+}

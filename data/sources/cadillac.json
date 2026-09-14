@@ -1,0 +1,38 @@
+{
+  "brand": "Cadillac",
+  "brandSlug": "cadillac",
+  "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+  "sourceUrls": [
+    "https://www.cadillac.com.au/lyriq"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Cadillac Australia sells a single BEV model, the Lyriq (right-hand-drive, imported/converted by GM Specialty Vehicles). Battery capacity (102kWh) and AC/DC charging figures (11.5kW AC / 190kW DC) are consistent across sources and treated as reliable. However, pricing and power-output figures show real conflict: launch-era press (2024/early 2025) cited approx. $117,000-$122,000 drive-away for the Luxury variant, while later 2025/2026 secondary sources (dealer/aggregator listings) show substantially lower drive-away figures in the $90,000-$95,000 range, consistent with reported price cuts and a shift to a single-trim MY27 lineup. Power output is also inconsistently reported: 272kW (single-motor RWD figure per some specs) vs 388kW (dual-motor AWD figure per others), and it is not clear from available sources which figure corresponds to the actual current-model-year AU-market variant. Because these conflicts could not be reconciled with confidence, priceAud and powerKw are set to null and flagged low-confidence rather than guessing which figure is current.",
+  "variants": [
+    {
+      "model": "Lyriq",
+      "variant": "Luxury (MY27 single-trim lineup, AWD)",
+      "bodyType": "suv",
+      "segment": "suv-large",
+      "batteryUsableKwh": 102,
+      "batteryGrossKwh": null,
+      "rangeKm": 530,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11.5,
+      "dcChargeKw": 190,
+      "drive": "AWD",
+      "powerKw": null,
+      "torqueNm": null,
+      "zeroTo100s": null,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": null,
+      "priceBasis": "Conflicting figures across sources: launch-era reports cite approx. $117,000-$122,000 drive-away; later secondary sources suggest $90,000-$95,000 drive-away following price adjustments. Could not be reconciled with confidence; set to null rather than guessed.",
+      "availability": "current",
+      "fieldSources": {},
+      "lowConfidenceFields": ["priceAud", "powerKw", "torqueNm", "rangeKm", "towingBrakedKg", "zeroTo100s"]
+    }
+  ]
+}

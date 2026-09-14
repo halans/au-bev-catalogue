@@ -1,0 +1,41 @@
+{
+  "name": "au-bev-catalogue",
+  "version": "1.0.0",
+  "description": "Catalogue of every battery-electric vehicle sold new in Australia, reconciled from multiple sources with per-field provenance. Zero runtime dependencies.",
+  "license": "CC-BY-NC-SA-4.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "bev": "bin/bev.js"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin/",
+    "src/",
+    "data/sources/",
+    "data/catalogue.json",
+    "dist/",
+    "docs/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node bin/bev.js build",
+    "validate": "node bin/bev.js validate",
+    "coverage": "node bin/bev.js coverage",
+    "test": "node --test test/*.test.js",
+    "ci": "npm run build && npm test && node bin/bev.js validate --format ci",
+    "package": "node scripts/package.js"
+  },
+  "keywords": [
+    "electric-vehicle",
+    "bev",
+    "australia",
+    "catalogue",
+    "open-data",
+    "provenance",
+    "cli"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}

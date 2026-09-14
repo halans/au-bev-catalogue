@@ -1,0 +1,99 @@
+{
+  "brand": "Ford",
+  "brandSlug": "ford",
+  "publisher": "Ford Australia",
+  "sourceUrls": [
+    "https://www.ford.com.au/showroom/trucks-and-vans/transit/electric/",
+    "https://www.ford.com.au/future-vehicle/next-gen-e-transit-custom/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Ford Australia currently sells BEVs only in its van/LCV range (E-Transit and E-Transit Custom). Ford has no BEV passenger car or SUV on sale in Australia in Sept 2026 (Mustang Mach-E was discontinued locally; no replacement confirmed). IMPORTANT CAVEAT: ford.com.au's 'future-vehicle/next-gen-e-transit-custom' page lists a Trend variant with a 45kWh usable battery, 160kW motor and 340km WLTP range, which conflicts with the currently-orderable E-Transit Custom Trend/Sport specs (64kWh usable battery, 301-307km WLTP) confirmed via Ford's own spec-sheet PDF and independent fleet press (Nov 2025). Because the ford.com.au URL is explicitly namespaced 'future-vehicle', the 45kWh/340km spec is treated here as an ANNOUNCED/NOT-YET-ON-SALE next-generation update rather than the current on-sale spec, and is excluded from variants below pending confirmation of on-sale date. Pricing for E-Transit Custom variants is sourced from a fleet trade publication (Nov 2025) rather than Ford's own price list, which was not directly accessible; flagged low-confidence. E-Transit (full-size van) pricing shows some inconsistency across secondary sources ($89,990 single figure vs a $89,990-$104,990 range for higher trims); only the base/entry configuration is captured with confidence.",
+  "variants": [
+    {
+      "model": "E-Transit Custom",
+      "variant": "Trend LWB",
+      "bodyType": "van",
+      "segment": "van",
+      "batteryUsableKwh": 64,
+      "batteryGrossKwh": null,
+      "rangeKm": 301,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": 248,
+      "acChargeKw": 11,
+      "dcChargeKw": 125,
+      "drive": "RWD",
+      "powerKw": 160,
+      "torqueNm": 415,
+      "zeroTo100s": null,
+      "seats": 3,
+      "towingBrakedKg": 2300,
+      "v2l": null,
+      "priceAud": 79990,
+      "priceBasis": "Approx. figure from fleet trade press (Nov 2025), stated as 'plus on-roads'; not independently confirmed against Ford's current official price list",
+      "availability": "current",
+      "fieldSources": {
+        "priceAud": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/",
+        "dcChargeKw": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/"
+      },
+      "lowConfidenceFields": ["priceAud", "dcChargeKw", "seats"]
+    },
+    {
+      "model": "E-Transit Custom",
+      "variant": "Sport SWB",
+      "bodyType": "van",
+      "segment": "van",
+      "batteryUsableKwh": 64,
+      "batteryGrossKwh": null,
+      "rangeKm": 307,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": 242,
+      "acChargeKw": 11,
+      "dcChargeKw": 125,
+      "drive": "RWD",
+      "powerKw": 160,
+      "torqueNm": 415,
+      "zeroTo100s": null,
+      "seats": 3,
+      "towingBrakedKg": 2300,
+      "v2l": true,
+      "priceAud": 83990,
+      "priceBasis": "Approx. figure from fleet trade press (Nov 2025), stated as 'plus on-roads'; not independently confirmed against Ford's current official price list",
+      "availability": "current",
+      "fieldSources": {
+        "priceAud": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/",
+        "dcChargeKw": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/",
+        "v2l": "https://evdbau.com/v/ford-e-transit"
+      },
+      "lowConfidenceFields": ["priceAud", "dcChargeKw", "seats", "v2l"]
+    },
+    {
+      "model": "E-Transit",
+      "variant": "420L RWD SRW",
+      "bodyType": "van",
+      "segment": "van",
+      "batteryUsableKwh": 68,
+      "batteryGrossKwh": null,
+      "rangeKm": 307,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11.3,
+      "dcChargeKw": 115,
+      "drive": "RWD",
+      "powerKw": 198,
+      "torqueNm": 430,
+      "zeroTo100s": null,
+      "seats": null,
+      "towingBrakedKg": 3500,
+      "v2l": null,
+      "priceAud": 89990,
+      "priceBasis": "MRLP before on-road costs (base configuration); higher trims reportedly range up to approx. $104,990 MRLP but exact variant breakdown not confirmed",
+      "availability": "current",
+      "fieldSources": {
+        "priceAud": "https://www.carsguide.com.au/ford/e-transit/2026",
+        "towingBrakedKg": "https://www.ford.com.au/showroom/trucks-and-vans/transit/electric/"
+      },
+      "lowConfidenceFields": ["priceAud", "seats"]
+    }
+  ]
+}

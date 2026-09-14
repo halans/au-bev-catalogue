@@ -1,0 +1,14 @@
+{
+  "brand": "Citroen",
+  "brandSlug": "citroen",
+  "publisher": "Citroen Australia (Inchcape)",
+  "sourceUrls": [
+    "https://www.citroen.com.au/about-citroen/news/citroen-announcement.html",
+    "https://www.carsales.com.au/editorial/details/adieu-citroen-147139/",
+    "https://www.whichcar.com.au/features/citroen-end-road-in-australia"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "WITHDRAWN FROM MARKET: Citroen Australia (importer Inchcape) formally ceased all new-vehicle sales in Australia effective 1 November 2024, ending a 101+ year presence, after sales collapsed to just 87 units in H1 2024 (down 35% year-on-year, versus a 2007 peak of 3803 annual deliveries). Existing orders placed before 1 November 2024 were fulfilled, and Citroen's ~35 dealer network transitioned to a service-and-maintenance-only operation; the importer refocused on its sibling brand Peugeot. At the time of withdrawal Citroen's Australian range was petrol/diesel only (C3, C4, C5 Aircross, C5 X) -- no BEV was part of the final local lineup. Search results also surfaced ccarprice.com listings claiming current Australian availability and pricing for an e-C4 X, e-Berlingo and e-SpaceTourer; ccarprice.com is a low-reliability, seemingly auto-generated aggregator that explicitly disclaims guaranteed accuracy, and its claims directly conflict with the official Citroen Australia market-exit announcement and multiple corroborating reputable press sources (carsales, WhichCar, Drive, CarExpert), so those listings are treated as incorrect/not credible and excluded. As of September 2026, Citroen sells no new vehicles of any powertrain in Australia, BEV or otherwise.",
+  "variants": []
+}

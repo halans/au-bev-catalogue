@@ -1,0 +1,12 @@
+{
+  "brand": "Foton",
+  "brandSlug": "foton",
+  "publisher": "Foton Mobility Distribution Australia",
+  "sourceUrls": [
+    "https://www.fotonmobility.com.au/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Foton's current Australian passenger/light-commercial lineup (Tunland V7 and Tunland V9 utes, priced approx. $39,990-$49,990) is confirmed across multiple 2025/2026 sources to be diesel or diesel mild-hybrid only, with no battery-electric variant offered new in Australia. No evidence was found this session of an on-sale Foton or Foton-affiliated (e.g. 'Asiastar') BEV in the Australian market; a prior research pass had flagged a possible 'Tunland G7 EV' but this could not be corroborated this session against any dealer, press, or manufacturer source and is treated as unconfirmed/likely incorrect. Foton does sell electric light trucks/buses in some overseas markets, but none were verified as available for retail new-vehicle purchase in Australia within the 4.5-tonne GVM passenger/LCV scope of this dataset.",
+  "variants": []
+}

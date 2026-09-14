@@ -1,0 +1,24 @@
+# Dependencies (project currently has zero, but keep this for when that changes)
+node_modules/
+
+# npm/yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Packaging output — scripts/package.js stages a full copy plus a zip here.
+# data/catalogue.json and dist/index.html are tracked deliberately: this repo
+# is meant to be usable straight after clone without a build step first.
+build/
+*.zip
+
+# Environment / local config
+.env
+.env.local
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

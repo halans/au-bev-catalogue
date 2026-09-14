@@ -1,0 +1,41 @@
+{
+  "brand": "Alfa Romeo",
+  "brandSlug": "alfa-romeo",
+  "publisher": "Alfa Romeo Australia (Stellantis)",
+  "sourceUrls": [
+    "https://www.alfaromeo.com.au/models/junior",
+    "https://www.carexpert.com.au/alfa-romeo/junior/pricing"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "The Junior range is sold in Australia as both 'Ibrida' (petrol hybrid) and 'Elettrica' (BEV); the Ibrida is excluded entirely as it is not a BEV. Only one named Elettrica trim could be confirmed from the official site's spec block (115kW/260Nm, 54kWh, WLTP 407km); the multiple price points reported by CarExpert for 2026 ($58,990 before on-road costs base, with drive-away figures spanning $50,117-$64,057 and separately $60,813/$62,913/$64,057) most likely reflect colour and option-pack pricing rather than genuinely distinct named sub-variants, so a single Elettrica row is used rather than inventing separate trim names. DC fast-charge time is quoted as ~27 minutes (20-80%) on the official AU site vs ~30 minutes (10-80%) in a Stellantis press release; the official AU site figure is preferred.",
+  "variants": [
+    {
+      "model": "Junior",
+      "variant": "Elettrica",
+      "bodyType": "suv",
+      "segment": "suv-small",
+      "batteryUsableKwh": 54,
+      "batteryGrossKwh": null,
+      "rangeKm": 407,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 100,
+      "drive": "FWD",
+      "powerKw": 115,
+      "torqueNm": 260,
+      "zeroTo100s": 9.0,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 58990,
+      "priceBasis": "MSRP before on-road costs",
+      "availability": "current",
+      "fieldSources": {
+        "priceAud": "https://www.carexpert.com.au/alfa-romeo/junior/pricing"
+      },
+      "lowConfidenceFields": ["towingBrakedKg"]
+    }
+  ]
+}

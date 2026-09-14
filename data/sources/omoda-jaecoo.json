@@ -1,0 +1,43 @@
+{
+  "brand": "Omoda Jaecoo",
+  "brandSlug": "omoda-jaecoo",
+  "publisher": "Omoda Jaecoo Australia (omodajaecoo.com.au)",
+  "sourceUrls": [
+    "https://www.omodajaecoo.com.au/",
+    "https://www.omodajaecoo.com.au/models/jaecoo-j5-bev"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "As of September 2026 the Omoda Jaecoo brand family sells exactly one BEV: the Jaecoo J5 EV, single grade 'Summit'. No BEV is currently sold under the Omoda badge - the model formerly marketed as 'Omoda E5' has reverted to the Chery brand name (now 'Chery E5', see chery.json) and is out of scope here. The Jaecoo J6 EV is NOT confirmed for Australia; Chery Australia has said it is 'under consideration' with no confirmed plans, and third-party pricing sites listing J6 AU pricing appear to be unreliable/auto-generated - excluded. Jaecoo J7 SHS (hybrid) and other hybrid/PHEV Jaecoo/Omoda models (Omoda 9 SHS-P) are excluded as non-BEV. Braked towing capacity is not published for the J5 EV (only an unbraked 750kg + 75kg towball figure exists).",
+  "variants": [
+    {
+      "model": "Jaecoo J5 EV",
+      "variant": "Summit",
+      "bodyType": "suv",
+      "segment": "suv-small",
+      "batteryUsableKwh": null,
+      "batteryGrossKwh": 58.9,
+      "rangeKm": 402,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": 143,
+      "acChargeKw": 6.6,
+      "dcChargeKw": 130,
+      "drive": "FWD",
+      "powerKw": 155,
+      "torqueNm": 288,
+      "zeroTo100s": 7.7,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": true,
+      "priceAud": 35990,
+      "priceBasis": "$35,990 before on-road costs (standard RRP per brand brochure); a $36,990 driveaway promotional offer (no metallic paint) also runs 1 Jul-30 Sep 2026",
+      "availability": "current",
+      "fieldSources": {
+        "rangeKm": "https://www.omodajaecoo.com.au/models/jaecoo-j5-bev (brand brochure also separately quotes a 461km ADR 81/02 figure, not merged here)",
+        "consumptionWhPerKm": "https://carsauce.com.au (secondary, medium confidence)",
+        "zeroTo100s": "https://carsauce.com.au / futurefive.com.au (secondary, medium confidence - not on official brochure)"
+      },
+      "lowConfidenceFields": ["consumptionWhPerKm", "zeroTo100s", "towingBrakedKg"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "brand": "Jaguar",
+  "brandSlug": "jaguar",
+  "publisher": "Jaguar Land Rover Australia",
+  "sourceUrls": [
+    "https://www.jaguar.com/en-au/jdx/jaguar-range/i-pace/specifications/index.html",
+    "https://www.carexpert.com.au/jaguar/i-pace/2026/price-and-specs",
+    "https://www.carexpert.com.au/car-reviews/2025-jaguar-i-pace-review"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "REAL DOUBT / LIKELY WITHDRAWN: Jaguar's I-Pace was, as of a November 2024 review, sellable in Australia on remaining stock only ('sufficient stock... to carry us through to 2025'), following JLR's July 2024 global decision to axe the I-Pace and E-Pace as 'zero-profitability products'. CarExpert's own 2026 I-Pace pricing page (published 20 Aug 2026) shows 'Price not available' and zero year-to-date sales for 2026, and the official jaguar.com/en-au I-Pace specifications page itself returned a broken/unavailable content block at fetch time. Given no confirmed current price, zero 2026 sales, and a global discontinuation decision from mid-2024, the I-Pace is judged to be effectively no longer orderable new in Australia as of September 2026 and is therefore NOT listed as a current variant (an empty variants array is used) rather than assumed still on sale. Note also: a March 2026 CarExpert report described a recall affecting ~270 older (2017-2021 build) I-Pace units for a battery overheating/fire risk, capping charging at 90% pending a permanent fix -- this affects existing fleet vehicles, not new-vehicle orderability, and is unrelated to the withdrawal finding above. No other Jaguar BEV (e.g. a Jaguar 'Type 00' successor GT) has been confirmed as launched or orderable in Australia.",
+  "variants": []
+}

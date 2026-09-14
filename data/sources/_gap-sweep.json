@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-09-13",
+  "missingBrands": [
+    {
+      "brand": "Rivian",
+      "status": "not-in-market",
+      "evidence": "No official Australian distribution, dealer network, or right-hand-drive program found; only speculative overseas pricing-aggregator content located, no retail launch.",
+      "note": "Rivian has not announced RHD production or an Australian entry as of Sept 2026."
+    },
+    {
+      "brand": "Lucid",
+      "status": "not-in-market",
+      "evidence": "No official Australian distribution or dealer presence found.",
+      "note": "No confirmed RHD Air or Gravity program for Australia."
+    },
+    {
+      "brand": "VinFast",
+      "status": "not-in-market",
+      "evidence": "Only a manufacturing-investment headline (VinFast discussing a factory investment) was found, not a retail launch or dealer network in Australia.",
+      "note": "No VinFast showroom, retailer, or on-sale model confirmed for the Australian market as of Sept 2026; needs re-checking if the manufacturing story matures into a retail launch."
+    },
+    {
+      "brand": "Aion (GAC)",
+      "status": "selling",
+      "evidence": "GAC's own press materials confirm the AION UT launched publicly at the April 2026 Melbourne Motor Show; carsales.com.au lists a '2026 Aion AION V Luxury Auto' as an orderable new-vehicle listing.",
+      "note": "Strongest gap-sweep finding: Aion appears to be actively selling BEVs new in Australia and was not on the original ~50-brand reference list. Recommend a full dedicated brand file be created for Aion (AION UT and AION V models) in a follow-up pass."
+    },
+    {
+      "brand": "Jetour",
+      "status": "not-in-market",
+      "evidence": "Jetour's Australian launch has been reported as delayed to early 2027, with the initial announced lineup skewing toward PHEV and diesel-hybrid models rather than confirmed BEVs.",
+      "note": "Not selling BEVs new in Australia as of Sept 2026; worth re-checking in early 2027."
+    },
+    {
+      "brand": "Nio (Firefly)",
+      "status": "announced",
+      "evidence": "Nio's Firefly sub-brand has reportedly received ADR (Australian Design Rules) certification but no confirmed on-sale date or dealer network as of the last check.",
+      "note": "Carried over from a prior research pass; not independently re-verified in this session due to time constraints — treat as tentative."
+    },
+    {
+      "brand": "Xiaomi",
+      "status": "announced",
+      "evidence": "The Xiaomi SU7 has been reported in industry press as targeted for an Australian launch around 2027, with no retail presence or dealer network yet established.",
+      "note": "Carried over from a prior research pass; not independently re-verified in this session due to time constraints — treat as tentative."
+    }
+  ]
+}

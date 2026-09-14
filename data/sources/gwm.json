@@ -1,0 +1,73 @@
+{
+  "brand": "GWM",
+  "brandSlug": "gwm",
+  "publisher": "GWM Australia (gwmanz.com.au)",
+  "sourceUrls": [
+    "https://www.gwmanz.com/au/models/suv/ora-5-suv/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "GWM's only currently orderable BEV in Australia is the Ora 5 SUV (Lux, Ultra). The original Ora hatch (Good Cat/Funky Cat) was discontinued around April/May 2026, superseded by the Ora 5; not included as it is no longer sellable as new stock. An Ora 5 Hatch and Ora 5 Touring (wagon, larger battery) have been referenced by AU press as coming 'later in 2026' but are unconfirmed/no specs - excluded pending confirmation. Haval Jolion Max BEV is a confirmed future AU launch targeting Q4 2026 but is not yet orderable and has no official specs published - excluded (announced only, insufficient verified data to list). GWM's ute range (Cannon, Cannon Alpha, Cannon Hi4-T) is diesel/PHEV only - no BEV ute exists in the AU lineup. No BEV van exists in the GWM/Ora/Haval AU range. GWM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (the pre-on-road figures below are back-calculated by CarExpert, medium confidence). Range cycle is WLTC per the brand site and AU press, not WLTP - recorded as null for rangeCycle since WLTC is not one of the permitted enum values, with the true value noted in fieldSources/notes per variant.",
+  "variants": [
+    {
+      "model": "Ora 5 SUV",
+      "variant": "Lux",
+      "bodyType": "suv",
+      "segment": "suv-small",
+      "batteryUsableKwh": null,
+      "batteryGrossKwh": 58.33,
+      "rangeKm": 435,
+      "rangeCycle": null,
+      "consumptionWhPerKm": 155,
+      "acChargeKw": 6.6,
+      "dcChargeKw": 120,
+      "drive": "FWD",
+      "powerKw": 150,
+      "torqueNm": 260,
+      "zeroTo100s": 8.0,
+      "seats": 5,
+      "towingBrakedKg": 750,
+      "v2l": true,
+      "priceAud": 32490,
+      "priceBasis": "GWM AU publishes drive-away pricing only ($33,990 drive-away, VIC private buyer); the $32,490 before-on-road-costs figure is a CarExpert (Sydney) back-calculation, not brand-published",
+      "availability": "current",
+      "fieldSources": {
+        "rangeKm": "https://www.gwmanz.com/au/models/suv/ora-5-suv/ (brand quotes this as WLTC, not WLTP - note the cycle discrepancy)",
+        "acChargeKw": "https://www.gwmanz.com/au/models/suv/ora-5-suv/ (brand states 6.6kW; CarExpert secondary source states 11kW onboard charger - unresolved conflict)",
+        "zeroTo100s": "https://www.carexpert.com.au/gwm/ora-5/2026-lux-suv-fwd-electric-jskamoww20260410",
+        "priceAud": "https://www.carexpert.com.au/gwm/ora-5/2026-lux-suv-fwd-electric-jskamoww20260410"
+      },
+      "lowConfidenceFields": ["rangeCycle", "acChargeKw", "zeroTo100s", "priceAud"]
+    },
+    {
+      "model": "Ora 5 SUV",
+      "variant": "Ultra",
+      "bodyType": "suv",
+      "segment": "suv-small",
+      "batteryUsableKwh": null,
+      "batteryGrossKwh": 58.33,
+      "rangeKm": 435,
+      "rangeCycle": null,
+      "consumptionWhPerKm": 155,
+      "acChargeKw": 6.6,
+      "dcChargeKw": 120,
+      "drive": "FWD",
+      "powerKw": 150,
+      "torqueNm": 260,
+      "zeroTo100s": 8.0,
+      "seats": 5,
+      "towingBrakedKg": 750,
+      "v2l": true,
+      "priceAud": 35490,
+      "priceBasis": "GWM AU publishes drive-away pricing only ($36,990 drive-away); the $35,490 before-on-road-costs figure is a CarExpert (Sydney) back-calculation, not brand-published",
+      "availability": "current",
+      "fieldSources": {
+        "rangeKm": "https://www.gwmanz.com/au/models/suv/ora-5-suv/ (brand quotes this as WLTC, not WLTP)",
+        "acChargeKw": "https://www.gwmanz.com/au/models/suv/ora-5-suv/ (brand states 6.6kW; CarExpert secondary source states 11kW - unresolved conflict)",
+        "zeroTo100s": "https://www.carexpert.com.au/gwm/ora-5/2026-lux-suv-fwd-electric-jskamoww20260410",
+        "priceAud": "https://www.carexpert.com.au/gwm/ora-5/2026-lux-suv-fwd-electric-jskamoww20260410"
+      },
+      "lowConfidenceFields": ["rangeCycle", "acChargeKw", "zeroTo100s", "priceAud"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "brand": "Ram",
+  "brandSlug": "ram",
+  "publisher": "Ram Trucks Australia (Ateco Automotive)",
+  "sourceUrls": [
+    "https://www.ramtrucks.com.au/"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Ram does not currently sell any battery-electric vehicle in Australia as of September 2026. The Ram 1500 REV, a planned full-BEV version of the Ram 1500, was cancelled by Stellantis/RAM globally in September 2025 before reaching an Australian right-hand-drive conversion or launch. The Ram Ramcharger (an extended-range electric vehicle / EREV with a petrol generator providing extended range) is out of scope for this dataset because it is not a pure battery-electric vehicle. No other Ram BEV model is confirmed for the Australian market.",
+  "variants": []
+}

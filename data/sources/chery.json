@@ -1,0 +1,41 @@
+{
+  "brand": "Chery",
+  "brandSlug": "chery",
+  "publisher": "Chery Australia (cherymotor.com.au)",
+  "sourceUrls": [
+    "https://www.cherymotor.com.au/models/chery-e5-electric-suv"
+  ],
+  "fetchedAt": "2026-09-13",
+  "licence": "proprietary-factual",
+  "notes": "Chery (as distinct from Omoda/Jaecoo) sells exactly one BEV model in Australia: the Chery E5, currently one variant (Ultimate) after the entry-level Urban trim was discontinued for MY26. The Chery eQ7 is NOT sold in Australia - it is a China-domestic CLTC-rated model with no AU dealer presence, ADR compliance, or pricing; excluded. Chery's remaining AU lineup (Tiggo 4/7/8/9, C5) is petrol, HEV or PHEV ('Super Hybrid') and is excluded. Chery AU publishes only a driveaway price for the E5 ($37,990, valid 1 Jul-30 Sep 2026); no separate before-on-road-costs MSRP is brand-published. Brand's own spec sheet does not distinguish usable vs gross battery capacity (58.9kWh single figure). Braked towing capacity is not published by Chery; only an unbraked 750kg figure exists. V2L is reported as false per an AEVA technical note stating the E5 does not currently include V2X capability.",
+  "variants": [
+    {
+      "model": "E5",
+      "variant": "Ultimate",
+      "bodyType": "suv",
+      "segment": "suv-small",
+      "batteryUsableKwh": null,
+      "batteryGrossKwh": 58.9,
+      "rangeKm": 430,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": 132,
+      "acChargeKw": 6.6,
+      "dcChargeKw": 130,
+      "drive": "FWD",
+      "powerKw": 155,
+      "torqueNm": 288,
+      "zeroTo100s": 7.6,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": false,
+      "priceAud": 37990,
+      "priceBasis": "Driveaway price (DAP), 1 July 2026 - 30 September 2026 offer window; Chery does not publish a separate before-on-road-costs MSRP for current MY26 stock",
+      "availability": "current",
+      "fieldSources": {
+        "consumptionWhPerKm": "https://www.cherymotor.com.au/models/chery-e5-electric-suv (NEDC/ADR 81/02-cycle figure per brand spec sheet PDF; also has separate NEDC-cycle range of 505km not recorded here to avoid mixing cycles)",
+        "v2l": "AEVA technical note (aeva.au/files/3659): 'The E5 currently does not include V2X capability' - medium confidence, secondary source"
+      },
+      "lowConfidenceFields": ["v2l", "towingBrakedKg"]
+    }
+  ]
+}
