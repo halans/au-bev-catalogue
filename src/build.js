@@ -52,7 +52,7 @@ function build(options) {
 
   const catalogue = {
     meta: {
-      name: 'Australian Battery-Electric Vehicle Catalogue',
+      name: 'Australian Battery-Electric Vehicle Directory',
       builtAt: now,
       schemaVersion: 1,
       recordCount: reconciled.records.length,

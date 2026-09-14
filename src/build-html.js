@@ -798,7 +798,7 @@ function buildHtml(catalogue) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Australian Battery-Electric Vehicle Catalogue</title>
+<title>Australian Battery-Electric Vehicle Directory</title>
 <meta name="description" content="Every battery-electric vehicle model and variant sold new in Australia, with per-field provenance. Built ${escapeHtml(meta.builtAt || '')}.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

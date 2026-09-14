@@ -180,7 +180,7 @@ function printTable(rows, columns) {
  * Commands
  * ------------------------------------------------------------------ */
 
-const HELP = `bev — Australian battery-electric vehicle catalogue
+const HELP = `bev — Australian battery-electric vehicle directory
 
 Usage
   bev build [--out <file>] [--html <file>] [--now <YYYY-MM-DD>]
