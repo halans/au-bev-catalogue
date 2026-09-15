@@ -66,7 +66,7 @@ a{color:var(--accent)}
 @media(max-width:640px){.wrap{padding:0 18px}}
 
 header.top{background:var(--paper);border-bottom:1px solid var(--line)}
-.top-inner{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;padding:22px 0 18px}
+.top-inner{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;padding:22px 18px}
 h1{font-size:clamp(24px,4.2vw,38px);line-height:1.05}
 .sub{color:var(--ink-soft);font-size:13px;margin-top:6px;max-width:62ch}
 .stats{display:flex;gap:22px;flex-wrap:wrap}
