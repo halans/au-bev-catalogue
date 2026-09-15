@@ -785,15 +785,11 @@ function compactPayload(catalogue, meta) {
 
 /* ------------------------------------------------------------------ */
 
-function buildHtml(catalogue) {
+/** Coverage/methodology figures shared by the catalogue header and the About page. */
+function computeCoverageSections(catalogue) {
   const meta = catalogue.meta || {};
   const report = catalogue.coverage || { totals: {} };
   const totals = report.totals || {};
-
-  const sortOptions = catalogue.fields
-    .filter((f) => f.sortable)
-    .map((f) => `<option value="${f.key}">${escapeHtml(f.label)}</option>`)
-    .join('');
 
   const emptyBrandList = (report.emptyBrands || [])
     .map((b) => `<li><b>${escapeHtml(b.brand)}</b> — ${escapeHtml(b.notes || 'no BEV on sale')}</li>`)
@@ -808,6 +804,18 @@ function buildHtml(catalogue) {
     .sort((a, b) => a.completeness - b.completeness)
     .slice(0, 8)
     .map((f) => `<li>${escapeHtml(f.label)} — <span class="num">${f.completeness}%</span> populated</li>`)
+    .join('');
+
+  return { totals, emptyBrandList, licenceList, worstFields };
+}
+
+function buildHtml(catalogue) {
+  const meta = catalogue.meta || {};
+  const { totals } = computeCoverageSections(catalogue);
+
+  const sortOptions = catalogue.fields
+    .filter((f) => f.sortable)
+    .map((f) => `<option value="${f.key}">${escapeHtml(f.label)}</option>`)
     .join('');
 
   // The browser payload: records only. Coverage and conflict data stay out of
@@ -834,7 +842,7 @@ function buildHtml(catalogue) {
   <div class="wrap top-inner">
     <div>
       <h1>Australian BEV Catalogue</h1>
-      <p class="sub">Every battery-electric model and variant sold new in Australia. Each figure carries the publisher it came from, so you can check any number rather than take it on trust.</p>
+      <p class="sub">Every battery-electric model and variant sold new in Australia. Each figure carries the publisher it came from, so you can check any number rather than take it on trust. <a href="about.html">About this directory &amp; methodology →</a></p>
     </div>
     <div class="stats">
       <div class="stat"><b class="num">${totals.variants || 0}</b><span>Variants</span></div>
@@ -902,25 +910,8 @@ function buildHtml(catalogue) {
 </dialog>
 
 <footer>
-  <div class="wrap fcols">
-    <div>
-      <h3>What "complete" means here</h3>
-      <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
-      <p class="num">${totals.brandsChecked || 0} brands checked · ${totals.brandsWithNoBev || 0} with no BEV on sale · ${totals.conflicts || 0} source conflicts recorded</p>
-    </div>
-    <div>
-      <h3>Least complete fields</h3>
-      <ul>${worstFields || '<li>All fields fully populated.</li>'}</ul>
-    </div>
-    <div>
-      <h3>Checked, no BEV on sale</h3>
-      <ul>${emptyBrandList || '<li>None.</li>'}</ul>
-    </div>
-    <div>
-      <h3>Source licences</h3>
-      <ul>${licenceList}</ul>
-      <p>Figures are restated facts attributed to each publisher. This page is not affiliated with any manufacturer.</p>
-    </div>
+  <div class="wrap">
+    <p>This page is not affiliated with any manufacturer. <a href="about.html">Read about the methodology and data completeness →</a></p>
   </div>
 </footer>
 
@@ -970,6 +961,68 @@ ${VIEW}
 `;
 }
 
+/** The methodology/coverage page the catalogue's footer links out to. */
+function buildAboutHtml(catalogue) {
+  const meta = catalogue.meta || {};
+  const { totals, emptyBrandList, licenceList, worstFields } = computeCoverageSections(catalogue);
+
+  return `<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Australian Battery-Electric Vehicle Directory</title>
+<meta name="description" content="How completeness is measured and sourced for the Australian Battery-Electric Vehicle Directory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>${STYLES}</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <div>
+      <h1>About this directory</h1>
+      <p class="sub"><a href="index.html">← Back to the catalogue</a></p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="panel fcols" style="padding:20px">
+    <div>
+      <h3>What "complete" means here</h3>
+      <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
+      <p class="num">${totals.brandsChecked || 0} brands checked · ${totals.brandsWithNoBev || 0} with no BEV on sale · ${totals.conflicts || 0} source conflicts recorded</p>
+    </div>
+    <div>
+      <h3>Least complete fields</h3>
+      <ul>${worstFields || '<li>All fields fully populated.</li>'}</ul>
+    </div>
+    <div>
+      <h3>Checked, no BEV on sale</h3>
+      <ul>${emptyBrandList || '<li>None.</li>'}</ul>
+    </div>
+    <div>
+      <h3>Source licences</h3>
+      <ul>${licenceList}</ul>
+      <p>Figures are restated facts attributed to each publisher. This page is not affiliated with any manufacturer.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Built ${escapeHtml(meta.builtAt || '')}. <a href="index.html">← Back to the catalogue</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
+`;
+}
+
 function writeHtml(catalogue, target) {
   const dest = target || path.join(ROOT, 'dist', 'index.html');
   fs.mkdirSync(path.dirname(dest), { recursive: true });
@@ -977,4 +1030,13 @@ function writeHtml(catalogue, target) {
   return dest;
 }
 
-module.exports = { buildHtml, writeHtml, moduleSource, embedJson, compactPayload };
+function writeAboutHtml(catalogue, target) {
+  const dest = target || path.join(ROOT, 'dist', 'about.html');
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.writeFileSync(dest, buildAboutHtml(catalogue), 'utf8');
+  return dest;
+}
+
+module.exports = {
+  buildHtml, writeHtml, buildAboutHtml, writeAboutHtml, moduleSource, embedJson, compactPayload,
+};

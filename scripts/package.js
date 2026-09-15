@@ -46,6 +46,7 @@ const INCLUDE = [
   'docs/examples/validate.md',
   'data/catalogue.json',
   'dist/index.html',
+  'dist/about.html',
 ];
 
 const INCLUDE_DIRS = ['data/sources', 'test'];
