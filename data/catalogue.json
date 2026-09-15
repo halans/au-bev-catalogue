@@ -1,9 +1,9 @@
 {
   "meta": {
     "name": "Australian Battery-Electric Vehicle Directory",
-    "builtAt": "2026-09-14",
+    "builtAt": "2026-09-15",
     "schemaVersion": 1,
-    "recordCount": 278,
+    "recordCount": 280,
     "brandsChecked": 56,
     "adapters": [
       "snapshot"
@@ -16,7 +16,7 @@
       "alfa-romeo.json": "263c3d8283135eaaffab9bf55828c9e5670b68368b4920879aae01532b64a194",
       "audi.json": "b73a0c8a9de16eb33028d5bd00ea5d92a7529c16ea8c7c336827c581728cbbec",
       "bmw.json": "be69c47c7955a32c3c117b5c4e0483b6229550fa196bbaa18150d641ca77ec41",
-      "byd.json": "eae06e1b78e219e0b3de7bdb0ec2b37efad74c553650300818f508690ee84bff",
+      "byd.json": "dcb71df867c579d0c185e51fb37f40c6fd60db54c5bab8b8dd41facd2ff4d835",
       "cadillac.json": "a2f87aee68c083a4e86c0af6ec1ea9e5d928073f4c8fc354c2d3fde2931a65d4",
       "chery.json": "957f17398c4e3982079db48a62c72c0c6ff853b3d8e2416245b1fc9762723883",
       "citroen.json": "c518b771e0c9eb5dd33fe58f913fe6b2195922f7da3da36acc07c6a07f178ab8",
@@ -5487,6 +5487,383 @@
       "lowConfidenceFields": []
     },
     {
+      "id": "byd__atto-1__essential",
+      "brand": "BYD",
+      "model": "Atto 1",
+      "variant": "Essential",
+      "bodyType": "hatch",
+      "segment": "light",
+      "availability": "current",
+      "batteryUsableKwh": 30,
+      "batteryGrossKwh": null,
+      "rangeKm": 220,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 65,
+      "drive": "FWD",
+      "powerKw": 65,
+      "torqueNm": 175,
+      "zeroTo100s": 11.1,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 19990,
+      "priceBasis": "Drive-away promotional price nationally (standard $23,990 before on-road costs); offer had no stated end date as of Sept 2026",
+      "efficiencyWhPerKm": 136,
+      "dollarsPerKmRange": 90.86,
+      "provenance": {
+        "brand": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "model": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "variant": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "bodyType": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "segment": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "availability": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "batteryUsableKwh": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeKm": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeCycle": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "acChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "dcChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "drive": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "powerKw": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "torqueNm": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "zeroTo100s": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "seats": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceAud": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceBasis": {
+          "sourceKind": "press",
+          "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        }
+      },
+      "brandSlug": "byd",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "lowConfidenceFields": []
+    },
+    {
+      "id": "byd__atto-1__premium",
+      "brand": "BYD",
+      "model": "Atto 1",
+      "variant": "Premium",
+      "bodyType": "hatch",
+      "segment": "light",
+      "availability": "current",
+      "batteryUsableKwh": 43.2,
+      "batteryGrossKwh": null,
+      "rangeKm": 310,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": null,
+      "dcChargeKw": null,
+      "drive": "FWD",
+      "powerKw": 115,
+      "torqueNm": 220,
+      "zeroTo100s": 9.1,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 31213,
+      "priceBasis": "Drive-away (NSW) per thebeep.com.au; not corroborated against a second source and predates confirmation of any Essential-style promotional discount on this grade",
+      "efficiencyWhPerKm": 139,
+      "dollarsPerKmRange": 100.69,
+      "provenance": {
+        "brand": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "model": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "variant": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "bodyType": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "segment": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "availability": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "batteryUsableKwh": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "rangeKm": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "rangeCycle": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "drive": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "powerKw": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "torqueNm": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "zeroTo100s": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "seats": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceAud": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "priceBasis": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/byd/atto-1/",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        }
+      },
+      "brandSlug": "byd",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "lowConfidenceFields": [
+        "batteryUsableKwh",
+        "powerKw",
+        "priceAud",
+        "rangeKm",
+        "torqueNm",
+        "zeroTo100s"
+      ]
+    },
+    {
       "id": "byd__atto-3__essential",
       "brand": "BYD",
       "model": "Atto 3",
@@ -5518,7 +5895,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5527,7 +5904,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5536,7 +5913,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5545,7 +5922,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5554,7 +5931,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5563,7 +5940,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5572,7 +5949,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5581,7 +5958,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5590,7 +5967,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5599,7 +5976,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5608,7 +5985,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5617,7 +5994,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5626,7 +6003,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5635,7 +6012,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5644,7 +6021,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5653,7 +6030,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5662,7 +6039,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5671,7 +6048,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5680,13 +6057,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": []
     },
     {
@@ -5721,7 +6098,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5730,7 +6107,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5739,7 +6116,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5748,7 +6125,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5757,7 +6134,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5766,7 +6143,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5775,7 +6152,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5784,7 +6161,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5793,7 +6170,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5802,7 +6179,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5811,7 +6188,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5820,7 +6197,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5829,7 +6206,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5838,7 +6215,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5847,7 +6224,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5856,7 +6233,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5865,7 +6242,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5874,7 +6251,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5883,7 +6260,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5892,7 +6269,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -5901,13 +6278,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": []
     },
     {
@@ -5942,7 +6319,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5951,7 +6328,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5960,7 +6337,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5969,7 +6346,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5978,7 +6355,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5987,7 +6364,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -5996,7 +6373,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6005,7 +6382,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6014,7 +6391,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6023,7 +6400,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6032,7 +6409,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6041,7 +6418,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6050,7 +6427,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6059,7 +6436,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6068,7 +6445,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6077,7 +6454,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6086,7 +6463,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6095,7 +6472,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6104,7 +6481,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6113,7 +6490,7 @@
           "url": "https://www.carexpert.com.au/car-news/2026-byd-atto-3-evo-price-and-specs",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6122,13 +6499,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": []
     },
     {
@@ -6163,7 +6540,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6172,7 +6549,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6181,7 +6558,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6190,7 +6567,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6199,7 +6576,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6208,7 +6585,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6217,7 +6594,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6226,7 +6603,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -6235,7 +6612,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -6244,7 +6621,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6253,7 +6630,7 @@
           "url": "https://www.carexpert.com.au/byd/dolphin/2026",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6262,7 +6639,7 @@
           "url": "https://www.carexpert.com.au/byd/dolphin/2026",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6271,7 +6648,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6280,7 +6657,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6289,7 +6666,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6298,13 +6675,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": [
         "rangeCycle",
         "rangeKm"
@@ -6342,7 +6719,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6351,7 +6728,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6360,7 +6737,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6369,7 +6746,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6378,7 +6755,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6387,7 +6764,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6396,7 +6773,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6405,7 +6782,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -6414,7 +6791,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -6423,7 +6800,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6432,7 +6809,7 @@
           "url": "https://www.carexpert.com.au/byd/dolphin/2026",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6441,7 +6818,7 @@
           "url": "https://www.carexpert.com.au/byd/dolphin/2026",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6450,7 +6827,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6459,7 +6836,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6468,7 +6845,7 @@
           "url": "https://www.drive.com.au/showrooms/byd/dolphin/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6477,13 +6854,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": [
         "rangeCycle",
         "rangeKm"
@@ -6521,7 +6898,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6530,7 +6907,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6539,7 +6916,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6548,7 +6925,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6557,7 +6934,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6566,7 +6943,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6575,7 +6952,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6584,7 +6961,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6593,7 +6970,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6602,7 +6979,7 @@
           "url": "https://bydautomotive.com.au/brochures/BYD-SEAL-2025.pdf",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6611,7 +6988,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6620,7 +6997,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6629,7 +7006,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6638,7 +7015,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6647,7 +7024,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6656,7 +7033,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6665,7 +7042,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6674,13 +7051,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": []
     },
     {
@@ -6715,7 +7092,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6724,7 +7101,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6733,7 +7110,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6742,7 +7119,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6751,7 +7128,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6760,7 +7137,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6769,7 +7146,7 @@
           "url": "https://bydautomotive.com.au/brochures/BYD-SEAL-2025.pdf",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6778,7 +7155,7 @@
           "url": "https://bydautomotive.com.au/seal",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6787,7 +7164,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6796,7 +7173,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6805,7 +7182,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6814,7 +7191,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6823,7 +7200,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6832,7 +7209,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6841,7 +7218,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6850,7 +7227,7 @@
           "url": "https://www.carexpert.com.au/byd/seal/2026",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6859,7 +7236,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6868,13 +7245,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": []
     },
     {
@@ -6909,7 +7286,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6918,7 +7295,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6927,7 +7304,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6936,7 +7313,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6945,7 +7322,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6954,7 +7331,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6963,7 +7340,7 @@
           "url": "https://www.carsales.com.au/research/byd/seal/2026/premium/",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -6972,7 +7349,7 @@
           "url": "https://bydautomotive.com.au/seal",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6981,7 +7358,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -6990,7 +7367,7 @@
           "url": "https://bydautomotive.com.au/brochures/BYD-SEAL-2025.pdf",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -6999,7 +7376,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7008,7 +7385,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7017,7 +7394,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7026,7 +7403,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7035,7 +7412,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7044,7 +7421,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7053,7 +7430,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-seal-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7062,13 +7439,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": [
         "acChargeKw"
       ]
@@ -7105,7 +7482,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7114,7 +7491,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7123,7 +7500,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7132,7 +7509,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7141,7 +7518,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7150,7 +7527,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7159,7 +7536,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-performance-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7168,7 +7545,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-performance-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7177,7 +7554,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7186,7 +7563,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-performance-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7195,7 +7572,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-performance-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7204,7 +7581,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7213,7 +7590,7 @@
           "url": "https://bydautomotive.com.au/sealion-7",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7222,7 +7599,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-performance-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7231,7 +7608,7 @@
           "url": "https://bydautomotive.com.au/sealion-7",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7240,7 +7617,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7249,7 +7626,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-performance-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7258,13 +7635,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": []
     },
     {
@@ -7299,7 +7676,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7308,7 +7685,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7317,7 +7694,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7326,7 +7703,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7335,7 +7712,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7344,7 +7721,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7353,7 +7730,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7362,7 +7739,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7371,7 +7748,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7380,7 +7757,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7389,7 +7766,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7398,7 +7775,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7407,7 +7784,7 @@
           "url": "https://bydautomotive.com.au/sealion-7",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7416,7 +7793,7 @@
           "url": "https://bydautomotive.com.au/sealion-7",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7425,7 +7802,7 @@
           "url": "https://bydautomotive.com.au/sealion-7",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7434,7 +7811,7 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -7443,7 +7820,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-byd-sealion-7-review",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "medium",
           "adapter": "snapshot"
         },
@@ -7452,13 +7829,13 @@
           "url": "https://www.byd.com/au",
           "publisher": "BYD Australia",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-15",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
       "lowConfidenceFields": []
     },
     {
@@ -52606,10 +52983,10 @@
         "https://bydautomotive.com.au/seal",
         "https://bydautomotive.com.au/sealion-7"
       ],
-      "fetchedAt": "2026-09-13",
+      "fetchedAt": "2026-09-15",
       "licence": "proprietary-factual",
-      "notes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7.",
-      "variantCount": 10,
+      "notes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "variantCount": 12,
       "sourceFile": "byd.json"
     },
     {
@@ -53463,119 +53840,119 @@
   "duplicates": [],
   "problems": [],
   "coverage": {
-    "generatedAt": "2026-09-14",
+    "generatedAt": "2026-09-15",
     "totals": {
-      "variants": 278,
+      "variants": 280,
       "brandsWithVariants": 50,
       "brandsChecked": 56,
       "brandsWithNoBev": 6,
-      "populatedFields": 4724,
+      "populatedFields": 4758,
       "coreCompleteness": 90,
       "conflicts": 5
     },
     "availability": {
       "runout": 10,
-      "current": 250,
+      "current": 252,
       "announced": 18
     },
     "freshness": {
       "oldestSnapshot": "2026-09-13",
-      "newestSnapshot": "2026-09-13"
+      "newestSnapshot": "2026-09-15"
     },
     "provenanceMix": {
       "manufacturer": 3712,
-      "press": 1012
+      "press": 1046
     },
     "byField": [
       {
         "field": "brand",
         "label": "Brand",
         "core": true,
-        "present": 278,
+        "present": 280,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 0,
         "bySourceKind": {
           "manufacturer": 250,
-          "press": 28
+          "press": 30
         }
       },
       {
         "field": "model",
         "label": "Model",
         "core": true,
-        "present": 278,
+        "present": 280,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 0,
         "bySourceKind": {
           "manufacturer": 250,
-          "press": 28
+          "press": 30
         }
       },
       {
         "field": "variant",
         "label": "Variant",
         "core": true,
-        "present": 278,
+        "present": 280,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 3,
         "bySourceKind": {
           "manufacturer": 250,
-          "press": 28
+          "press": 30
         }
       },
       {
         "field": "bodyType",
         "label": "Body",
         "core": true,
-        "present": 278,
+        "present": 280,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 0,
         "bySourceKind": {
           "manufacturer": 250,
-          "press": 28
+          "press": 30
         }
       },
       {
         "field": "segment",
         "label": "Segment",
         "core": false,
-        "present": 278,
+        "present": 280,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 3,
         "bySourceKind": {
           "manufacturer": 250,
-          "press": 28
+          "press": 30
         }
       },
       {
         "field": "availability",
         "label": "Availability",
         "core": true,
-        "present": 278,
+        "present": 280,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 7,
         "bySourceKind": {
           "manufacturer": 250,
-          "press": 28
+          "press": 30
         }
       },
       {
         "field": "batteryUsableKwh",
         "label": "Battery (usable)",
         "core": true,
-        "present": 193,
+        "present": 195,
         "missing": 85,
-        "completeness": 69.4,
-        "lowConfidence": 49,
+        "completeness": 69.6,
+        "lowConfidence": 50,
         "bySourceKind": {
           "manufacturer": 117,
-          "press": 76
+          "press": 78
         }
       },
       {
@@ -53583,8 +53960,8 @@
         "label": "Battery (gross)",
         "core": false,
         "present": 90,
-        "missing": 188,
-        "completeness": 32.4,
+        "missing": 190,
+        "completeness": 32.1,
         "lowConfidence": 28,
         "bySourceKind": {
           "manufacturer": 72,
@@ -53595,12 +53972,12 @@
         "field": "rangeKm",
         "label": "Range",
         "core": true,
-        "present": 224,
+        "present": 226,
         "missing": 54,
-        "completeness": 80.6,
-        "lowConfidence": 50,
+        "completeness": 80.7,
+        "lowConfidence": 51,
         "bySourceKind": {
-          "press": 91,
+          "press": 93,
           "manufacturer": 133
         }
       },
@@ -53608,13 +53985,13 @@
         "field": "rangeCycle",
         "label": "Range cycle",
         "core": true,
-        "present": 244,
+        "present": 246,
         "missing": 34,
-        "completeness": 87.8,
+        "completeness": 87.9,
         "lowConfidence": 4,
         "bySourceKind": {
           "manufacturer": 216,
-          "press": 28
+          "press": 30
         }
       },
       {
@@ -53622,8 +53999,8 @@
         "label": "Consumption",
         "core": false,
         "present": 64,
-        "missing": 214,
-        "completeness": 23,
+        "missing": 216,
+        "completeness": 22.9,
         "lowConfidence": 12,
         "bySourceKind": {
           "manufacturer": 45,
@@ -53634,91 +54011,91 @@
         "field": "acChargeKw",
         "label": "AC charge",
         "core": false,
-        "present": 202,
-        "missing": 76,
-        "completeness": 72.7,
+        "present": 203,
+        "missing": 77,
+        "completeness": 72.5,
         "lowConfidence": 45,
         "bySourceKind": {
           "manufacturer": 155,
-          "press": 47
+          "press": 48
         }
       },
       {
         "field": "dcChargeKw",
         "label": "DC charge",
         "core": true,
-        "present": 200,
-        "missing": 78,
-        "completeness": 71.9,
+        "present": 201,
+        "missing": 79,
+        "completeness": 71.8,
         "lowConfidence": 61,
         "bySourceKind": {
           "manufacturer": 134,
-          "press": 66
+          "press": 67
         }
       },
       {
         "field": "drive",
         "label": "Drive",
         "core": true,
-        "present": 269,
+        "present": 271,
         "missing": 9,
         "completeness": 96.8,
         "lowConfidence": 5,
         "bySourceKind": {
           "manufacturer": 238,
-          "press": 31
+          "press": 33
         }
       },
       {
         "field": "powerKw",
         "label": "Power",
         "core": true,
-        "present": 248,
+        "present": 250,
         "missing": 30,
-        "completeness": 89.2,
-        "lowConfidence": 36,
+        "completeness": 89.3,
+        "lowConfidence": 37,
         "bySourceKind": {
           "manufacturer": 177,
-          "press": 71
+          "press": 73
         }
       },
       {
         "field": "torqueNm",
         "label": "Torque",
         "core": false,
-        "present": 210,
+        "present": 212,
         "missing": 68,
-        "completeness": 75.5,
-        "lowConfidence": 41,
+        "completeness": 75.7,
+        "lowConfidence": 42,
         "bySourceKind": {
           "manufacturer": 137,
-          "press": 73
+          "press": 75
         }
       },
       {
         "field": "zeroTo100s",
         "label": "0–100 km/h",
         "core": false,
-        "present": 159,
+        "present": 161,
         "missing": 119,
-        "completeness": 57.2,
-        "lowConfidence": 24,
+        "completeness": 57.5,
+        "lowConfidence": 25,
         "bySourceKind": {
           "manufacturer": 118,
-          "press": 41
+          "press": 43
         }
       },
       {
         "field": "seats",
         "label": "Seats",
         "core": false,
-        "present": 265,
+        "present": 267,
         "missing": 13,
-        "completeness": 95.3,
+        "completeness": 95.4,
         "lowConfidence": 23,
         "bySourceKind": {
           "manufacturer": 233,
-          "press": 32
+          "press": 34
         }
       },
       {
@@ -53726,8 +54103,8 @@
         "label": "Towing (braked)",
         "core": false,
         "present": 113,
-        "missing": 165,
-        "completeness": 40.6,
+        "missing": 167,
+        "completeness": 40.4,
         "lowConfidence": 34,
         "bySourceKind": {
           "press": 45,
@@ -53739,8 +54116,8 @@
         "label": "V2L",
         "core": false,
         "present": 93,
-        "missing": 185,
-        "completeness": 33.5,
+        "missing": 187,
+        "completeness": 33.2,
         "lowConfidence": 10,
         "bySourceKind": {
           "manufacturer": 65,
@@ -53751,26 +54128,26 @@
         "field": "priceAud",
         "label": "Price",
         "core": true,
-        "present": 233,
+        "present": 235,
         "missing": 45,
-        "completeness": 83.8,
-        "lowConfidence": 79,
+        "completeness": 83.9,
+        "lowConfidence": 80,
         "bySourceKind": {
           "manufacturer": 80,
-          "press": 153
+          "press": 155
         }
       },
       {
         "field": "priceBasis",
         "label": "Price basis",
         "core": false,
-        "present": 249,
+        "present": 251,
         "missing": 29,
         "completeness": 89.6,
         "lowConfidence": 0,
         "bySourceKind": {
           "manufacturer": 224,
-          "press": 25
+          "press": 27
         }
       }
     ],
@@ -53808,6 +54185,17 @@
         "fetchedAt": "2026-09-13"
       },
       {
+        "brand": "BYD",
+        "variants": 12,
+        "coreCompleteness": 97.9,
+        "lowConfidenceFields": 11,
+        "availability": {
+          "current": 11,
+          "runout": 1
+        },
+        "fetchedAt": "2026-09-15"
+      },
+      {
         "brand": "Kia",
         "variants": 12,
         "coreCompleteness": 97.2,
@@ -53836,17 +54224,6 @@
         "availability": {
           "current": 9,
           "announced": 1
-        },
-        "fetchedAt": "2026-09-13"
-      },
-      {
-        "brand": "BYD",
-        "variants": 10,
-        "coreCompleteness": 98.3,
-        "lowConfidenceFields": 5,
-        "availability": {
-          "runout": 1,
-          "current": 9
         },
         "fetchedAt": "2026-09-13"
       },

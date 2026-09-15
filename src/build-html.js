@@ -63,7 +63,7 @@ h1,h2,h3{font-family:Caprasimo,Inter,system-ui,sans-serif;font-weight:400;letter
 a{color:var(--accent)}
 
 .wrap{max-width:1400px;margin:0 auto;padding:0 20px}
-@media(max-width:640px){.wrap{padding:0 14px}}
+@media(max-width:640px){.wrap{padding:0 18px}}
 
 header.top{background:var(--paper);border-bottom:1px solid var(--line)}
 .top-inner{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;padding:22px 0 18px}
@@ -97,11 +97,24 @@ aside .panel{padding:16px}
   background:none;border:0;padding:14px 16px;font:inherit;font-weight:600;cursor:pointer;color:var(--ink)
 }
 @media(max-width:900px){
-  aside{position:sticky;top:0;z-index:20}
-  aside .panel{padding:0;border-radius:var(--radius)}
+  /* aside is sticky to top:0, so once the open panel's content is taller than
+     the viewport its lower chips and the reset button sit below the fold —
+     the sticky box stays pinned and never scrolls far enough to reveal them.
+     Capping the whole card to the viewport height and laying it out as a
+     column lets #filter-body claim exactly the space left under the toggle
+     and scroll internally for the rest — no guessing the toggle's rendered
+     height (it changes with system font-size/zoom), the flex box measures it. */
+  aside{position:sticky;top:0;z-index:20;max-height:100vh;max-height:100dvh}
+  aside .panel{
+    padding:0;border-radius:var(--radius);
+    display:flex;flex-direction:column;max-height:inherit;overflow:hidden
+  }
   #filter-body{display:none;padding:16px;border-top:1px solid var(--line)}
-  #filter-body.open{display:block}
-  #filter-toggle{display:flex}
+  #filter-body.open{
+    display:block;flex:1 1 auto;min-height:0;
+    overflow-y:auto;-webkit-overflow-scrolling:touch
+  }
+  #filter-toggle{display:flex;flex:none}
   /* Comfortable touch targets — the desktop sizes are too small for a thumb. */
   .chip{padding:8px 12px;font-size:13px;min-height:36px}
   .rowbtn{padding:8px 12px;font-size:12.5px;min-height:36px}
@@ -584,6 +597,16 @@ document.addEventListener('click', function(event){
     var body = el('filter-body');
     var open = body.classList.toggle('open');
     target.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open){
+      // The panel's max-height budget is sized against the viewport (100dvh),
+      // which only matches what's actually on screen once the sticky aside is
+      // pinned flush to the top. On a page that hasn't been scrolled yet, the
+      // unpinned aside sits further down, so part of a tall filter list would
+      // land below the fold — outside both the page's scroll (aside is stuck)
+      // and the panel's own internal scroll (already at its end). Scrolling
+      // the toggle to the top on open keeps the whole list reachable.
+      target.scrollIntoView({ block: 'start' });
+    }
     return;
   }
   if (target.classList.contains('viewbtn')){
