@@ -848,7 +848,7 @@ function buildHtml(catalogue) {
 <header class="top">
   <div class="wrap top-inner">
     <div>
-      <h1>Australian BEV Directory</h1>
+      <h1>Australian BEV Catalogue</h1>
       <p class="sub">Every battery-electric model and variant sold new in Australia. Each figure carries the publisher it came from, so you can check any number rather than take it on trust. <a href="about.html">About this directory &amp; methodology →</a></p>
     </div>
     <div class="stats">
