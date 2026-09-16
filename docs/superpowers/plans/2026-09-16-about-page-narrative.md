@@ -1,6 +1,6 @@
 # About Page Narrative Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Turn `dist/about.html` from a bare heading over a raw 4-column stats grid into a landing-page-style narrative that explains the data-honesty story, with the existing completeness stats and lists woven into the sections that explain them.
 
@@ -17,7 +17,7 @@
 **Files:**
 - Modify: `src/build-html.js:253-261` (inside the `STYLES` template literal)
 
-- [ ] **Step 1: Confirm `.fcols`, `footer h3`, `footer ul`, `footer li` are unused**
+- [x] **Step 1: Confirm `.fcols`, `footer h3`, `footer ul`, `footer li` are unused**
 
 Run: `grep -n "fcols\|<footer\|</footer" src/build-html.js`
 
@@ -34,7 +34,7 @@ Expected output includes exactly these lines (line numbers may shift slightly bu
 
 If either `<footer>` block contains an `<h3>` or `<ul>`, or `.fcols` is referenced anywhere other than line 993, STOP — the codebase has diverged from this plan's assumptions and the CSS in this task must not be deleted blind. Re-read `src/build-html.js` around both footers before continuing.
 
-- [ ] **Step 2: Replace the CSS block**
+- [x] **Step 2: Replace the CSS block**
 
 Find this exact block (current lines 253-261):
 
@@ -71,12 +71,12 @@ footer{border-top:1px solid var(--line);background:var(--paper);padding:26px 0 4
 
 Use the Edit tool with the old block as `old_string` and the new block as `new_string` (both include the unchanged `.conf.high` and `.sr` lines as anchors, so the match is unambiguous).
 
-- [ ] **Step 3: Sanity-check the file still parses**
+- [x] **Step 3: Sanity-check the file still parses**
 
 Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
 Expected: `ok` (a template literal syntax error would throw here immediately)
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add src/build-html.js
@@ -95,7 +95,7 @@ EOF
 **Files:**
 - Modify: `src/build-html.js` — the `buildAboutHtml()` function (currently spans from `/** The methodology/coverage page...` to the closing `` ` ``/`}` before `function writeHtml`)
 
-- [ ] **Step 1: Replace the header + main block**
+- [x] **Step 1: Replace the header + main block**
 
 Find this exact block:
 
@@ -194,12 +194,12 @@ Use the Edit tool with the old block as `old_string` and the new block as `new_s
 
 Note: `totals`, `emptyBrandList`, `licenceList`, `worstFields` are already destructured at the top of `buildAboutHtml()` from `computeCoverageSections(catalogue)` — no change needed there.
 
-- [ ] **Step 2: Sanity-check the file still parses**
+- [x] **Step 2: Sanity-check the file still parses**
 
 Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
 Expected: `ok`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/build-html.js
@@ -228,7 +228,7 @@ matching eyebrow line to `index.html`'s header.
 **Files:**
 - Modify: `src/build-html.js` — the `buildHtml()` function's `<header class="top">` block
 
-- [ ] **Step 1: Add the eyebrow line above the `<h1>`**
+- [x] **Step 1: Add the eyebrow line above the `<h1>`**
 
 Find this exact block:
 
@@ -253,12 +253,12 @@ Replace with:
 
 Use the Edit tool with the old block as `old_string` and the new block as `new_string`. The `.crumb` class already exists in `STYLES` (added in Task 1) — no CSS change needed here.
 
-- [ ] **Step 2: Sanity-check the file still parses**
+- [x] **Step 2: Sanity-check the file still parses**
 
 Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
 Expected: `ok`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/build-html.js
@@ -276,17 +276,17 @@ EOF
 
 **Files:** none (verification only)
 
-- [ ] **Step 1: Rebuild the catalogue and both HTML pages**
+- [x] **Step 1: Rebuild the catalogue and both HTML pages**
 
 Run: `node bin/bev.js build`
 Expected: three lines of output ending in `... core fields 90% populated` (or similar), with no errors. Confirms `dist/about.html` was regenerated.
 
-- [ ] **Step 2: Run the full test suite**
+- [x] **Step 2: Run the full test suite**
 
 Run: `node --test test/*.test.js`
 Expected: `# fail 0` in the summary. `test/equivalence.test.js` only exercises `buildHtml()` (the catalogue page), so it is not expected to be affected by this change — a failure here would mean something outside the intended scope broke.
 
-- [ ] **Step 3: Visually verify `dist/about.html` in a browser**
+- [x] **Step 3: Visually verify `dist/about.html` in a browser**
 
 Serve the `dist/` directory and open `about.html` (e.g. `python3 -m http.server <port> --directory dist`, then navigate to `http://localhost:<port>/about.html`). Confirm:
 - The page reads top-to-bottom as a coherent narrative: hero paragraph, then four sections, each with its heading, prose, and (where applicable) its `.panel` list directly beneath.
@@ -295,7 +295,7 @@ Serve the `dist/` directory and open `about.html` (e.g. `python3 -m http.server 
 - At a narrow viewport (~400px wide), no section or panel overflows horizontally.
 - From `index.html`, the "About this directory & methodology →" link in the header and the footer link both still navigate to `about.html` correctly (unchanged from the prior change, but confirm nothing regressed), and the new "Part of the electricvehicle.life blog" eyebrow line above its `<h1>` links to `https://electricvehicle.life`.
 
-- [ ] **Step 4: Stop any server started for verification**
+- [x] **Step 4: Stop any server started for verification**
 
 If a local HTTP server was started for Step 3, stop it (e.g. `kill <pid>`).
 
