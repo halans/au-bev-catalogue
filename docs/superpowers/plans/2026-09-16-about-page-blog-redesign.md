@@ -19,7 +19,7 @@
 **Files:**
 - Modify: `src/build-html.js` — the `buildHtml()` function's `<h1>`
 
-- [ ] **Step 1: Change the heading text**
+- [x] **Step 1: Change the heading text**
 
 Find this exact line:
 
@@ -35,12 +35,12 @@ Replace with:
 
 This line is inside `buildHtml()`'s `<header class="top">` block (has `<p class="crumb">Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>` immediately above it and `<p class="sub">Every battery-electric model and variant sold new in Australia...` immediately below it — use that surrounding context to confirm you're editing the right occurrence if the string match isn't unique). Do not change anything else on that line or nearby lines.
 
-- [ ] **Step 2: Sanity-check the file still parses**
+- [x] **Step 2: Sanity-check the file still parses**
 
 Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
 Expected: `ok`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/build-html.js
@@ -59,7 +59,7 @@ EOF
 **Files:**
 - Modify: `src/build-html.js` — the `computeCoverageSections()` function
 
-- [ ] **Step 1: Add the derivation and extend the return value**
+- [x] **Step 1: Add the derivation and extend the return value**
 
 Find this exact block:
 
@@ -104,12 +104,12 @@ Replace with:
 
 `buildHtml()`'s existing `const { totals } = computeCoverageSections(catalogue);` needs no change — destructuring a subset of a larger return object is valid JS and the extra fields are simply unused there.
 
-- [ ] **Step 2: Sanity-check the file still parses**
+- [x] **Step 2: Sanity-check the file still parses**
 
 Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
 Expected: `ok`
 
-- [ ] **Step 3: Verify the numbers against live data**
+- [x] **Step 3: Verify the numbers against live data**
 
 Run:
 ```bash
@@ -126,7 +126,7 @@ console.log('government', Math.round(((mix['green-vehicle-guide']||0)+(mix['over
 ```
 Expected: three numbers that look like plausible percentages (roughly manufacturer ~78, press ~22, government ~0 as of the last check — exact figures will drift as the underlying data changes, that's expected and correct). This is a manual cross-check, not an automated test — just confirm the arithmetic isn't inverted or off by a factor of 100 (i.e. not printing `0.78` or `7800`).
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add src/build-html.js
@@ -145,7 +145,7 @@ EOF
 **Files:**
 - Modify: `src/build-html.js` — end of the `STYLES` constant, and a new constant added after it
 
-- [ ] **Step 1: Confirm `.about-body` will become fully dead after Task 4**
+- [x] **Step 1: Confirm `.about-body` will become fully dead after Task 4**
 
 Run: `grep -n "about-body" src/build-html.js`
 
@@ -153,7 +153,7 @@ Expected: every match is either inside the `STYLES` constant (the CSS rules bein
 
 Also run: `grep -n '"crumb"' src/build-html.js` — confirm `buildHtml()` still has `<p class="crumb">Part of the ... blog</p>` (added in an earlier, already-shipped task). The `.crumb` CSS rule must NOT be removed — only the `.about-body` rules are dead. `about.html` will use its own `.byline` class after Task 4, not `.crumb`.
 
-- [ ] **Step 2: Remove the dead `.about-body` CSS**
+- [x] **Step 2: Remove the dead `.about-body` CSS**
 
 Find this exact block:
 
@@ -178,7 +178,7 @@ Replace with (keeping `.crumb`, removing everything else, keeping the closing ba
 `;
 ```
 
-- [ ] **Step 3: Add the new `ABOUT_STYLES` constant immediately after `STYLES`**
+- [x] **Step 3: Add the new `ABOUT_STYLES` constant immediately after `STYLES`**
 
 Immediately after the line you just edited (the `` `; `` that closes `STYLES`), insert this new constant. Find this anchor (the start of the next section of the file):
 
@@ -337,12 +337,12 @@ footer p{margin:0 0 .8em;max-width:60em}
  * ------------------------------------------------------------------ */
 ```
 
-- [ ] **Step 4: Sanity-check the file still parses**
+- [x] **Step 4: Sanity-check the file still parses**
 
 Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
 Expected: `ok`
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/build-html.js
@@ -364,7 +364,7 @@ EOF
 **Files:**
 - Modify: `src/build-html.js` — the entire `buildAboutHtml()` function
 
-- [ ] **Step 1: Replace the whole function body**
+- [x] **Step 1: Replace the whole function body**
 
 Find this exact block (the complete current `buildAboutHtml()` function, from its doc comment through its closing brace):
 
@@ -625,12 +625,12 @@ function buildAboutHtml(catalogue) {
 
 Use the Edit tool with the old block as `old_string` and the new block as `new_string`.
 
-- [ ] **Step 2: Sanity-check the file still parses**
+- [x] **Step 2: Sanity-check the file still parses**
 
 Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
 Expected: `ok`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/build-html.js
@@ -654,21 +654,21 @@ EOF
 
 **Files:** none (verification only)
 
-- [ ] **Step 1: Rebuild the catalogue and both HTML pages**
+- [x] **Step 1: Rebuild the catalogue and both HTML pages**
 
 Run: `node bin/bev.js build`
 Expected: three lines of output, no errors, confirming both `dist/index.html` and `dist/about.html` were regenerated.
 
-- [ ] **Step 2: Run the full test suite**
+- [x] **Step 2: Run the full test suite**
 
 Run: `node --test test/*.test.js`
 Expected: `# fail 0`. `test/equivalence.test.js` only exercises `buildHtml()`; the one-line `<h1>` rename in that function doesn't touch anything an existing assertion checks, so this suite should be unaffected.
 
-- [ ] **Step 3: Visually verify `dist/index.html`**
+- [x] **Step 3: Visually verify `dist/index.html`**
 
 Serve `dist/` (e.g. `python3 -m http.server <port> --directory dist`) and open `index.html`. Confirm the `<h1>` now reads "Australian BEV Directory", and that nothing else on the page changed (layout, filters, table, footer all identical to before this plan).
 
-- [ ] **Step 4: Visually verify `dist/about.html`**
+- [x] **Step 4: Visually verify `dist/about.html`**
 
 Open `about.html` in the same server. Confirm:
 - It reads as a single-column editorial article — kicker label, large heading, standfirst paragraph, byline/back-link line, stat strip, then the article body.
@@ -682,7 +682,7 @@ Open `about.html` in the same server. Confirm:
 - At a narrow viewport (~400px), the dead-end list's grid collapses to one column (per the `@media(max-width:600px)` rule already in `ABOUT_STYLES`) and nothing overflows horizontally.
 - `index.html`'s existing "About this directory & methodology →" link and footer link still navigate to `about.html` correctly.
 
-- [ ] **Step 5: Stop any server started for verification**
+- [x] **Step 5: Stop any server started for verification**
 
 If a local HTTP server was started for Steps 3–4, stop it.
 
