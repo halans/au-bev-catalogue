@@ -256,15 +256,143 @@ footer{border-top:1px solid var(--line);background:var(--paper);padding:26px 0 4
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 .crumb{font-size:12px;margin-bottom:8px}
-.about-body section{max-width:70ch;margin:0 0 36px}
-.about-body section:last-child{margin-bottom:0}
-.about-body h2{font-size:20px;margin-bottom:10px}
-.about-body p{color:var(--ink-soft);margin:0 0 12px}
-.about-body p:last-child{margin-bottom:0}
-.about-body ul{margin:0;padding-left:16px}
-.about-body li{margin-bottom:4px}
-.about-body .panel{padding:18px;margin-top:14px}
-.about-body .panel h3{font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-faint);margin-bottom:8px}
+`;
+
+/* ------------------------------------------------------------------ *
+ * About page — a self-contained editorial stylesheet, deliberately NOT
+ * shared with STYLES above. The About page reads as a standalone article
+ * (styling merged from the electricvehicle.life post that covers this
+ * project), not as another screen of the app-like catalogue UI, so it gets
+ * its own design tokens/typography/layout rather than reusing the wrap
+ * width, panel cards, or colour values the main page uses.
+ * ------------------------------------------------------------------ */
+
+const ABOUT_STYLES = `
+:root{
+  --ink:#12131a; --ink-soft:#4a4e5e; --ink-faint:#8b8fa0;
+  --paper:#ffffff; --wash:#f4f5f8; --line:#e3e5ec;
+  --accent:#0b5cff; --accent-soft:#e8efff;
+  --warn:#b45309; --warn-soft:#fef8e7;
+  --bad:#b42318; --good:#067647;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:17px; line-height:1.65;
+}
+h1,h2,h3{font-family:Caprasimo,Inter,system-ui,sans-serif;font-weight:400;letter-spacing:-.015em;margin:0}
+.num{font-variant-numeric:tabular-nums}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+@media(max-width:600px){ .wrap{padding:0 18px} body{font-size:16.5px} }
+
+header.top{border-bottom:1px solid var(--line);background:var(--wash)}
+.kicker{
+  display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px
+}
+.top-inner{padding:52px 0 40px}
+@media(max-width:600px){ .top-inner{padding:34px 0 28px} }
+h1{font-size:clamp(30px,6.2vw,50px);line-height:1.08}
+.standfirst{
+  font-size:clamp(17px,2.2vw,20px);line-height:1.55;color:var(--ink-soft);
+  margin:20px 0 0;max-width:34em
+}
+.byline{
+  margin-top:24px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-faint)
+}
+
+article{padding:44px 0 20px}
+article > p{margin:0 0 1.35em}
+article h2{
+  font-size:clamp(22px,3.4vw,30px);line-height:1.18;
+  margin:2.4em 0 .7em;
+}
+article h3{
+  font-family:Inter,sans-serif;font-weight:700;font-size:17px;letter-spacing:0;
+  margin:2em 0 .5em
+}
+article ul{margin:0 0 1.35em;padding-left:22px}
+article li{margin-bottom:.6em}
+strong{font-weight:600}
+
+hr.rule{border:0;border-top:1px solid var(--line);margin:3em 0}
+
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:10px;overflow:hidden;margin:2em 0
+}
+.stat{background:var(--paper);padding:16px 18px}
+.stat b{
+  display:block;font-family:Caprasimo,Inter,sans-serif;font-weight:400;
+  font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums
+}
+.stat span{
+  display:block;margin-top:4px;font-size:11px;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--ink-faint);line-height:1.35
+}
+
+.deadends{margin:2em 0;border-top:1px solid var(--line)}
+.deadend{
+  display:grid;grid-template-columns:200px 1fr;gap:4px 24px;
+  padding:16px 0;border-bottom:1px solid var(--line)
+}
+@media(max-width:600px){ .deadend{grid-template-columns:1fr;gap:2px} }
+.deadend dt{font-weight:600;font-size:15.5px}
+.deadend dd{margin:0;font-size:15.5px;color:var(--ink-soft)}
+.verdict{
+  display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.05em;
+  text-transform:uppercase;padding:2px 7px;border-radius:4px;
+  background:#fee2e2;color:var(--bad);margin-top:6px
+}
+
+.rules{
+  background:var(--wash);border:1px solid var(--line);border-radius:10px;
+  padding:6px 24px;margin:2em 0
+}
+.rules h3{margin:1.4em 0 .4em}
+.rules p{font-size:15.5px;color:var(--ink-soft);margin:0 0 1.4em}
+
+.defect{
+  display:flex;gap:18px;padding:20px 0;border-top:1px solid var(--line)
+}
+.defect:last-of-type{border-bottom:1px solid var(--line)}
+.defect .n{
+  flex:0 0 34px;height:34px;border-radius:50%;background:var(--warn-soft);
+  color:var(--warn);font-weight:700;font-size:15px;
+  display:flex;align-items:center;justify-content:center
+}
+.defect div.body{flex:1;min-width:0}
+.defect h3{margin:0 0 .3em}
+.defect p{margin:0;font-size:15.5px;color:var(--ink-soft)}
+
+.pull{
+  margin:2.2em 0;padding:0 0 0 22px;border-left:3px solid var(--accent);
+  font-size:clamp(18px,2.4vw,21px);line-height:1.45;color:var(--ink)
+}
+
+.cta{
+  margin:2.5em 0 0;padding:26px;border-radius:10px;
+  background:var(--ink);color:#fff
+}
+.cta h3{font-family:Caprasimo,Inter,sans-serif;font-weight:400;font-size:22px;color:#fff;margin-bottom:8px}
+.cta p{margin:0 0 18px;color:#c7cad6;font-size:15.5px}
+.cta a.btn{
+  display:inline-block;background:#fff;color:var(--ink);text-decoration:none;
+  font-weight:600;font-size:15px;padding:11px 20px;border-radius:7px
+}
+.cta a.btn:hover{background:var(--accent-soft)}
+
+footer{
+  border-top:1px solid var(--line);margin-top:56px;padding:26px 0 56px;
+  font-size:13.5px;color:var(--ink-faint)
+}
+footer p{margin:0 0 .8em;max-width:60em}
 `;
 
 /* ------------------------------------------------------------------ *
