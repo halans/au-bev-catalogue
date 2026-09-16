@@ -1193,7 +1193,7 @@ function buildAboutHtml(catalogue) {
   <h3>Source licences</h3>
   <p>Specification figures are restated facts attributed to their publisher, not open-licensed data, and each record carries its licence in its provenance.</p>
   <ul>${licenceList}</ul>
-  <p>Figures are restated facts attributed to each publisher. This directory is not affiliated with any manufacturer.</p>
+  <p>Figures are restated facts attributed to each publisher. This directory is not affiliated with any manufacturer. Check it out on <a href="https://github.com/halans/au-bev-catalogue" target="_blank">GitHub</a>.</p>
 
   <h2>What "complete" means here</h2>
 
@@ -1268,7 +1268,7 @@ function buildAboutHtml(catalogue) {
 </article>
 
 <footer class="wrap">
-  <p>Built ${escapeHtml(meta.builtAt || '')}. <a href="index.html">← Back to the directory</a></p>
+  <p>Built ${escapeHtml(meta.builtAt || '')}. ElectricVehicle.life</p>
 </footer>
 
 </body>
