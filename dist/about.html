@@ -10,290 +10,269 @@
 <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#12131a; --ink-soft:#5b5f70; --ink-faint:#8b8fa0;
+  --ink:#12131a; --ink-soft:#4a4e5e; --ink-faint:#8b8fa0;
   --paper:#ffffff; --wash:#f4f5f8; --line:#e3e5ec;
   --accent:#0b5cff; --accent-soft:#e8efff;
-  --warn:#b45309; --warn-soft:#fef3c7;
+  --warn:#b45309; --warn-soft:#fef8e7;
   --bad:#b42318; --good:#067647;
-  --radius:10px;
-  --shadow:0 1px 2px rgba(18,19,26,.06),0 8px 24px rgba(18,19,26,.06);
 }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
 body{
-  background:var(--wash); color:var(--ink);
+  margin:0; background:var(--paper); color:var(--ink);
   font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size:15px; line-height:1.5;
-  -webkit-text-size-adjust:100%;
+  font-size:17px; line-height:1.65;
 }
-h1,h2,h3{font-family:Caprasimo,Inter,system-ui,sans-serif;font-weight:400;letter-spacing:-.01em;margin:0}
+h1,h2,h3{font-family:Caprasimo,Inter,system-ui,sans-serif;font-weight:400;letter-spacing:-.015em;margin:0}
 .num{font-variant-numeric:tabular-nums}
-a{color:var(--accent)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
 
-.wrap{max-width:1400px;margin:0 auto;padding:0 20px}
-@media(max-width:640px){.wrap{padding:0 18px}}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+@media(max-width:600px){ .wrap{padding:0 18px} body{font-size:16.5px} }
 
-header.top{background:var(--paper);border-bottom:1px solid var(--line)}
-.top-inner{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;padding:22px 18px}
-h1{font-size:clamp(24px,4.2vw,38px);line-height:1.05}
-.sub{color:var(--ink-soft);font-size:13px;margin-top:6px;max-width:62ch}
-.stats{display:flex;gap:22px;flex-wrap:wrap}
-.stat{min-width:62px}
-.stat b{display:block;font-size:21px;font-family:Caprasimo,Inter,sans-serif;font-weight:400;line-height:1.1}
-.stat span{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-faint)}
-
-.notice{
-  background:var(--warn-soft);border-bottom:1px solid #f0d9a0;
-  font-size:12.5px;color:#6b4708;padding:9px 0;
+header.top{border-bottom:1px solid var(--line);background:var(--wash)}
+.kicker{
+  display:inline-block;font-size:11px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px
 }
-.notice p{margin:0;max-width:110ch}
-
-main{padding:20px 0 120px}
-.layout{display:grid;grid-template-columns:255px 1fr;gap:22px;align-items:start}
-@media(max-width:900px){.layout{grid-template-columns:1fr}}
-
-.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-
-aside .panel{padding:16px}
-
-/* Base state: the collapse control only exists on narrow screens. This rule
-   must come BEFORE the media query that reveals it — an equally specific
-   display:none placed afterwards would win the cascade and leave the filter
-   panel permanently unopenable on a phone. */
-#filter-toggle{
-  display:none;width:100%;align-items:center;justify-content:space-between;
-  background:none;border:0;padding:14px 16px;font:inherit;font-weight:600;cursor:pointer;color:var(--ink)
+.top-inner{padding:52px 0 40px}
+@media(max-width:600px){ .top-inner{padding:34px 0 28px} }
+h1{font-size:clamp(30px,6.2vw,50px);line-height:1.08}
+.standfirst{
+  font-size:clamp(17px,2.2vw,20px);line-height:1.55;color:var(--ink-soft);
+  margin:20px 0 0;max-width:34em
 }
-@media(max-width:900px){
-  /* aside is sticky to top:0, so once the open panel's content is taller than
-     the viewport its lower chips and the reset button sit below the fold —
-     the sticky box stays pinned and never scrolls far enough to reveal them.
-     Capping the whole card to the viewport height and laying it out as a
-     column lets #filter-body claim exactly the space left under the toggle
-     and scroll internally for the rest — no guessing the toggle's rendered
-     height (it changes with system font-size/zoom), the flex box measures it. */
-  aside{position:sticky;top:0;z-index:20;max-height:100vh;max-height:100dvh}
-  aside .panel{
-    padding:0;border-radius:var(--radius);
-    display:flex;flex-direction:column;max-height:inherit;overflow:hidden
-  }
-  #filter-body{display:none;padding:16px;border-top:1px solid var(--line)}
-  #filter-body.open{
-    display:block;flex:1 1 auto;min-height:0;
-    overflow-y:auto;-webkit-overflow-scrolling:touch
-  }
-  #filter-toggle{display:flex;flex:none}
-  /* Comfortable touch targets — the desktop sizes are too small for a thumb. */
-  .chip{padding:8px 12px;font-size:13px;min-height:36px}
-  .rowbtn{padding:8px 12px;font-size:12.5px;min-height:36px}
-  .reset{min-height:44px}
-  select,.viewbtn{min-height:40px}
-  .x{min-height:44px;min-width:44px}
+.byline{
+  margin-top:24px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--ink-faint)
 }
-#filter-toggle .chev{transition:transform .15s}
-#filter-toggle[aria-expanded="true"] .chev{transform:rotate(180deg)}
 
-.search{position:relative;margin-bottom:16px}
-.search input{
-  width:100%;padding:11px 12px 11px 34px;font:inherit;
-  border:1px solid var(--line);border-radius:8px;background:var(--wash)
+article{padding:44px 0 20px}
+article > p{margin:0 0 1.35em}
+article h2{
+  font-size:clamp(22px,3.4vw,30px);line-height:1.18;
+  margin:2.4em 0 .7em;
 }
-.search input:focus{outline:2px solid var(--accent);outline-offset:-1px;background:var(--paper)}
-.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--ink-faint)}
-
-.fgroup{border-top:1px solid var(--line);padding:13px 0 4px}
-.fgroup:first-of-type{border-top:0}
-.fgroup h3{font-family:Inter,sans-serif;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-faint);margin-bottom:9px}
-.chips{display:flex;flex-wrap:wrap;gap:5px}
-.chip{
-  border:1px solid var(--line);background:var(--paper);border-radius:99px;
-  padding:4px 9px;font-size:12px;cursor:pointer;color:var(--ink-soft);
-  font-family:inherit;display:inline-flex;gap:5px;align-items:center
+article h3{
+  font-family:Inter,sans-serif;font-weight:700;font-size:17px;letter-spacing:0;
+  margin:2em 0 .5em
 }
-.chip:hover{border-color:var(--ink-faint)}
-.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-.chip em{font-style:normal;opacity:.6;font-size:11px}
-.chip[aria-pressed="true"] em{opacity:.8}
-.more{background:none;border:0;color:var(--accent);font:inherit;font-size:12px;cursor:pointer;padding:4px 0}
+article ul{margin:0 0 1.35em;padding-left:22px}
+article li{margin-bottom:.6em}
+strong{font-weight:600}
 
-.range{display:flex;gap:8px;align-items:center}
-.range input{
-  width:100%;padding:7px 8px;font:inherit;font-size:13px;
-  border:1px solid var(--line);border-radius:6px;background:var(--wash)
+hr.rule{border:0;border-top:1px solid var(--line);margin:3em 0}
+
+.stats{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:10px;overflow:hidden;margin:2em 0
 }
-.range span{color:var(--ink-faint);font-size:12px}
-
-.reset{
-  width:100%;margin-top:14px;padding:9px;font:inherit;font-size:13px;cursor:pointer;
-  background:var(--wash);border:1px solid var(--line);border-radius:8px;color:var(--ink-soft)
+.stat{background:var(--paper);padding:16px 18px}
+.stat b{
+  display:block;font-family:Caprasimo,Inter,sans-serif;font-weight:400;
+  font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums
 }
-.reset:hover{background:var(--paper);color:var(--ink)}
-
-.toolbar{
-  display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
-  padding:13px 16px;margin-bottom:14px
+.stat span{
+  display:block;margin-top:4px;font-size:11px;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--ink-faint);line-height:1.35
 }
-.count{font-size:13px;color:var(--ink-soft)}
-.count b{color:var(--ink)}
-.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-select,.viewbtn{
-  font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--line);
-  border-radius:7px;background:var(--paper);color:var(--ink);cursor:pointer
+
+.deadends{margin:2em 0;border-top:1px solid var(--line)}
+.deadend{
+  display:grid;grid-template-columns:200px 1fr;gap:4px 24px;
+  padding:16px 0;border-bottom:1px solid var(--line)
 }
-.viewbtn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
-
-table{width:100%;border-collapse:collapse;font-size:13.5px}
-thead th{
-  position:sticky;top:0;background:var(--paper);z-index:5;
-  text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.06em;
-  color:var(--ink-faint);font-weight:600;padding:11px 10px;border-bottom:1px solid var(--line);
-  white-space:nowrap;cursor:pointer;user-select:none
+@media(max-width:600px){ .deadend{grid-template-columns:1fr;gap:2px} }
+.deadend dt{font-weight:600;font-size:15.5px}
+.deadend dd{margin:0;font-size:15.5px;color:var(--ink-soft)}
+.verdict{
+  display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.05em;
+  text-transform:uppercase;padding:2px 7px;border-radius:4px;
+  background:#fee2e2;color:var(--bad);margin-top:6px
 }
-thead th[aria-sort]{color:var(--accent)}
-thead th.nosort{cursor:default}
-tbody td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-tbody tr:hover{background:var(--wash)}
-td.name{min-width:200px}
-td.name b{display:block;font-weight:600}
-td.name small{color:var(--ink-faint);font-size:12px}
-td.r{text-align:right}
-.flag{
-  display:inline-block;font-size:10px;padding:1px 5px;border-radius:4px;
-  background:var(--warn-soft);color:var(--warn);margin-left:5px;vertical-align:middle
+
+.rules{
+  background:var(--wash);border:1px solid var(--line);border-radius:10px;
+  padding:6px 24px;margin:2em 0
 }
-.flag.runout{background:#fee2e2;color:var(--bad)}
-.flag.announced{background:var(--accent-soft);color:var(--accent)}
-.unk{color:var(--ink-faint)}
-.cyclepill{font-size:10px;color:var(--ink-faint);display:block}
+.rules h3{margin:1.4em 0 .4em}
+.rules p{font-size:15.5px;color:var(--ink-soft);margin:0 0 1.4em}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:12px}
-.card{padding:14px}
-.card h3{font-family:Inter,sans-serif;font-size:14.5px;font-weight:600;margin-bottom:2px}
-.card .brandline{font-size:12px;color:var(--ink-faint);margin-bottom:10px}
-.card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin:0;font-size:12.5px}
-.card dt{color:var(--ink-faint)}
-.card dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
-
-.rowbtn{
-  background:none;border:1px solid var(--line);border-radius:6px;cursor:pointer;
-  font:inherit;font-size:11px;padding:3px 7px;color:var(--ink-soft);white-space:nowrap
+.defect{
+  display:flex;gap:18px;padding:20px 0;border-top:1px solid var(--line)
 }
-.rowbtn:hover{border-color:var(--accent);color:var(--accent)}
-.rowbtn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-
-.empty{padding:56px 20px;text-align:center;color:var(--ink-soft)}
-.empty b{display:block;font-size:16px;color:var(--ink);margin-bottom:6px}
-
-.tray{
-  position:fixed;left:0;right:0;bottom:0;background:var(--paper);
-  border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(18,19,26,.10);
-  z-index:40;transform:translateY(100%);transition:transform .18s ease;max-height:76vh;overflow:auto
+.defect:last-of-type{border-bottom:1px solid var(--line)}
+.defect .n{
+  flex:0 0 34px;height:34px;border-radius:50%;background:var(--warn-soft);
+  color:var(--warn);font-weight:700;font-size:15px;
+  display:flex;align-items:center;justify-content:center
 }
-.tray.open{transform:translateY(0)}
-.tray-head{
-  display:flex;gap:12px;align-items:center;justify-content:space-between;
-  padding:12px 0;position:sticky;top:0;background:var(--paper);border-bottom:1px solid var(--line)
+.defect div.body{flex:1;min-width:0}
+.defect h3{margin:0 0 .3em}
+.defect p{margin:0;font-size:15.5px;color:var(--ink-soft)}
+
+.pull{
+  margin:2.2em 0;padding:0 0 0 22px;border-left:3px solid var(--accent);
+  font-size:clamp(18px,2.4vw,21px);line-height:1.45;color:var(--ink)
 }
-.tray-head h2{font-size:17px}
-.tray table{font-size:13px}
-.tray td,.tray th{padding:8px 10px}
-.tray tbody tr.differs{background:#fffbeb}
-.tray .fieldname{color:var(--ink-soft);white-space:nowrap}
-.x{background:none;border:0;font-size:20px;line-height:1;cursor:pointer;color:var(--ink-faint);padding:4px 8px}
-.x:hover{color:var(--ink)}
 
-dialog{
-  border:0;border-radius:var(--radius);padding:0;max-width:min(560px,92vw);
-  box-shadow:0 24px 70px rgba(18,19,26,.28)
+.cta{
+  margin:2.5em 0 0;padding:26px;border-radius:10px;
+  background:var(--ink);color:#fff
 }
-dialog::backdrop{background:rgba(18,19,26,.45)}
-.dlg-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:16px 18px 10px;border-bottom:1px solid var(--line)}
-.dlg-head h2{font-size:18px}
-.dlg-head p{margin:4px 0 0;font-size:12px;color:var(--ink-faint)}
-.dlg-body{padding:14px 18px 20px;max-height:64vh;overflow:auto}
-.prov{width:100%;border-collapse:collapse;font-size:12.5px}
-.prov th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);padding:6px 8px;border-bottom:1px solid var(--line)}
-.prov td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-.prov td a{word-break:break-all;font-size:11.5px}
-.conf{font-size:10px;padding:1px 5px;border-radius:4px;background:var(--wash);color:var(--ink-soft)}
-.conf.low{background:var(--warn-soft);color:var(--warn)}
-.conf.medium{background:#e0f2fe;color:#075985}
-.conf.high{background:#dcfce7;color:var(--good)}
+.cta h3{font-family:Caprasimo,Inter,sans-serif;font-weight:400;font-size:22px;color:#fff;margin-bottom:8px}
+.cta p{margin:0 0 18px;color:#c7cad6;font-size:15.5px}
+.cta a.btn{
+  display:inline-block;background:#fff;color:var(--ink);text-decoration:none;
+  font-weight:600;font-size:15px;padding:11px 20px;border-radius:7px
+}
+.cta a.btn:hover{background:var(--accent-soft)}
 
-footer{border-top:1px solid var(--line);background:var(--paper);padding:26px 0 40px;font-size:12.5px;color:var(--ink-soft)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-
-.crumb{font-size:12px;margin-bottom:8px}
-.about-body section{max-width:70ch;margin:0 0 36px}
-.about-body section:last-child{margin-bottom:0}
-.about-body h2{font-size:20px;margin-bottom:10px}
-.about-body p{color:var(--ink-soft);margin:0 0 12px}
-.about-body p:last-child{margin-bottom:0}
-.about-body ul{margin:0;padding-left:16px}
-.about-body li{margin-bottom:4px}
-.about-body .panel{padding:18px;margin-top:14px}
-.about-body .panel h3{font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-faint);margin-bottom:8px}
+footer{
+  border-top:1px solid var(--line);margin-top:56px;padding:26px 0 56px;
+  font-size:13.5px;color:var(--ink-faint)
+}
+footer p{margin:0 0 .8em;max-width:60em}
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="wrap top-inner">
-    <div>
-      <p class="crumb"><a href="index.html">← Back to the catalogue</a> · Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>
-      <h1>About this directory</h1>
-      <p class="sub">Comparing battery-electric cars sold in Australia usually means a dozen browser tabs of manufacturer marketing copy, each using its own test cycle, its own definition of "usable" battery capacity, and its own idea of what counts as on sale. This directory puts that in one place — and instead of asking you to take any number on trust, it names the publisher behind every figure and is upfront about where the data is thin.</p>
-    </div>
+    <span class="kicker">Methodology · Australia</span>
+    <h1>About this directory</h1>
+    <p class="standfirst">Comparing battery-electric cars sold in Australia usually means a dozen browser tabs of manufacturer marketing copy, each using its own test cycle, its own definition of "usable" battery capacity, and its own idea of what counts as on sale. This directory puts that in one place — and instead of asking you to take any number on trust, it names the publisher behind every figure and is upfront about where the data is thin.</p>
+    <p class="byline"><a href="index.html">← Back to the directory</a> · Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>
   </div>
 </header>
 
-<main class="wrap about-body">
-  <section>
-    <h2>Why there's no single official dataset</h2>
-    <p>The honest answer to "can this be complete, from open data, kept current?" is: two of those three, yes. An audit of the actual Australian sources found no open dataset of BEV models to build from. The Green Vehicle Guide's data service is live, but access needs a signed third-party licence agreement — and it doesn't carry battery capacity, DC charge rate or price anyway. data.gov.au has no vehicle-specification dataset, only EV charger locations. The RAV/RVCS registry is VIN-only, with no bulk export. VFACTS, the industry's own sales data, is paywalled — cut off even from the Electric Vehicle Council. ev-database.org has the richest field coverage anywhere, but its terms prohibit automated collection.</p>
-    <p>So this project's primary source is each manufacturer's own Australian website — the authoritative public statement of what is actually sold here — with Australian motoring press filling documented gaps. That has a consequence worth stating plainly: the code behind this directory is open, but the data is mixed. Specification figures are restated facts attributed to their publisher, not open-licensed data, and each record carries its licence in its provenance.</p>
-    <div class="panel">
-      <h3>Source licences</h3>
-      <ul><li><b>green-vehicle-guide</b> — Commonwealth of Australia, third-party licence agreement required</li><li><b>manufacturer</b> — proprietary-factual (specification facts restated with attribution)</li><li><b>press</b> — proprietary-factual (specification facts restated with attribution)</li><li><b>wikidata</b> — CC0-1.0</li><li><b>overseas-regulator</b> — Open Government Licence / EC reuse notice</li></ul>
-      <p>Figures are restated facts attributed to each publisher. This page is not affiliated with any manufacturer.</p>
-    </div>
-  </section>
+<article class="wrap">
 
-  <section>
-    <h2>What "complete" means here</h2>
-    <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
-    <p class="num">56 brands checked · 6 with no BEV on sale · 5 source conflicts recorded</p>
-    <div class="panel">
-      <h3>Checked, no BEV on sale</h3>
-      <ul><li><b>Citroen</b> — WITHDRAWN FROM MARKET: Citroen Australia (importer Inchcape) formally ceased all new-vehicle sales in Australia effective 1 November 2024, ending a 101+ year presence, after sales collapsed to just 87 units in H1 2024 (down 35% year-on-year, versus a 2007 peak of 3803 annual deliveries). Existing orders placed before 1 November 2024 were fulfilled, and Citroen's ~35 dealer network transitioned to a service-and-maintenance-only operation; the importer refocused on its sibling brand Peugeot. At the time of withdrawal Citroen's Australian range was petrol/diesel only (C3, C4, C5 Aircross, C5 X) -- no BEV was part of the final local lineup. Search results also surfaced ccarprice.com listings claiming current Australian availability and pricing for an e-C4 X, e-Berlingo and e-SpaceTourer; ccarprice.com is a low-reliability, seemingly auto-generated aggregator that explicitly disclaims guaranteed accuracy, and its claims directly conflict with the official Citroen Australia market-exit announcement and multiple corroborating reputable press sources (carsales, WhichCar, Drive, CarExpert), so those listings are treated as incorrect/not credible and excluded. As of September 2026, Citroen sells no new vehicles of any powertrain in Australia, BEV or otherwise.</li><li><b>Foton</b> — Foton's current Australian passenger/light-commercial lineup (Tunland V7 and Tunland V9 utes, priced approx. $39,990-$49,990) is confirmed across multiple 2025/2026 sources to be diesel or diesel mild-hybrid only, with no battery-electric variant offered new in Australia. No evidence was found this session of an on-sale Foton or Foton-affiliated (e.g. 'Asiastar') BEV in the Australian market; a prior research pass had flagged a possible 'Tunland G7 EV' but this could not be corroborated this session against any dealer, press, or manufacturer source and is treated as unconfirmed/likely incorrect. Foton does sell electric light trucks/buses in some overseas markets, but none were verified as available for retail new-vehicle purchase in Australia within the 4.5-tonne GVM passenger/LCV scope of this dataset.</li><li><b>Isuzu</b> — Isuzu does not currently sell a battery-electric vehicle in Australia as of September 2026. The Isuzu D-Max EV (battery-electric dual-cab ute) has been confirmed by Isuzu as planned for the Australian market, and has appeared in various global/regional launches, but multiple 2025 reports indicate no confirmed Australian on-sale date, with local timing reportedly linked to New Vehicle Efficiency Standard (NVES) policy settings and light commercial vehicle CO2 targets. No Isuzu BEV is currently orderable new in Australia.</li><li><b>Jaguar</b> — REAL DOUBT / LIKELY WITHDRAWN: Jaguar's I-Pace was, as of a November 2024 review, sellable in Australia on remaining stock only ('sufficient stock... to carry us through to 2025'), following JLR's July 2024 global decision to axe the I-Pace and E-Pace as 'zero-profitability products'. CarExpert's own 2026 I-Pace pricing page (published 20 Aug 2026) shows 'Price not available' and zero year-to-date sales for 2026, and the official jaguar.com/en-au I-Pace specifications page itself returned a broken/unavailable content block at fetch time. Given no confirmed current price, zero 2026 sales, and a global discontinuation decision from mid-2024, the I-Pace is judged to be effectively no longer orderable new in Australia as of September 2026 and is therefore NOT listed as a current variant (an empty variants array is used) rather than assumed still on sale. Note also: a March 2026 CarExpert report described a recall affecting ~270 older (2017-2021 build) I-Pace units for a battery overheating/fire risk, capping charging at 90% pending a permanent fix -- this affects existing fleet vehicles, not new-vehicle orderability, and is unrelated to the withdrawal finding above. No other Jaguar BEV (e.g. a Jaguar 'Type 00' successor GT) has been confirmed as launched or orderable in Australia.</li><li><b>Mahindra</b> — Mahindra Australia sells ZERO battery-electric vehicles as of September 2026. The current retail lineup is exclusively internal-combustion: Scorpio (diesel), XUV3XO (petrol), XUV700 (petrol/diesel), plus an upcoming diesel-only Lifestyler dual-cab ute - none of these are electrified. AU press (carsales.com.au, 2026-09-02; Drive.com.au, 2026-09-02; GoAuto, 2026-08-18) reports Mahindra is evaluating a trio of EVs (XEV 9e, XEV 9S, BE 6) for possible future Australian launch - a single XEV 9e demonstrator has been imported on temporary plates for internal dealer display, and Australian trademark filings exist for 'XEV 9E' and 'BE 6' - but none has a confirmed launch date, Australian specification, or pricing. This does not meet the bar for 'announced' status (which requires a confirmed AU launch), so no variants are listed. Revisit this brand as these EVs progress toward a firm Australian launch commitment.</li><li><b>Ram</b> — Ram does not currently sell any battery-electric vehicle in Australia as of September 2026. The Ram 1500 REV, a planned full-BEV version of the Ram 1500, was cancelled by Stellantis/RAM globally in September 2025 before reaching an Australian right-hand-drive conversion or launch. The Ram Ramcharger (an extended-range electric vehicle / EREV with a petrol generator providing extended range) is out of scope for this dataset because it is not a pure battery-electric vehicle. No other Ram BEV model is confirmed for the Australian market.</li></ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Where the gaps are</h2>
-    <p>Coverage isn't uniform across fields. Some specifications — brand, model, body type, availability — are published by every manufacturer and sit at 100%. Others, like published energy consumption or gross battery capacity, are the fields manufacturers most often leave out of their own marketing pages, so they're the ones most likely to show as unknown here rather than guessed at.</p>
-    <div class="panel">
-      <h3>Least complete fields</h3>
-      <ul><li>Consumption — <span class="num">22.9%</span> populated</li><li>Battery (gross) — <span class="num">32.1%</span> populated</li><li>V2L — <span class="num">33.2%</span> populated</li><li>Towing (braked) — <span class="num">40.4%</span> populated</li><li>0–100 km/h — <span class="num">57.5%</span> populated</li><li>Battery (usable) — <span class="num">69.6%</span> populated</li><li>DC charge — <span class="num">71.8%</span> populated</li><li>AC charge — <span class="num">72.5%</span> populated</li></ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Rules the data obeys</h2>
-    <p>A few rules apply everywhere in this dataset, so a filtered list or a sorted column never quietly implies more than the sources actually say:</p>
-    <ul>
-      <li>A missing value is always recorded as unknown — never zero, and never an estimate carried over from an overseas-spec version of the same model.</li>
-      <li>Range figures from different test cycles (WLTP, NEDC, CLTC) are never merged into one number — a Chinese-market CLTC figure isn't comparable to a European WLTP one, and is flagged as such.</li>
-      <li>Numeric filters exclude unknowns rather than including them by default — filtering to "under $50,000" will never quietly include a car whose price isn't published.</li>
-      <li>Sorting always puts unknown values last in both directions, so "cheapest first" never presents an unpriced car as free.</li>
-    </ul>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">
-    <p>Built 2026-09-16. <a href="index.html">← Back to the catalogue</a></p>
+  <div class="stats">
+    <div class="stat"><b class="num">280</b><span>Variants tracked</span></div>
+    <div class="stat"><b class="num">56</b><span>Brands checked</span></div>
+    <div class="stat"><b class="num">90%</b><span>Core fields populated</span></div>
+    <div class="stat"><b class="num">5</b><span>Source conflicts recorded</span></div>
   </div>
+
+  <hr class="rule">
+
+  <h2>Why there's no single official dataset</h2>
+
+  <p>The honest answer to "can this be complete, from open data, kept current?" is: two of those three, yes. An audit of the actual Australian sources found no open dataset of BEV models to build from.</p>
+
+  <dl class="deadends">
+    <div class="deadend">
+      <dt>Green Vehicle Guide</dt>
+      <dd>The only official per-model source, and it has a live data service — but access needs a signed third-party licence agreement, and even then it carries energy consumption and ADR figures, not battery capacity, DC charge rate or price.
+      <span class="verdict">Licence-gated</span></dd>
+    </div>
+    <div class="deadend">
+      <dt>data.gov.au</dt>
+      <dd>No vehicle-specification dataset exists. Its catalogue API was queried directly — there are datasets for EV charger locations, nothing about the cars themselves.
+      <span class="verdict">Doesn't exist</span></dd>
+    </div>
+    <div class="deadend">
+      <dt>Register of Approved Vehicles</dt>
+      <dd>A VIN-at-a-time lookup, with no bulk export and no API. Useful for one car's record; no use for building a list.
+      <span class="verdict">VIN-only</span></dd>
+    </div>
+    <div class="deadend">
+      <dt>VFACTS</dt>
+      <dd>The industry's own sales data, held behind a subscription — cut off even from the Electric Vehicle Council in 2024.
+      <span class="verdict">Paywalled</span></dd>
+    </div>
+    <div class="deadend">
+      <dt>ev-database.org</dt>
+      <dd>The richest EV specification data anywhere, but its terms explicitly prohibit automated collection. Bulk access is a paid commercial licence.
+      <span class="verdict">Terms forbid it</span></dd>
+    </div>
+  </dl>
+
+  <p>That is the entire landscape: there is no open Australian dataset of battery-electric vehicle models. So this directory's primary source is each manufacturer's own Australian website — the authoritative public statement of what is actually sold here — with Australian motoring press filling documented gaps. That has a consequence worth stating plainly: the code behind this directory is open, but the data is mixed.</p>
+
+  <p class="pull">You don't have to trust the directory. You can check it.</p>
+
+  <h3>Source licences</h3>
+  <p>Specification figures are restated facts attributed to their publisher, not open-licensed data, and each record carries its licence in its provenance.</p>
+  <ul><li><b>green-vehicle-guide</b> — Commonwealth of Australia, third-party licence agreement required</li><li><b>manufacturer</b> — proprietary-factual (specification facts restated with attribution)</li><li><b>press</b> — proprietary-factual (specification facts restated with attribution)</li><li><b>wikidata</b> — CC0-1.0</li><li><b>overseas-regulator</b> — Open Government Licence / EC reuse notice</li></ul>
+  <p>Figures are restated facts attributed to each publisher. This directory is not affiliated with any manufacturer.</p>
+
+  <h2>What "complete" means here</h2>
+
+  <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
+
+  <p>56 brands checked · 6 with no BEV on sale · 5 source conflicts recorded</p>
+
+  <p>The provenance mix is worth stating plainly too: <strong>78% of populated fields come from manufacturers, 22% from motoring press, and 0% from any government source.</strong></p>
+
+  <h3>Checked, no BEV on sale</h3>
+  <ul><li><b>Citroen</b> — WITHDRAWN FROM MARKET: Citroen Australia (importer Inchcape) formally ceased all new-vehicle sales in Australia effective 1 November 2024, ending a 101+ year presence, after sales collapsed to just 87 units in H1 2024 (down 35% year-on-year, versus a 2007 peak of 3803 annual deliveries). Existing orders placed before 1 November 2024 were fulfilled, and Citroen's ~35 dealer network transitioned to a service-and-maintenance-only operation; the importer refocused on its sibling brand Peugeot. At the time of withdrawal Citroen's Australian range was petrol/diesel only (C3, C4, C5 Aircross, C5 X) -- no BEV was part of the final local lineup. Search results also surfaced ccarprice.com listings claiming current Australian availability and pricing for an e-C4 X, e-Berlingo and e-SpaceTourer; ccarprice.com is a low-reliability, seemingly auto-generated aggregator that explicitly disclaims guaranteed accuracy, and its claims directly conflict with the official Citroen Australia market-exit announcement and multiple corroborating reputable press sources (carsales, WhichCar, Drive, CarExpert), so those listings are treated as incorrect/not credible and excluded. As of September 2026, Citroen sells no new vehicles of any powertrain in Australia, BEV or otherwise.</li><li><b>Foton</b> — Foton's current Australian passenger/light-commercial lineup (Tunland V7 and Tunland V9 utes, priced approx. $39,990-$49,990) is confirmed across multiple 2025/2026 sources to be diesel or diesel mild-hybrid only, with no battery-electric variant offered new in Australia. No evidence was found this session of an on-sale Foton or Foton-affiliated (e.g. 'Asiastar') BEV in the Australian market; a prior research pass had flagged a possible 'Tunland G7 EV' but this could not be corroborated this session against any dealer, press, or manufacturer source and is treated as unconfirmed/likely incorrect. Foton does sell electric light trucks/buses in some overseas markets, but none were verified as available for retail new-vehicle purchase in Australia within the 4.5-tonne GVM passenger/LCV scope of this dataset.</li><li><b>Isuzu</b> — Isuzu does not currently sell a battery-electric vehicle in Australia as of September 2026. The Isuzu D-Max EV (battery-electric dual-cab ute) has been confirmed by Isuzu as planned for the Australian market, and has appeared in various global/regional launches, but multiple 2025 reports indicate no confirmed Australian on-sale date, with local timing reportedly linked to New Vehicle Efficiency Standard (NVES) policy settings and light commercial vehicle CO2 targets. No Isuzu BEV is currently orderable new in Australia.</li><li><b>Jaguar</b> — REAL DOUBT / LIKELY WITHDRAWN: Jaguar's I-Pace was, as of a November 2024 review, sellable in Australia on remaining stock only ('sufficient stock... to carry us through to 2025'), following JLR's July 2024 global decision to axe the I-Pace and E-Pace as 'zero-profitability products'. CarExpert's own 2026 I-Pace pricing page (published 20 Aug 2026) shows 'Price not available' and zero year-to-date sales for 2026, and the official jaguar.com/en-au I-Pace specifications page itself returned a broken/unavailable content block at fetch time. Given no confirmed current price, zero 2026 sales, and a global discontinuation decision from mid-2024, the I-Pace is judged to be effectively no longer orderable new in Australia as of September 2026 and is therefore NOT listed as a current variant (an empty variants array is used) rather than assumed still on sale. Note also: a March 2026 CarExpert report described a recall affecting ~270 older (2017-2021 build) I-Pace units for a battery overheating/fire risk, capping charging at 90% pending a permanent fix -- this affects existing fleet vehicles, not new-vehicle orderability, and is unrelated to the withdrawal finding above. No other Jaguar BEV (e.g. a Jaguar 'Type 00' successor GT) has been confirmed as launched or orderable in Australia.</li><li><b>Mahindra</b> — Mahindra Australia sells ZERO battery-electric vehicles as of September 2026. The current retail lineup is exclusively internal-combustion: Scorpio (diesel), XUV3XO (petrol), XUV700 (petrol/diesel), plus an upcoming diesel-only Lifestyler dual-cab ute - none of these are electrified. AU press (carsales.com.au, 2026-09-02; Drive.com.au, 2026-09-02; GoAuto, 2026-08-18) reports Mahindra is evaluating a trio of EVs (XEV 9e, XEV 9S, BE 6) for possible future Australian launch - a single XEV 9e demonstrator has been imported on temporary plates for internal dealer display, and Australian trademark filings exist for 'XEV 9E' and 'BE 6' - but none has a confirmed launch date, Australian specification, or pricing. This does not meet the bar for 'announced' status (which requires a confirmed AU launch), so no variants are listed. Revisit this brand as these EVs progress toward a firm Australian launch commitment.</li><li><b>Ram</b> — Ram does not currently sell any battery-electric vehicle in Australia as of September 2026. The Ram 1500 REV, a planned full-BEV version of the Ram 1500, was cancelled by Stellantis/RAM globally in September 2025 before reaching an Australian right-hand-drive conversion or launch. The Ram Ramcharger (an extended-range electric vehicle / EREV with a petrol generator providing extended range) is out of scope for this dataset because it is not a pure battery-electric vehicle. No other Ram BEV model is confirmed for the Australian market.</li></ul>
+
+  <h2>Where the gaps are</h2>
+
+  <p>Coverage isn't uniform across fields. Some specifications — brand, model, body type, availability — are published by every manufacturer and sit at 100%. Others, like published energy consumption or gross battery capacity, are the fields manufacturers most often leave out of their own marketing pages, so they're the ones most likely to show as unknown here rather than guessed at.</p>
+
+  <h3>Least complete fields</h3>
+  <ul><li>Consumption — <span class="num">22.9%</span> populated</li><li>Battery (gross) — <span class="num">32.1%</span> populated</li><li>V2L — <span class="num">33.2%</span> populated</li><li>Towing (braked) — <span class="num">40.4%</span> populated</li><li>0–100 km/h — <span class="num">57.5%</span> populated</li><li>Battery (usable) — <span class="num">69.6%</span> populated</li><li>DC charge — <span class="num">71.8%</span> populated</li><li>AC charge — <span class="num">72.5%</span> populated</li></ul>
+
+  <h2>Rules the data obeys</h2>
+
+  <p>A few rules apply everywhere in this dataset, so a filtered list or a sorted column never quietly implies more than the sources actually say:</p>
+
+  <div class="rules">
+    <h3>A missing value is always unknown</h3>
+    <p>Never zero, and never an estimate carried over from an overseas-spec version of the same model.</p>
+
+    <h3>Range figures are never merged across test cycles</h3>
+    <p>WLTP, NEDC and CLTC produce different numbers for the same car — a Chinese-market CLTC figure isn't comparable to a European WLTP one, and is flagged as such.</p>
+
+    <h3>Numeric filters exclude unknowns</h3>
+    <p>Filtering to "under $50,000" will never quietly include a car whose price isn't published.</p>
+
+    <h3>Sorting puts unknowns last</h3>
+    <p>In both directions, so "cheapest first" never presents an unpriced car as free.</p>
+  </div>
+
+  <h2>What it caught in itself</h2>
+
+  <p>A validator with ESLint-style severities checks the data on every build. It has caught real defects, which says more than any feature description could:</p>
+
+  <div class="defect">
+    <div class="n">1</div>
+    <div class="body">
+      <h3>A 12-seat Skywell van failed the seat-count check</h3>
+      <p>The van was correct — the plausibility limit of 9 seats was wrong, because it was written with passenger cars in mind and the dataset also covers commercial vans.</p>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="n">2</div>
+    <div class="body">
+      <h3>A Denza charging-speed figure tripped the 1,500 kW ceiling</h3>
+      <p>Not a transcription error — BYD genuinely publishes that figure for its FLASH Charging system. It's only reachable on a China-market connector, though, so the record now carries that caveat instead of implying it's available here.</p>
+    </div>
+  </div>
+
+  <div class="defect">
+    <div class="n">3</div>
+    <div class="body">
+      <h3>The filter panel was impossible to open on a phone</h3>
+      <p>A base CSS rule set the toggle to <code>display: none</code> after the media query meant to reveal it, so it lost the cascade at every screen size. Every automated test passed — only loading the page at 390 pixels wide caught it.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h3>Browse the directory</h3>
+    <p>All 280 variants. Search, filter, sort, compare vehicles side by side, and check the source of any figure.</p>
+    <a class="btn" href="index.html">Open the directory →</a>
+  </div>
+
+</article>
+
+<footer class="wrap">
+  <p>Built 2026-09-16. <a href="index.html">← Back to the directory</a></p>
 </footer>
 
 </body>
