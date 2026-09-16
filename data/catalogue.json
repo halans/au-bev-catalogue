@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Australian Battery-Electric Vehicle Directory",
-    "builtAt": "2026-09-15",
+    "builtAt": "2026-09-16",
     "schemaVersion": 1,
     "recordCount": 280,
     "brandsChecked": 56,
@@ -53840,7 +53840,7 @@
   "duplicates": [],
   "problems": [],
   "coverage": {
-    "generatedAt": "2026-09-15",
+    "generatedAt": "2026-09-16",
     "totals": {
       "variants": 280,
       "brandsWithVariants": 50,
