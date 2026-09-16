@@ -848,7 +848,7 @@ function buildHtml(catalogue) {
 <header class="top">
   <div class="wrap top-inner">
     <div>
-      <h1>Australian BEV Catalogue</h1>
+      <h1>Australian BEV Directory</h1>
       <p class="sub">Every battery-electric model and variant sold new in Australia. Each figure carries the publisher it came from, so you can check any number rather than take it on trust. <a href="about.html">About this directory &amp; methodology →</a></p>
     </div>
     <div class="stats">
@@ -990,33 +990,54 @@ function buildAboutHtml(catalogue) {
 <header class="top">
   <div class="wrap top-inner">
     <div>
+      <p class="crumb"><a href="index.html">← Back to the catalogue</a> · Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>
       <h1>About this directory</h1>
-      <p class="sub"><a href="index.html">← Back to the catalogue</a></p>
+      <p class="sub">Comparing battery-electric cars sold in Australia usually means a dozen browser tabs of manufacturer marketing copy, each using its own test cycle, its own definition of "usable" battery capacity, and its own idea of what counts as on sale. This directory puts that in one place — and instead of asking you to take any number on trust, it names the publisher behind every figure and is upfront about where the data is thin.</p>
     </div>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="panel fcols" style="padding:20px">
-    <div>
-      <h3>What "complete" means here</h3>
-      <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
-      <p class="num">${totals.brandsChecked || 0} brands checked · ${totals.brandsWithNoBev || 0} with no BEV on sale · ${totals.conflicts || 0} source conflicts recorded</p>
-    </div>
-    <div>
-      <h3>Least complete fields</h3>
-      <ul>${worstFields || '<li>All fields fully populated.</li>'}</ul>
-    </div>
-    <div>
-      <h3>Checked, no BEV on sale</h3>
-      <ul>${emptyBrandList || '<li>None.</li>'}</ul>
-    </div>
-    <div>
+<main class="wrap about-body">
+  <section>
+    <h2>Why there's no single official dataset</h2>
+    <p>The honest answer to "can this be complete, from open data, kept current?" is: two of those three, yes. An audit of the actual Australian sources found no open dataset of BEV models to build from. The Green Vehicle Guide's data service is live, but access needs a signed third-party licence agreement — and it doesn't carry battery capacity, DC charge rate or price anyway. data.gov.au has no vehicle-specification dataset, only EV charger locations. The RAV/RVCS registry is VIN-only, with no bulk export. VFACTS, the industry's own sales data, is paywalled — cut off even from the Electric Vehicle Council. ev-database.org has the richest field coverage anywhere, but its terms prohibit automated collection.</p>
+    <p>So this project's primary source is each manufacturer's own Australian website — the authoritative public statement of what is actually sold here — with Australian motoring press filling documented gaps. That has a consequence worth stating plainly: the code behind this directory is open, but the data is mixed. Specification figures are restated facts attributed to their publisher, not open-licensed data, and each record carries its licence in its provenance.</p>
+    <div class="panel">
       <h3>Source licences</h3>
       <ul>${licenceList}</ul>
       <p>Figures are restated facts attributed to each publisher. This page is not affiliated with any manufacturer.</p>
     </div>
-  </div>
+  </section>
+
+  <section>
+    <h2>What "complete" means here</h2>
+    <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
+    <p class="num">${totals.brandsChecked || 0} brands checked · ${totals.brandsWithNoBev || 0} with no BEV on sale · ${totals.conflicts || 0} source conflicts recorded</p>
+    <div class="panel">
+      <h3>Checked, no BEV on sale</h3>
+      <ul>${emptyBrandList || '<li>None.</li>'}</ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where the gaps are</h2>
+    <p>Coverage isn't uniform across fields. Some specifications — brand, model, body type, availability — are published by every manufacturer and sit at 100%. Others, like published energy consumption or gross battery capacity, are the fields manufacturers most often leave out of their own marketing pages, so they're the ones most likely to show as unknown here rather than guessed at.</p>
+    <div class="panel">
+      <h3>Least complete fields</h3>
+      <ul>${worstFields || '<li>All fields fully populated.</li>'}</ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rules the data obeys</h2>
+    <p>A few rules apply everywhere in this dataset, so a filtered list or a sorted column never quietly implies more than the sources actually say:</p>
+    <ul>
+      <li>A missing value is always recorded as unknown — never zero, and never an estimate carried over from an overseas-spec version of the same model.</li>
+      <li>Range figures from different test cycles (WLTP, NEDC, CLTC) are never merged into one number — a Chinese-market CLTC figure isn't comparable to a European WLTP one, and is flagged as such.</li>
+      <li>Numeric filters exclude unknowns rather than including them by default — filtering to "under $50,000" will never quietly include a car whose price isn't published.</li>
+      <li>Sorting always puts unknown values last in both directions, so "cheapest first" never presents an unpriced car as free.</li>
+    </ul>
+  </section>
 </main>
 
 <footer>
