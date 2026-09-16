@@ -813,7 +813,20 @@ function computeCoverageSections(catalogue) {
     .map((f) => `<li>${escapeHtml(f.label)} — <span class="num">${f.completeness}%</span> populated</li>`)
     .join('');
 
-  return { totals, emptyBrandList, licenceList, worstFields };
+  // Aggregate figures for the About page's provenance-mix stat. `provenanceMix` and
+  // `populatedFields` already come straight out of coverage.js's own totals — this is
+  // percentage formatting, not a new measurement.
+  const mix = report.provenanceMix || {};
+  const populatedFields = totals.populatedFields || 0;
+  const pctOf = (n) => (populatedFields ? Math.round((n / populatedFields) * 1000) / 10 : 0);
+  const manufacturerPct = pctOf(mix.manufacturer || 0);
+  const pressPct = pctOf(mix.press || 0);
+  const governmentPct = pctOf((mix['green-vehicle-guide'] || 0) + (mix['overseas-regulator'] || 0));
+
+  return {
+    totals, emptyBrandList, licenceList, worstFields,
+    manufacturerPct, pressPct, governmentPct,
+  };
 }
 
 function buildHtml(catalogue) {
