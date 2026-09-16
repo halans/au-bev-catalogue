@@ -4,7 +4,7 @@
 
 **Goal:** Turn `dist/about.html` from a bare heading over a raw 4-column stats grid into a landing-page-style narrative that explains the data-honesty story, with the existing completeness stats and lists woven into the sections that explain them.
 
-**Architecture:** Pure content/markup change inside `src/build-html.js`: rewrite the `buildAboutHtml()` template and add a small set of scoped CSS rules to `STYLES`. No new data, no new computed fields, no changes to `index.html`, `bin/bev.js`, or `scripts/package.js` — those are already wired up from the prior change that split the About page out.
+**Architecture:** Pure content/markup change inside `src/build-html.js`: rewrite the `buildAboutHtml()` template, add a small set of scoped CSS rules to `STYLES`, and (Task 4, added after initial approval) add a small blog-attribution link to both pages' headers. No new data, no new computed fields, no changes to `bin/bev.js` or `scripts/package.js` — those are already wired up from the prior change that split the About page out.
 
 **Tech Stack:** Plain Node.js template literals producing static HTML/CSS. No test framework changes — this is copy/markup with no new logic branch, per the spec's testing section.
 
@@ -139,7 +139,7 @@ Replace with:
 <header class="top">
   <div class="wrap top-inner">
     <div>
-      <p class="crumb"><a href="index.html">← Back to the catalogue</a></p>
+      <p class="crumb"><a href="index.html">← Back to the catalogue</a> · Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>
       <h1>About this directory</h1>
       <p class="sub">Comparing battery-electric cars sold in Australia usually means a dozen browser tabs of manufacturer marketing copy, each using its own test cycle, its own definition of "usable" battery capacity, and its own idea of what counts as on sale. This directory puts that in one place — and instead of asking you to take any number on trust, it names the publisher behind every figure and is upfront about where the data is thin.</p>
     </div>
@@ -217,7 +217,62 @@ EOF
 
 ---
 
-### Task 3: Build, run the suite, and visually verify
+### Task 3: Add a blog attribution link to the catalogue page header
+
+This directory is served at `directory.electricvehicle.life` as a sub-section of the
+`electricvehicle.life` blog (added to the plan after initial approval — see the
+"Addendum" in `docs/superpowers/specs/2026-09-16-about-page-narrative-design.md`). The
+About page's link back (added in Task 2) already covers `about.html`; this task adds the
+matching eyebrow line to `index.html`'s header.
+
+**Files:**
+- Modify: `src/build-html.js` — the `buildHtml()` function's `<header class="top">` block
+
+- [ ] **Step 1: Add the eyebrow line above the `<h1>`**
+
+Find this exact block:
+
+```js
+  <div class="wrap top-inner">
+    <div>
+      <h1>Australian BEV Catalogue</h1>
+      <p class="sub">Every battery-electric model and variant sold new in Australia. Each figure carries the publisher it came from, so you can check any number rather than take it on trust. <a href="about.html">About this directory &amp; methodology →</a></p>
+    </div>
+```
+
+Replace with:
+
+```js
+  <div class="wrap top-inner">
+    <div>
+      <p class="crumb">Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>
+      <h1>Australian BEV Catalogue</h1>
+      <p class="sub">Every battery-electric model and variant sold new in Australia. Each figure carries the publisher it came from, so you can check any number rather than take it on trust. <a href="about.html">About this directory &amp; methodology →</a></p>
+    </div>
+```
+
+Use the Edit tool with the old block as `old_string` and the new block as `new_string`. The `.crumb` class already exists in `STYLES` (added in Task 1) — no CSS change needed here.
+
+- [ ] **Step 2: Sanity-check the file still parses**
+
+Run: `node -e "require('./src/build-html.js'); console.log('ok')"`
+Expected: `ok`
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add src/build-html.js
+git commit -m "$(cat <<'EOF'
+Add electricvehicle.life blog attribution link to the catalogue header
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+EOF
+)"
+```
+
+---
+
+### Task 4: Build, run the suite, and visually verify
 
 **Files:** none (verification only)
 
@@ -236,9 +291,9 @@ Expected: `# fail 0` in the summary. `test/equivalence.test.js` only exercises `
 Serve the `dist/` directory and open `about.html` (e.g. `python3 -m http.server <port> --directory dist`, then navigate to `http://localhost:<port>/about.html`). Confirm:
 - The page reads top-to-bottom as a coherent narrative: hero paragraph, then four sections, each with its heading, prose, and (where applicable) its `.panel` list directly beneath.
 - The "Source licences" list sits inside the "Why there's no single official dataset" section; "Checked, no BEV on sale" sits inside "What 'complete' means here"; "Least complete fields" sits inside "Where the gaps are"; "Rules the data obeys" has no list, just four bullets.
-- The breadcrumb "← Back to the catalogue" above the `<h1>` and the footer link both navigate to `index.html`.
+- The breadcrumb "← Back to the catalogue · Part of the electricvehicle.life blog" above the `<h1>` on `about.html` navigates correctly (catalogue link to `index.html`, blog link to `https://electricvehicle.life`).
 - At a narrow viewport (~400px wide), no section or panel overflows horizontally.
-- From `index.html`, the "About this directory & methodology →" link in the header and the footer link both still navigate to `about.html` correctly (unchanged from the prior change, but confirm nothing regressed).
+- From `index.html`, the "About this directory & methodology →" link in the header and the footer link both still navigate to `about.html` correctly (unchanged from the prior change, but confirm nothing regressed), and the new "Part of the electricvehicle.life blog" eyebrow line above its `<h1>` links to `https://electricvehicle.life`.
 
 - [ ] **Step 4: Stop any server started for verification**
 

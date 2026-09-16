@@ -12,12 +12,27 @@ unexplained in a grid.
 ## Non-goals
 
 - No change to `data/catalogue.json`, `src/coverage.js`, or any computed figures. This is
-  a `buildAboutHtml()` template/copy change in `src/build-html.js` only.
-- No change to `index.html`'s content or its existing link to `about.html`.
+  a `buildHtml()`/`buildAboutHtml()` template/copy change in `src/build-html.js` only.
 - No new data fields. "Rules the data obeys" (new section 5 below) is static prose
   copied from README.md, not derived from the catalogue at build time.
 - No architecture/engine explanation (the README's "one engine, three surfaces"
   section) — confirmed out of scope; this page stays about the data, not the code.
+
+## Addendum: blog attribution links (added after initial approval)
+
+This directory is served at `directory.electricvehicle.life` as a sub-section of the
+`electricvehicle.life` blog. Both pages need a small attribution link back to the blog,
+placed in the header near the title (confirmed with the user over the original
+"no change to index.html" non-goal above, which this supersedes):
+
+- **`index.html`**: add a new eyebrow line above the `<h1>`:
+  `<p class="crumb">Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>`
+- **`about.html`**: fold the blog link into the existing breadcrumb line (added in the
+  main design above) rather than stacking a second crumb line:
+  `<p class="crumb"><a href="index.html">← Back to the catalogue</a> · Part of the <a href="https://electricvehicle.life">electricvehicle.life</a> blog</p>`
+
+The `.crumb` CSS class already covers this (small font, bottom margin) — no new styles
+needed beyond what Task 1 already added.
 
 ## Content source
 
