@@ -253,11 +253,18 @@ dialog::backdrop{background:rgba(18,19,26,.45)}
 .conf.high{background:#dcfce7;color:var(--good)}
 
 footer{border-top:1px solid var(--line);background:var(--paper);padding:26px 0 40px;font-size:12.5px;color:var(--ink-soft)}
-footer h3{font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-faint);margin-bottom:8px}
-.fcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
-footer ul{margin:0;padding-left:16px}
-footer li{margin-bottom:4px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.crumb{font-size:12px;margin-bottom:8px}
+.about-body section{max-width:70ch;margin:0 0 36px}
+.about-body section:last-child{margin-bottom:0}
+.about-body h2{font-size:20px;margin-bottom:10px}
+.about-body p{color:var(--ink-soft);margin:0 0 12px}
+.about-body p:last-child{margin-bottom:0}
+.about-body ul{margin:0;padding-left:16px}
+.about-body li{margin-bottom:4px}
+.about-body .panel{padding:18px;margin-top:14px}
+.about-body .panel h3{font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-faint);margin-bottom:8px}
 `;
 
 /* ------------------------------------------------------------------ *
