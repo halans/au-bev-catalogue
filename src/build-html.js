@@ -16,7 +16,14 @@
 const fs = require('fs');
 const path = require('path');
 
+const engine = require('./engine');
+const schema = require('./schema');
+
 const ROOT = path.resolve(__dirname, '..');
+
+/** Canonical production URL. Every canonical link, OG/Twitter tag, robots.txt
+ *  and sitemap.xml entry is derived from this single constant. */
+const SITE_URL = 'https://directory.electricvehicle.life';
 
 /** Read a module's source text for verbatim inlining. */
 function moduleSource(relative) {
@@ -957,6 +964,192 @@ function computeCoverageSections(catalogue) {
   };
 }
 
+/**
+ * Server-rendered results — SEO/crawlability.
+ *
+ * The browser's default view (all records, sorted by name ascending) is
+ * pre-rendered into the page at build time using the SAME engine.query() /
+ * engine.formatValue() the CLI and the client-side view layer call — never a
+ * reimplementation. This exists because crawlers that don't execute
+ * JavaScript (most answer-engine bots included) would otherwise see an empty
+ * #results div: the catalogue's actual content only ever existed inside the
+ * embedded JSON payload. render() on page load immediately replaces this
+ * markup with the identical client-rendered output, so nothing here can
+ * drift from what a JS-enabled visitor sees.
+ */
+const STATIC_TABLE_COLUMNS = [
+  'batteryUsableKwh', 'rangeKm', 'dcChargeKw', 'powerKw', 'zeroTo100s', 'seats', 'priceAud',
+];
+
+function staticFieldLabel(key) {
+  const field = schema.FIELD_BY_KEY.get(key);
+  return field ? field.label : key;
+}
+
+function staticAvailabilityFlag(record) {
+  if (record.availability === 'runout') return '<span class="flag runout">runout</span>';
+  if (record.availability === 'announced') return '<span class="flag announced">announced</span>';
+  return '';
+}
+
+function staticCellValue(record, key) {
+  const text = engine.formatValue(key, record[key]);
+  if (text === '—') return '<span class="unk" title="not published by the source">—</span>';
+  let cycle = '';
+  if (key === 'rangeKm' && record.rangeCycle) {
+    cycle = '<span class="cyclepill">' + escapeHtml(record.rangeCycle) + '</span>';
+  }
+  return '<span class="num">' + escapeHtml(text) + '</span>' + cycle;
+}
+
+function renderStaticTable(records) {
+  let html = '<table><thead><tr><th class="nosort">Vehicle</th>';
+  for (let c = 0; c < STATIC_TABLE_COLUMNS.length; c += 1) {
+    const key = STATIC_TABLE_COLUMNS[c];
+    html += '<th class="r" data-sort="' + key + '">' + escapeHtml(staticFieldLabel(key)) + '</th>';
+  }
+  html += '<th class="nosort"></th></tr></thead><tbody>';
+
+  for (let i = 0; i < records.length; i += 1) {
+    const record = records[i];
+    html += '<tr><td class="name"><b>' + escapeHtml(record.model || '') + ' ' + escapeHtml(record.variant || '') +
+      staticAvailabilityFlag(record) + '</b><small>' + escapeHtml(record.brand || '') +
+      (record.bodyType ? ' · ' + escapeHtml(record.bodyType) : '') +
+      (record.drive ? ' · ' + escapeHtml(record.drive) : '') + '</small></td>';
+    for (let c = 0; c < STATIC_TABLE_COLUMNS.length; c += 1) {
+      html += '<td class="r">' + staticCellValue(record, STATIC_TABLE_COLUMNS[c]) + '</td>';
+    }
+    html += '<td class="r" style="white-space:nowrap">' +
+      '<button class="rowbtn" type="button" data-prov="' + escapeHtml(record.id) + '">Sources</button> ' +
+      '<button class="rowbtn" type="button" aria-pressed="false" data-compare="' + escapeHtml(record.id) + '">Compare</button>' +
+      '</td></tr>';
+  }
+  return html + '</tbody></table>';
+}
+
+/**
+ * Structured data — schema.org JSON-LD.
+ *
+ * Dataset describes the catalogue as a whole (what it is, who publishes it,
+ * how it's licensed); the ItemList/Car entries give answer engines
+ * machine-readable facts per vehicle without requiring JS execution to reach
+ * them. Battery/range/charge figures use `additionalProperty` because
+ * schema.org has no native EV-specific vocabulary for them.
+ */
+const AVAILABILITY_SCHEMA = {
+  current: 'https://schema.org/InStock',
+  runout: 'https://schema.org/LimitedAvailability',
+  announced: 'https://schema.org/PreOrder',
+};
+
+function vehicleAdditionalProperties(record) {
+  const specs = [
+    { key: 'batteryUsableKwh', name: 'Usable battery capacity' },
+    { key: 'rangeKm', name: 'Range', cycle: record.rangeCycle },
+    { key: 'dcChargeKw', name: 'DC charge rate' },
+    { key: 'powerKw', name: 'Power' },
+    { key: 'zeroTo100s', name: '0–100 km/h' },
+    { key: 'seats', name: 'Seats' },
+  ];
+  const props = [];
+  for (let i = 0; i < specs.length; i += 1) {
+    const spec = specs[i];
+    const value = record[spec.key];
+    if (schema.isBlank(value)) continue;
+    const field = schema.FIELD_BY_KEY.get(spec.key);
+    const entry = { '@type': 'PropertyValue', name: spec.name, value };
+    if (field && field.unit) entry.unitText = field.unit;
+    if (spec.cycle) entry.description = spec.cycle + ' test cycle';
+    props.push(entry);
+  }
+  return props;
+}
+
+function vehicleJsonLd(record) {
+  const node = {
+    '@type': 'Car',
+    name: engine.displayName(record),
+    brand: { '@type': 'Brand', name: record.brand },
+  };
+  if (record.model) node.model = record.model;
+  if (record.variant) node.vehicleConfiguration = record.variant;
+  if (record.bodyType) node.bodyType = record.bodyType;
+  if (record.drive) node.driveWheelConfiguration = record.drive;
+  if (!schema.isBlank(record.seats)) node.vehicleSeatingCapacity = record.seats;
+  node.fuelType = 'Electric';
+
+  const props = vehicleAdditionalProperties(record);
+  if (props.length) node.additionalProperty = props;
+
+  if (!schema.isBlank(record.priceAud)) {
+    node.offers = {
+      '@type': 'Offer',
+      price: record.priceAud,
+      priceCurrency: 'AUD',
+      availability: AVAILABILITY_SCHEMA[record.availability] || undefined,
+    };
+  }
+  return node;
+}
+
+function buildDatasetJsonLd(catalogue) {
+  const meta = catalogue.meta || {};
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: meta.name || 'Australian Battery-Electric Vehicle Directory',
+    description: 'Every battery-electric vehicle model and variant sold new in Australia, reconciled from manufacturer and press sources with per-field provenance.',
+    url: SITE_URL + '/',
+    license: SITE_URL + '/about.html',
+    creator: { '@type': 'Organization', name: 'ElectricVehicle.life', url: 'https://electricvehicle.life' },
+    dateModified: meta.builtAt || undefined,
+    keywords: ['electric vehicles', 'battery electric vehicle', 'BEV', 'Australia', 'EV specifications', 'EV price'],
+    variableMeasured: [
+      'Usable battery capacity (kWh)', 'Range (km)', 'DC charge rate (kW)',
+      'Power (kW)', '0-100 km/h (s)', 'Seats', 'Price (AUD)',
+    ],
+  };
+}
+
+function buildVehicleItemListJsonLd(records) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Battery-electric vehicles sold new in Australia',
+    numberOfItems: records.length,
+    itemListElement: records.map((record, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: vehicleJsonLd(record),
+    })),
+  };
+}
+
+function buildFaqJsonLd(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
+  };
+}
+
+function buildBreadcrumbJsonLd(crumbs) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((crumb, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: crumb.name,
+      item: crumb.url,
+    })),
+  };
+}
+
 function buildHtml(catalogue) {
   const meta = catalogue.meta || {};
   const { totals } = computeCoverageSections(catalogue);
@@ -972,17 +1165,41 @@ function buildHtml(catalogue) {
   // embedding tripled the page weight for no added information.
   const payload = compactPayload(catalogue, meta);
 
+  // Default-state result set (all records, name ascending) — identical to
+  // what the client renders on load. See renderStaticTable() above.
+  const staticIndex = engine.buildIndex(catalogue);
+  const staticResult = engine.query(staticIndex, { sort: 'name', direction: 'asc' });
+  const staticTableHtml = renderStaticTable(staticResult.records);
+  const staticCountHtml = '<b class="num">' + staticResult.total + '</b> of ' +
+    '<span class="num">' + staticIndex.size + '</span> variants';
+  const datasetJsonLd = embedJson(buildDatasetJsonLd(catalogue));
+  const itemListJsonLd = embedJson(buildVehicleItemListJsonLd(staticResult.records));
+  const description = `Every battery-electric vehicle model and variant sold new in Australia — ${totals.variants || 0} variants across ${totals.brandsWithVariants || 0} brands — with per-field provenance. Built ${escapeHtml(meta.builtAt || '')}.`;
+
   return `<!DOCTYPE html>
 <html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Australian Battery-Electric Vehicle Directory</title>
-<meta name="description" content="Every battery-electric vehicle model and variant sold new in Australia, with per-field provenance. Built ${escapeHtml(meta.builtAt || '')}.">
+<title>Australian Battery-Electric Vehicle Directory — Compare EVs by Price, Range &amp; Battery</title>
+<meta name="description" content="${description}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="${SITE_URL}/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2312131a'/%3E%3Cpath d='M13 3 5 14h5l-1 7 8-11h-5z' fill='%2300e08a'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Australian BEV Directory">
+<meta property="og:title" content="Australian Battery-Electric Vehicle Directory">
+<meta property="og:description" content="${description}">
+<meta property="og:url" content="${SITE_URL}/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Australian Battery-Electric Vehicle Directory">
+<meta name="twitter:description" content="${description}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>${STYLES}</style>
+<script type="application/ld+json">${datasetJsonLd}</script>
+<script type="application/ld+json">${itemListJsonLd}</script>
 </head>
 <body>
 
@@ -1023,7 +1240,7 @@ function buildHtml(catalogue) {
 
     <section>
       <div class="panel toolbar">
-        <div class="count" id="count" aria-live="polite"></div>
+        <div class="count" id="count" aria-live="polite">${staticCountHtml}</div>
         <div class="tools">
           <label class="sr" for="sort">Sort by</label>
           <select id="sort">
@@ -1040,7 +1257,8 @@ function buildHtml(catalogue) {
           <button class="rowbtn" type="button" data-copy-link title="Copy a link to this search">Copy link</button>
         </div>
       </div>
-      <div class="panel" id="results" style="overflow-x:auto"></div>
+      <noscript><div class="panel"><p>Search and filtering need JavaScript. The full list of vehicles below still works without it.</p></div></noscript>
+      <div class="panel" id="results" style="overflow-x:auto">${staticTableHtml}</div>
     </section>
   </div>
 </main>
@@ -1120,17 +1338,79 @@ function buildAboutHtml(catalogue) {
     manufacturerPct, pressPct, governmentPct,
   } = computeCoverageSections(catalogue);
 
+  const description = 'Why no open Australian BEV dataset exists, what "complete" means in this directory, ' +
+    'where the data is thin, and the rules every figure obeys — the methodology behind the Australian ' +
+    'Battery-Electric Vehicle Directory.';
+
+  const faqJsonLd = embedJson(buildFaqJsonLd([
+    {
+      question: 'Why isn’t there a single official Australian BEV dataset?',
+      answer: 'No open Australian dataset of battery-electric vehicle specifications exists. Green Vehicle ' +
+        'Guide is licence-gated and doesn’t cover battery capacity, DC charge rate or price; data.gov.au ' +
+        'has no vehicle-specification dataset; the Register of Approved Vehicles is a VIN-only lookup with no ' +
+        'bulk export; VFACTS is a paywalled industry subscription; and ev-database.org’s terms prohibit ' +
+        'automated collection. This directory’s primary source is therefore each manufacturer’s own ' +
+        'Australian website, with motoring press filling documented gaps.',
+    },
+    {
+      question: 'What does "complete" mean in this directory?',
+      answer: `Complete means every BEV variant offered new by a brand with an Australian distributor, at a ` +
+        `stated snapshot date — including runout and announced models. Model coverage is the goal; ` +
+        `per-field completeness is measured, not claimed, and currently stands at ${totals.coreCompleteness || 0}% ` +
+        `of core fields populated across ${totals.brandsChecked || 0} brands checked.`,
+    },
+    {
+      question: 'Where are the data gaps?',
+      answer: 'Coverage isn’t uniform across fields. Fields every manufacturer publishes — brand, model, ' +
+        'body type, availability — sit at 100%. Fields manufacturers most often omit from their own marketing ' +
+        'pages, like published energy consumption or gross battery capacity, are the ones most likely to be ' +
+        'recorded as unknown here rather than guessed at.',
+    },
+    {
+      question: 'What rules does the data obey?',
+      answer: 'A missing value is always recorded as unknown, never zero or an estimate carried over from an ' +
+        'overseas-spec version of the same model. Range figures from different test cycles — WLTP, NEDC, CLTC ' +
+        '— are never merged. Numeric filters exclude vehicles with unpublished figures rather than silently ' +
+        'including them, and sorting always puts unknown values last in both directions.',
+    },
+    {
+      question: 'What bugs has the validator caught?',
+      answer: 'Two real defects: a 12-seat Skywell van that failed a seat-count check because the plausibility ' +
+        'limit was written for passenger cars, not commercial vans; and a Denza charging-speed figure that ' +
+        'tripped a plausibility ceiling but turned out to be a genuine published figure, only reachable on a ' +
+        'China-market connector, now recorded with that caveat.',
+    },
+  ]));
+
+  const breadcrumbJsonLd = embedJson(buildBreadcrumbJsonLd([
+    { name: 'Australian BEV Directory', url: `${SITE_URL}/` },
+    { name: 'About', url: `${SITE_URL}/about.html` },
+  ]));
+
   return `<!DOCTYPE html>
 <html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — Australian Battery-Electric Vehicle Directory</title>
-<meta name="description" content="How completeness is measured and sourced for the Australian Battery-Electric Vehicle Directory.">
+<title>Methodology &amp; Data Sources — Australian BEV Directory</title>
+<meta name="description" content="${escapeHtml(description)}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="${SITE_URL}/about.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2312131a'/%3E%3Cpath d='M13 3 5 14h5l-1 7 8-11h-5z' fill='%2300e08a'/%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Australian BEV Directory">
+<meta property="og:title" content="Methodology &amp; Data Sources — Australian BEV Directory">
+<meta property="og:description" content="${escapeHtml(description)}">
+<meta property="og:url" content="${SITE_URL}/about.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Methodology &amp; Data Sources — Australian BEV Directory">
+<meta name="twitter:description" content="${escapeHtml(description)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>${ABOUT_STYLES}</style>
+<script type="application/ld+json">${faqJsonLd}</script>
+<script type="application/ld+json">${breadcrumbJsonLd}</script>
 </head>
 <body>
 
@@ -1154,9 +1434,9 @@ function buildAboutHtml(catalogue) {
 
   <hr class="rule">
 
-  <h2>Why there's no single official dataset</h2>
+  <h2>Why isn't there a single official Australian BEV dataset?</h2>
 
-  <p>The honest answer to "can this be complete, from open data, kept current?" is: two of those three, yes. An audit of the actual Australian sources found no open dataset of BEV models to build from.</p>
+  <p>No open Australian dataset of battery-electric vehicle specifications exists. An audit of every candidate source — government and commercial — found each one either licence-gated, nonexistent, VIN-only, paywalled, or off-limits under its own terms of use.</p>
 
   <dl class="deadends">
     <div class="deadend">
@@ -1195,9 +1475,9 @@ function buildAboutHtml(catalogue) {
   <ul>${licenceList}</ul>
   <p>Figures are restated facts attributed to each publisher. This directory is not affiliated with any manufacturer. Check it out on <a href="https://github.com/halans/au-bev-catalogue" target="_blank">GitHub</a>.</p>
 
-  <h2>What "complete" means here</h2>
+  <h2>What does "complete" mean in this directory?</h2>
 
-  <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
+  <p>Complete means every BEV variant offered new by a brand with an Australian distributor, at a stated snapshot date — including runout and announced models. Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
 
   <p>${totals.brandsChecked || 0} brands checked · ${totals.brandsWithNoBev || 0} with no BEV on sale · ${totals.conflicts || 0} source conflicts recorded</p>
 
@@ -1206,16 +1486,16 @@ function buildAboutHtml(catalogue) {
   <h3>Checked, no BEV on sale</h3>
   <ul>${emptyBrandList || '<li>None.</li>'}</ul>
 
-  <h2>Where the gaps are</h2>
+  <h2>Where are the data gaps?</h2>
 
   <p>Coverage isn't uniform across fields. Some specifications — brand, model, body type, availability — are published by every manufacturer and sit at 100%. Others, like published energy consumption or gross battery capacity, are the fields manufacturers most often leave out of their own marketing pages, so they're the ones most likely to show as unknown here rather than guessed at.</p>
 
   <h3>Least complete fields</h3>
   <ul>${worstFields || '<li>All fields fully populated.</li>'}</ul>
 
-  <h2>Rules the data obeys</h2>
+  <h2>What rules does the data obey?</h2>
 
-  <p>A few rules apply everywhere in this dataset, so a filtered list or a sorted column never quietly implies more than the sources actually say:</p>
+  <p>A missing value is always recorded as unknown, never zero or an estimate. A few rules apply everywhere in this dataset, so a filtered list or a sorted column never quietly implies more than the sources actually say:</p>
 
   <div class="rules">
     <h3>A missing value is always unknown</h3>
@@ -1231,9 +1511,9 @@ function buildAboutHtml(catalogue) {
     <p>In both directions, so "cheapest first" never presents an unpriced car as free.</p>
   </div>
 
-  <h2>What it caught in itself</h2>
+  <h2>What bugs has the validator caught?</h2>
 
-  <p>A validator with ESLint-style severities checks the data on every build. It has caught real defects, which says more than any feature description could:</p>
+  <p>Two real defects, caught by a validator with ESLint-style severities that checks the data on every build — which says more than any feature description could:</p>
 
   <div class="defect">
     <div class="n">1</div>
@@ -1290,6 +1570,52 @@ function writeAboutHtml(catalogue, target) {
   return dest;
 }
 
+/** robots.txt and sitemap.xml — generated, not hand-maintained, so the
+ *  sitemap's <lastmod> and page list can never drift from what actually
+ *  gets built. */
+function buildRobotsTxt() {
+  return `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+}
+
+function buildSitemapXml(catalogue) {
+  const lastmod = (catalogue.meta && catalogue.meta.builtAt) || '';
+  const pages = [
+    { loc: `${SITE_URL}/`, priority: '1.0' },
+    { loc: `${SITE_URL}/about.html`, priority: '0.6' },
+  ];
+  const urls = pages.map((p) => `  <url>
+    <loc>${p.loc}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <priority>${p.priority}</priority>
+  </url>`).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls}
+</urlset>
+`;
+}
+
+function writeRobotsTxt(target) {
+  const dest = target || path.join(ROOT, 'dist', 'robots.txt');
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.writeFileSync(dest, buildRobotsTxt(), 'utf8');
+  return dest;
+}
+
+function writeSitemapXml(catalogue, target) {
+  const dest = target || path.join(ROOT, 'dist', 'sitemap.xml');
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.writeFileSync(dest, buildSitemapXml(catalogue), 'utf8');
+  return dest;
+}
+
 module.exports = {
   buildHtml, writeHtml, buildAboutHtml, writeAboutHtml, moduleSource, embedJson, compactPayload,
+  buildRobotsTxt, writeRobotsTxt, buildSitemapXml, writeSitemapXml,
+  buildDatasetJsonLd, buildVehicleItemListJsonLd, buildFaqJsonLd, buildBreadcrumbJsonLd,
+  renderStaticTable, SITE_URL,
 };

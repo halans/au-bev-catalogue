@@ -15,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { build, writeCatalogue, loadCatalogue, CATALOGUE_PATH, ROOT } = require('../src/build');
-const { writeHtml, writeAboutHtml } = require('../src/build-html');
+const { writeHtml, writeAboutHtml, writeRobotsTxt, writeSitemapXml } = require('../src/build-html');
 const { validate, DEFAULT_RULES, SEVERITIES } = require('../src/validate');
 const { report } = require('../src/reporters');
 const { coverage } = require('../src/coverage');
@@ -222,12 +222,17 @@ function cmdBuild(args) {
   const aboutOut = path.join(path.dirname(htmlOut), 'about.html');
   writeAboutHtml(catalogue, aboutOut);
 
+  const robotsOut = writeRobotsTxt(path.join(path.dirname(htmlOut), 'robots.txt'));
+  const sitemapOut = writeSitemapXml(catalogue, path.join(path.dirname(htmlOut), 'sitemap.xml'));
+
   const totals = catalogue.coverage.totals;
   console.log('built catalogue: ' + path.relative(process.cwd(), catalogueOut));
   console.log('built html page: ' + path.relative(process.cwd(), htmlOut) +
     ' (' + Math.round(fs.statSync(htmlOut).size / 1024) + ' KB)');
   console.log('built about page: ' + path.relative(process.cwd(), aboutOut) +
     ' (' + Math.round(fs.statSync(aboutOut).size / 1024) + ' KB)');
+  console.log('built robots.txt: ' + path.relative(process.cwd(), robotsOut));
+  console.log('built sitemap.xml: ' + path.relative(process.cwd(), sitemapOut));
   console.log(
     totals.variants + ' variants · ' + totals.brandsWithVariants + ' brands with BEVs · ' +
     totals.brandsChecked + ' brands checked · core fields ' + totals.coreCompleteness + '% populated'

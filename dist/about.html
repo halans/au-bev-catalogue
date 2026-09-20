@@ -3,8 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About — Australian Battery-Electric Vehicle Directory</title>
-<meta name="description" content="How completeness is measured and sourced for the Australian Battery-Electric Vehicle Directory.">
+<title>Methodology &amp; Data Sources — Australian BEV Directory</title>
+<meta name="description" content="Why no open Australian BEV dataset exists, what &quot;complete&quot; means in this directory, where the data is thin, and the rules every figure obeys — the methodology behind the Australian Battery-Electric Vehicle Directory.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://directory.electricvehicle.life/about.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2312131a'/%3E%3Cpath d='M13 3 5 14h5l-1 7 8-11h-5z' fill='%2300e08a'/%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Australian BEV Directory">
+<meta property="og:title" content="Methodology &amp; Data Sources — Australian BEV Directory">
+<meta property="og:description" content="Why no open Australian BEV dataset exists, what &quot;complete&quot; means in this directory, where the data is thin, and the rules every figure obeys — the methodology behind the Australian Battery-Electric Vehicle Directory.">
+<meta property="og:url" content="https://directory.electricvehicle.life/about.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Methodology &amp; Data Sources — Australian BEV Directory">
+<meta name="twitter:description" content="Why no open Australian BEV dataset exists, what &quot;complete&quot; means in this directory, where the data is thin, and the rules every figure obeys — the methodology behind the Australian Battery-Electric Vehicle Directory.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -135,6 +146,8 @@ footer{
 }
 footer p{margin:0 0 .8em;max-width:60em}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why isn’t there a single official Australian BEV dataset?","acceptedAnswer":{"@type":"Answer","text":"No open Australian dataset of battery-electric vehicle specifications exists. Green Vehicle Guide is licence-gated and doesn’t cover battery capacity, DC charge rate or price; data.gov.au has no vehicle-specification dataset; the Register of Approved Vehicles is a VIN-only lookup with no bulk export; VFACTS is a paywalled industry subscription; and ev-database.org’s terms prohibit automated collection. This directory’s primary source is therefore each manufacturer’s own Australian website, with motoring press filling documented gaps."}},{"@type":"Question","name":"What does \"complete\" mean in this directory?","acceptedAnswer":{"@type":"Answer","text":"Complete means every BEV variant offered new by a brand with an Australian distributor, at a stated snapshot date — including runout and announced models. Model coverage is the goal; per-field completeness is measured, not claimed, and currently stands at 90% of core fields populated across 56 brands checked."}},{"@type":"Question","name":"Where are the data gaps?","acceptedAnswer":{"@type":"Answer","text":"Coverage isn’t uniform across fields. Fields every manufacturer publishes — brand, model, body type, availability — sit at 100%. Fields manufacturers most often omit from their own marketing pages, like published energy consumption or gross battery capacity, are the ones most likely to be recorded as unknown here rather than guessed at."}},{"@type":"Question","name":"What rules does the data obey?","acceptedAnswer":{"@type":"Answer","text":"A missing value is always recorded as unknown, never zero or an estimate carried over from an overseas-spec version of the same model. Range figures from different test cycles — WLTP, NEDC, CLTC — are never merged. Numeric filters exclude vehicles with unpublished figures rather than silently including them, and sorting always puts unknown values last in both directions."}},{"@type":"Question","name":"What bugs has the validator caught?","acceptedAnswer":{"@type":"Answer","text":"Two real defects: a 12-seat Skywell van that failed a seat-count check because the plausibility limit was written for passenger cars, not commercial vans; and a Denza charging-speed figure that tripped a plausibility ceiling but turned out to be a genuine published figure, only reachable on a China-market connector, now recorded with that caveat."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Australian BEV Directory","item":"https://directory.electricvehicle.life/"},{"@type":"ListItem","position":2,"name":"About","item":"https://directory.electricvehicle.life/about.html"}]}</script>
 </head>
 <body>
 
@@ -158,9 +171,9 @@ footer p{margin:0 0 .8em;max-width:60em}
 
   <hr class="rule">
 
-  <h2>Why there's no single official dataset</h2>
+  <h2>Why isn't there a single official Australian BEV dataset?</h2>
 
-  <p>The honest answer to "can this be complete, from open data, kept current?" is: two of those three, yes. An audit of the actual Australian sources found no open dataset of BEV models to build from.</p>
+  <p>No open Australian dataset of battery-electric vehicle specifications exists. An audit of every candidate source — government and commercial — found each one either licence-gated, nonexistent, VIN-only, paywalled, or off-limits under its own terms of use.</p>
 
   <dl class="deadends">
     <div class="deadend">
@@ -199,9 +212,9 @@ footer p{margin:0 0 .8em;max-width:60em}
   <ul><li><b>green-vehicle-guide</b> — Commonwealth of Australia, third-party licence agreement required</li><li><b>manufacturer</b> — proprietary-factual (specification facts restated with attribution)</li><li><b>press</b> — proprietary-factual (specification facts restated with attribution)</li><li><b>wikidata</b> — CC0-1.0</li><li><b>overseas-regulator</b> — Open Government Licence / EC reuse notice</li></ul>
   <p>Figures are restated facts attributed to each publisher. This directory is not affiliated with any manufacturer. Check it out on <a href="https://github.com/halans/au-bev-catalogue" target="_blank">GitHub</a>.</p>
 
-  <h2>What "complete" means here</h2>
+  <h2>What does "complete" mean in this directory?</h2>
 
-  <p>Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
+  <p>Complete means every BEV variant offered new by a brand with an Australian distributor, at a stated snapshot date — including runout and announced models. Every brand with an Australian distributor was checked, including those that turned out to sell no BEV. Model coverage is the goal; per-field completeness is measured, not claimed.</p>
 
   <p>56 brands checked · 6 with no BEV on sale · 5 source conflicts recorded</p>
 
@@ -210,16 +223,16 @@ footer p{margin:0 0 .8em;max-width:60em}
   <h3>Checked, no BEV on sale</h3>
   <ul><li><b>Citroen</b> — WITHDRAWN FROM MARKET: Citroen Australia (importer Inchcape) formally ceased all new-vehicle sales in Australia effective 1 November 2024, ending a 101+ year presence, after sales collapsed to just 87 units in H1 2024 (down 35% year-on-year, versus a 2007 peak of 3803 annual deliveries). Existing orders placed before 1 November 2024 were fulfilled, and Citroen's ~35 dealer network transitioned to a service-and-maintenance-only operation; the importer refocused on its sibling brand Peugeot. At the time of withdrawal Citroen's Australian range was petrol/diesel only (C3, C4, C5 Aircross, C5 X) -- no BEV was part of the final local lineup. Search results also surfaced ccarprice.com listings claiming current Australian availability and pricing for an e-C4 X, e-Berlingo and e-SpaceTourer; ccarprice.com is a low-reliability, seemingly auto-generated aggregator that explicitly disclaims guaranteed accuracy, and its claims directly conflict with the official Citroen Australia market-exit announcement and multiple corroborating reputable press sources (carsales, WhichCar, Drive, CarExpert), so those listings are treated as incorrect/not credible and excluded. As of September 2026, Citroen sells no new vehicles of any powertrain in Australia, BEV or otherwise.</li><li><b>Foton</b> — Foton's current Australian passenger/light-commercial lineup (Tunland V7 and Tunland V9 utes, priced approx. $39,990-$49,990) is confirmed across multiple 2025/2026 sources to be diesel or diesel mild-hybrid only, with no battery-electric variant offered new in Australia. No evidence was found this session of an on-sale Foton or Foton-affiliated (e.g. 'Asiastar') BEV in the Australian market; a prior research pass had flagged a possible 'Tunland G7 EV' but this could not be corroborated this session against any dealer, press, or manufacturer source and is treated as unconfirmed/likely incorrect. Foton does sell electric light trucks/buses in some overseas markets, but none were verified as available for retail new-vehicle purchase in Australia within the 4.5-tonne GVM passenger/LCV scope of this dataset.</li><li><b>Isuzu</b> — Isuzu does not currently sell a battery-electric vehicle in Australia as of September 2026. The Isuzu D-Max EV (battery-electric dual-cab ute) has been confirmed by Isuzu as planned for the Australian market, and has appeared in various global/regional launches, but multiple 2025 reports indicate no confirmed Australian on-sale date, with local timing reportedly linked to New Vehicle Efficiency Standard (NVES) policy settings and light commercial vehicle CO2 targets. No Isuzu BEV is currently orderable new in Australia.</li><li><b>Jaguar</b> — REAL DOUBT / LIKELY WITHDRAWN: Jaguar's I-Pace was, as of a November 2024 review, sellable in Australia on remaining stock only ('sufficient stock... to carry us through to 2025'), following JLR's July 2024 global decision to axe the I-Pace and E-Pace as 'zero-profitability products'. CarExpert's own 2026 I-Pace pricing page (published 20 Aug 2026) shows 'Price not available' and zero year-to-date sales for 2026, and the official jaguar.com/en-au I-Pace specifications page itself returned a broken/unavailable content block at fetch time. Given no confirmed current price, zero 2026 sales, and a global discontinuation decision from mid-2024, the I-Pace is judged to be effectively no longer orderable new in Australia as of September 2026 and is therefore NOT listed as a current variant (an empty variants array is used) rather than assumed still on sale. Note also: a March 2026 CarExpert report described a recall affecting ~270 older (2017-2021 build) I-Pace units for a battery overheating/fire risk, capping charging at 90% pending a permanent fix -- this affects existing fleet vehicles, not new-vehicle orderability, and is unrelated to the withdrawal finding above. No other Jaguar BEV (e.g. a Jaguar 'Type 00' successor GT) has been confirmed as launched or orderable in Australia.</li><li><b>Mahindra</b> — Mahindra Australia sells ZERO battery-electric vehicles as of September 2026. The current retail lineup is exclusively internal-combustion: Scorpio (diesel), XUV3XO (petrol), XUV700 (petrol/diesel), plus an upcoming diesel-only Lifestyler dual-cab ute - none of these are electrified. AU press (carsales.com.au, 2026-09-02; Drive.com.au, 2026-09-02; GoAuto, 2026-08-18) reports Mahindra is evaluating a trio of EVs (XEV 9e, XEV 9S, BE 6) for possible future Australian launch - a single XEV 9e demonstrator has been imported on temporary plates for internal dealer display, and Australian trademark filings exist for 'XEV 9E' and 'BE 6' - but none has a confirmed launch date, Australian specification, or pricing. This does not meet the bar for 'announced' status (which requires a confirmed AU launch), so no variants are listed. Revisit this brand as these EVs progress toward a firm Australian launch commitment.</li><li><b>Ram</b> — Ram does not currently sell any battery-electric vehicle in Australia as of September 2026. The Ram 1500 REV, a planned full-BEV version of the Ram 1500, was cancelled by Stellantis/RAM globally in September 2025 before reaching an Australian right-hand-drive conversion or launch. The Ram Ramcharger (an extended-range electric vehicle / EREV with a petrol generator providing extended range) is out of scope for this dataset because it is not a pure battery-electric vehicle. No other Ram BEV model is confirmed for the Australian market.</li></ul>
 
-  <h2>Where the gaps are</h2>
+  <h2>Where are the data gaps?</h2>
 
   <p>Coverage isn't uniform across fields. Some specifications — brand, model, body type, availability — are published by every manufacturer and sit at 100%. Others, like published energy consumption or gross battery capacity, are the fields manufacturers most often leave out of their own marketing pages, so they're the ones most likely to show as unknown here rather than guessed at.</p>
 
   <h3>Least complete fields</h3>
   <ul><li>Consumption — <span class="num">22.9%</span> populated</li><li>Battery (gross) — <span class="num">32.1%</span> populated</li><li>V2L — <span class="num">33.2%</span> populated</li><li>Towing (braked) — <span class="num">40.4%</span> populated</li><li>0–100 km/h — <span class="num">57.5%</span> populated</li><li>Battery (usable) — <span class="num">69.6%</span> populated</li><li>DC charge — <span class="num">71.8%</span> populated</li><li>AC charge — <span class="num">72.5%</span> populated</li></ul>
 
-  <h2>Rules the data obeys</h2>
+  <h2>What rules does the data obey?</h2>
 
-  <p>A few rules apply everywhere in this dataset, so a filtered list or a sorted column never quietly implies more than the sources actually say:</p>
+  <p>A missing value is always recorded as unknown, never zero or an estimate. A few rules apply everywhere in this dataset, so a filtered list or a sorted column never quietly implies more than the sources actually say:</p>
 
   <div class="rules">
     <h3>A missing value is always unknown</h3>
@@ -235,9 +248,9 @@ footer p{margin:0 0 .8em;max-width:60em}
     <p>In both directions, so "cheapest first" never presents an unpriced car as free.</p>
   </div>
 
-  <h2>What it caught in itself</h2>
+  <h2>What bugs has the validator caught?</h2>
 
-  <p>A validator with ESLint-style severities checks the data on every build. It has caught real defects, which says more than any feature description could:</p>
+  <p>Two real defects, caught by a validator with ESLint-style severities that checks the data on every build — which says more than any feature description could:</p>
 
   <div class="defect">
     <div class="n">1</div>
