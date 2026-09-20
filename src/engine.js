@@ -101,9 +101,12 @@ function facets(index) {
       const label = typeof value === 'boolean' ? (value ? 'yes' : 'no') : String(value);
       counts.set(label, (counts.get(label) || 0) + 1);
     }
-    out[key] = Array.from(counts.entries())
-      .map(([value, count]) => ({ value, count }))
-      .sort((a, b) => (b.count - a.count) || (a.value < b.value ? -1 : 1));
+    const rows = Array.from(counts.entries()).map(([value, count]) => ({ value, count }));
+    // Brand has 50+ distinct values, so alphabetical lets you find one by name;
+    // every other facet has few enough values that "most common first" is more useful.
+    out[key] = key === 'brand'
+      ? rows.sort((a, b) => (a.value.toLowerCase() < b.value.toLowerCase() ? -1 : 1))
+      : rows.sort((a, b) => (b.count - a.count) || (a.value < b.value ? -1 : 1));
   }
   return out;
 }

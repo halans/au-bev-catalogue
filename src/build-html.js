@@ -542,7 +542,7 @@ function renderCards(records){
     var record = records[i];
     var picked = state.compare.indexOf(record.id) !== -1;
     html += '<article class="panel card"><h3>' + esc(record.model || '') + ' ' + esc(record.variant || '') +
-      availabilityFlag(record) + '</h3><div class="brandline">' + esc(record.brand || '') +
+      availabilityFlag(record) + '</h3><div class="brandline"><b>' + esc(record.brand || '') + '</b>' +
       (record.bodyType ? ' · ' + esc(record.bodyType) : '') + '</div><dl>';
     for (var c=0;c<TABLE_COLUMNS.length;c++){
       var key = TABLE_COLUMNS[c];
@@ -1376,6 +1376,22 @@ function buildAboutHtml(catalogue) {
         'including them, and sorting always puts unknown values last in both directions.',
     },
     {
+      question: 'What does "range cycle" mean?',
+      answer: 'Range cycle is the laboratory test standard behind a claimed range figure — WLTP (the standard ' +
+        'used across Europe, the UK and increasingly Australia), NEDC (an older, more lenient European cycle ' +
+        'that tends to overstate range compared to WLTP for the same car), CLTC (China’s domestic cycle, ' +
+        'also more generous than WLTP), WLTC and ADR 81/02 (Australia’s own consumption test standard). ' +
+        'The same car tested on two different cycles produces two different numbers, which is why this ' +
+        'directory always shows the cycle alongside the figure and never merges them.',
+    },
+    {
+      question: 'What does "V2L" stand for?',
+      answer: 'V2L stands for "vehicle-to-load": the ability to draw 240V AC power back out of the car’s ' +
+        'battery to run external gear — tools, camping equipment, a fridge in a blackout — through an ' +
+        'adaptor at the charge port or a dedicated outlet. It is recorded as a plain yes/no because plenty ' +
+        'of manufacturers don’t offer it at all, and it is often left off official spec sheets entirely.',
+    },
+    {
       question: 'What bugs has the validator caught?',
       answer: 'Two real defects: a 12-seat Skywell van that failed a seat-count check because the plausibility ' +
         'limit was written for passenger cars, not commercial vans; and a Denza charging-speed figure that ' +
@@ -1512,6 +1528,14 @@ function buildAboutHtml(catalogue) {
     <h3>Sorting puts unknowns last</h3>
     <p>In both directions, so "cheapest first" never presents an unpriced car as free.</p>
   </div>
+
+  <h2>What does "range cycle" mean?</h2>
+
+  <p>The laboratory test standard behind a claimed range figure. <strong><a href="index.html#rangeCycle=WLTP">WLTP</a></strong> (Worldwide Harmonised Light Vehicle Test Procedure) is the standard used across Europe, the UK and increasingly Australia, and is the closest thing to a common yardstick in this dataset. <strong><a href="index.html#rangeCycle=NEDC">NEDC</a></strong> is an older, more lenient European cycle that tends to overstate range compared to WLTP for the same car. <strong><a href="index.html#rangeCycle=CLTC">CLTC</a></strong> is China's domestic cycle, also more generous than WLTP. <strong><a href="index.html#rangeCycle=WLTC">WLTC</a></strong> and <strong><a href="index.html#rangeCycle=ADR%2081%2F02">ADR 81/02</a></strong> (Australia's own consumption test standard) round out the cycles seen here. Because the same car tested on two different cycles produces two different numbers, this directory always shows the cycle next to the figure and never merges them — see the rule above. Each name above links to every current vehicle tested on that cycle.</p>
+
+  <h2>What does "V2L" stand for?</h2>
+
+  <p>Short for <strong>vehicle-to-load</strong>: the ability to draw 240V AC power back out of the car's battery to run external gear — power tools, camping equipment, another EV, even a fridge during a blackout — usually through an adaptor at the charge port or a dedicated household-style outlet built into the car. It's recorded here as a plain yes/no because support varies widely between manufacturers and is frequently left off official spec sheets, so this directory has to confirm it from reviews and press coverage where a manufacturer's own page is silent. See <a href="index.html#v2l=yes">every vehicle with V2L</a> in the directory.</p>
 
   <h2>What bugs has the validator caught?</h2>
 
