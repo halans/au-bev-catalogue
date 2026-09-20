@@ -4,11 +4,12 @@
   "publisher": "Ford Australia",
   "sourceUrls": [
     "https://www.ford.com.au/showroom/trucks-and-vans/transit/electric/",
-    "https://www.ford.com.au/future-vehicle/next-gen-e-transit-custom/"
+    "https://www.ford.com.au/future-vehicle/next-gen-e-transit-custom/",
+    "https://thedriven.io/2025/11/07/fords-e-transit-custom-finally-hits-australian-shores-but-no-v2l-on-board/"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "Ford Australia currently sells BEVs only in its van/LCV range (E-Transit and E-Transit Custom). Ford has no BEV passenger car or SUV on sale in Australia in Sept 2026 (Mustang Mach-E was discontinued locally; no replacement confirmed). IMPORTANT CAVEAT: ford.com.au's 'future-vehicle/next-gen-e-transit-custom' page lists a Trend variant with a 45kWh usable battery, 160kW motor and 340km WLTP range, which conflicts with the currently-orderable E-Transit Custom Trend/Sport specs (64kWh usable battery, 301-307km WLTP) confirmed via Ford's own spec-sheet PDF and independent fleet press (Nov 2025). Because the ford.com.au URL is explicitly namespaced 'future-vehicle', the 45kWh/340km spec is treated here as an ANNOUNCED/NOT-YET-ON-SALE next-generation update rather than the current on-sale spec, and is excluded from variants below pending confirmation of on-sale date. Pricing for E-Transit Custom variants is sourced from a fleet trade publication (Nov 2025) rather than Ford's own price list, which was not directly accessible; flagged low-confidence. E-Transit (full-size van) pricing shows some inconsistency across secondary sources ($89,990 single figure vs a $89,990-$104,990 range for higher trims); only the base/entry configuration is captured with confidence.",
+  "notes": "Ford Australia currently sells BEVs only in its van/LCV range (E-Transit and E-Transit Custom). Ford has no BEV passenger car or SUV on sale in Australia in Sept 2026 (Mustang Mach-E was discontinued locally; no replacement confirmed). IMPORTANT CAVEAT: ford.com.au's 'future-vehicle/next-gen-e-transit-custom' page lists a Trend variant with a 45kWh usable battery, 160kW motor and 340km WLTP range, which conflicts with the currently-orderable E-Transit Custom Trend/Sport specs (64kWh usable battery, 301-307km WLTP) confirmed via Ford's own spec-sheet PDF and independent fleet press (Nov 2025). Because the ford.com.au URL is explicitly namespaced 'future-vehicle', the 45kWh/340km spec is treated here as an ANNOUNCED/NOT-YET-ON-SALE next-generation update rather than the current on-sale spec, and is excluded from variants below pending confirmation of on-sale date. Pricing for E-Transit Custom variants is sourced from a fleet trade publication (Nov 2025) rather than Ford's own price list, which was not directly accessible; flagged low-confidence. E-Transit (full-size van) pricing shows some inconsistency across secondary sources ($89,990 single figure vs a $89,990-$104,990 range for higher trims); only the base/entry configuration is captured with confidence. V2L CORRECTION (Sept 2026): both E-Transit Custom variants were previously reconciled with inconsistent v2l values (Trend null, Sport true) sourced from a generic aggregator (evdbau.com). A dedicated Australian first-drive review (The Driven, Nov 2025) explicitly states Ford chose not to fit V2L to the E-Transit Custom in Australia, across both trims; both variants are now set to v2l:false accordingly. The full-size E-Transit (420L)'s V2L status could not be confirmed either way in this pass and is left null rather than guessed.",
   "variants": [
     {
       "model": "E-Transit Custom",
@@ -28,13 +29,14 @@
       "zeroTo100s": null,
       "seats": 3,
       "towingBrakedKg": 2300,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 79990,
       "priceBasis": "Approx. figure from fleet trade press (Nov 2025), stated as 'plus on-roads'; not independently confirmed against Ford's current official price list",
       "availability": "current",
       "fieldSources": {
         "priceAud": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/",
-        "dcChargeKw": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/"
+        "dcChargeKw": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/",
+        "v2l": "https://thedriven.io/2025/11/07/fords-e-transit-custom-finally-hits-australian-shores-but-no-v2l-on-board/"
       },
       "lowConfidenceFields": ["priceAud", "dcChargeKw", "seats"]
     },
@@ -56,16 +58,16 @@
       "zeroTo100s": null,
       "seats": 3,
       "towingBrakedKg": 2300,
-      "v2l": true,
+      "v2l": false,
       "priceAud": 83990,
       "priceBasis": "Approx. figure from fleet trade press (Nov 2025), stated as 'plus on-roads'; not independently confirmed against Ford's current official price list",
       "availability": "current",
       "fieldSources": {
         "priceAud": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/",
         "dcChargeKw": "https://fleetevnews.com.au/what-fleet-managers-need-to-know-about-fords-new-electrified-transit-custom-range/",
-        "v2l": "https://evdbau.com/v/ford-e-transit"
+        "v2l": "https://thedriven.io/2025/11/07/fords-e-transit-custom-finally-hits-australian-shores-but-no-v2l-on-board/"
       },
-      "lowConfidenceFields": ["priceAud", "dcChargeKw", "seats", "v2l"]
+      "lowConfidenceFields": ["priceAud", "dcChargeKw", "seats"]
     },
     {
       "model": "E-Transit",

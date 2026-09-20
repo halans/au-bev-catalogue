@@ -1,63 +1,107 @@
 {
-  "brand": "Farizon",
-  "brandSlug": "farizon",
-  "publisher": "Farizon Auto Australia (Geely Group)",
-  "sourceUrls": [
-    "https://www.farizonauto.au/"
-  ],
-  "fetchedAt": "2026-09-13",
-  "licence": "proprietary-factual",
-  "notes": "Farizon Auto (a Geely-group commercial vehicle brand) has launched electric vans in Australia: the SV van range (multiple body/roof/wheelbase configurations) and the V7E van. No confirmed AUD pricing could be found for the SV range from any source, so priceAud is null for those variants. The V7E has a reported drive-away price range of approx. $49,990-$53,990 depending on configuration; the lower figure is used as the base/entry price with the range noted in priceBasis. The Farizon H9E was identified in sourcing as a 'Light Truck' model; its GVM could not be confirmed against the 4.5-tonne inclusion threshold used in this dataset, so it has been excluded pending verification rather than guessed into or out of scope.",
-  "variants": [
-    {
-      "model": "SV",
-      "variant": "Van (configuration unspecified — multiple body/roof/wheelbase variants exist)",
-      "bodyType": "van",
-      "segment": "van",
-      "batteryUsableKwh": null,
-      "batteryGrossKwh": null,
-      "rangeKm": null,
-      "rangeCycle": null,
-      "consumptionWhPerKm": null,
-      "acChargeKw": null,
-      "dcChargeKw": null,
-      "drive": "FWD",
-      "powerKw": null,
-      "torqueNm": null,
-      "zeroTo100s": null,
-      "seats": null,
-      "towingBrakedKg": null,
-      "v2l": null,
-      "priceAud": null,
-      "priceBasis": "No AUD pricing found from any source for the SV range as of Sept 2026.",
-      "availability": "current",
-      "fieldSources": {},
-      "lowConfidenceFields": ["priceAud", "batteryUsableKwh", "rangeKm", "powerKw", "torqueNm", "drive"]
-    },
-    {
-      "model": "V7E",
-      "variant": "Van (base configuration)",
-      "bodyType": "van",
-      "segment": "van",
-      "batteryUsableKwh": null,
-      "batteryGrossKwh": null,
-      "rangeKm": null,
-      "rangeCycle": null,
-      "consumptionWhPerKm": null,
-      "acChargeKw": null,
-      "dcChargeKw": null,
-      "drive": "FWD",
-      "powerKw": null,
-      "torqueNm": null,
-      "zeroTo100s": null,
-      "seats": null,
-      "towingBrakedKg": null,
-      "v2l": null,
-      "priceAud": 49990,
-      "priceBasis": "Drive-away pricing reported to range approx. $49,990-$53,990 depending on configuration; base/entry figure used here",
-      "availability": "current",
-      "fieldSources": {},
-      "lowConfidenceFields": ["priceAud", "batteryUsableKwh", "rangeKm", "powerKw", "torqueNm", "drive"]
-    }
-  ]
+    "brand": "Farizon",
+    "brandSlug": "farizon",
+    "publisher": "Farizon Auto Australia (Geely Group)",
+    "sourceUrls": [
+        "https://www.farizonauto.au/",
+        "https://www.carsguide.com.au/ev/farizon-supervan-swb-99408",
+        "https://www.chasingcars.com.au/news/new-car-prices/australias-cheapest-electric-van-kia-pv5-2026-arrives-to-undercut-volkswagen-id-buzz-farizon-supervan/",
+        "https://www.trucksales.com.au/editorial/details/farizon-v7e-van-priced-for-australia-151762/",
+        "https://www.carsales.com.au/editorial/details/2026-farizon-v7e-electric-commercial-van-coming-to-australia-151616/",
+        "https://www.bartonswynnumfarizon.com.au/blog/is-the-farizon-v7e-right-for-your-brisbane-business"
+    ],
+    "fetchedAt": "2026-09-20",
+    "licence": "proprietary-factual",
+    "notes": "Farizon Auto (a Geely-group commercial vehicle brand) has launched electric vans in Australia: the SV 'SuperVan' range (SWB/LWB, low/high roof configurations) and the V7E van (Standard/Extended Range). The Farizon H9E was identified in sourcing as a 'Light Truck' model; its GVM could not be confirmed against the 4.5-tonne inclusion threshold used in this dataset, so it has been excluded pending verification rather than guessed into or out of scope. Sept 2026 pass: previously both SV and V7E were recorded with almost all fields null pending confirmation; this pass fills in SV SWB Low Roof and both V7E trims from converging AU press coverage (CarsGuide's Australian first-drive review for SV; carsales.com.au, trucksales.com.au and a Farizon dealer blog for V7E, all reporting the same 50kWh/66kWh battery, 110kW/230Nm and $49,990/$53,990 drive-away figures). V2L is confirmed standard on both models: CarsGuide's SV review states it supports vehicle-to-load 'through Australian domestic household plugs at up to 3.3kW of continuous power' (though the reviewer noted it did not work on their test unit); V7E's V2L is confirmed as a standard feature across three independent sources (trucksales.com.au, carsales.com.au, and a Farizon dealer blog) though none states a wattage figure for it. Farizon's own SV LWB and LWB High Roof configurations are known to exist (per press coverage) but no Australian pricing/specs could be confirmed for them in this pass, so they remain excluded rather than guessed.",
+    "variants": [
+        {
+            "model": "SV",
+            "variant": "SWB Low Roof",
+            "bodyType": "van",
+            "segment": "van",
+            "batteryUsableKwh": 83,
+            "batteryGrossKwh": null,
+            "rangeKm": 376,
+            "rangeCycle": "WLTP",
+            "consumptionWhPerKm": null,
+            "acChargeKw": 11,
+            "dcChargeKw": 140,
+            "drive": "FWD",
+            "powerKw": 170,
+            "torqueNm": 336,
+            "zeroTo100s": null,
+            "seats": 3,
+            "towingBrakedKg": null,
+            "v2l": true,
+            "priceAud": 71490,
+            "priceBasis": "Before on-road costs (private-buyer pricing); fleet pricing reported to differ",
+            "availability": "current",
+            "fieldSources": {
+                "*": "https://www.carsguide.com.au/ev/farizon-supervan-swb-99408"
+            },
+            "lowConfidenceFields": ["towingBrakedKg"]
+        },
+        {
+            "model": "V7E",
+            "variant": "Standard Range",
+            "bodyType": "van",
+            "segment": "van",
+            "batteryUsableKwh": 50,
+            "batteryGrossKwh": null,
+            "rangeKm": 240,
+            "rangeCycle": "WLTP",
+            "consumptionWhPerKm": null,
+            "acChargeKw": null,
+            "dcChargeKw": null,
+            "drive": "FWD",
+            "powerKw": 110,
+            "torqueNm": 230,
+            "zeroTo100s": null,
+            "seats": null,
+            "towingBrakedKg": null,
+            "v2l": true,
+            "priceAud": 49990,
+            "priceBasis": "Drive-away",
+            "availability": "current",
+            "fieldSources": {
+                "*": [
+                    "https://www.trucksales.com.au/editorial/details/farizon-v7e-van-priced-for-australia-151762/",
+                    "https://www.carsales.com.au/editorial/details/2026-farizon-v7e-electric-commercial-van-coming-to-australia-151616/",
+                    "https://www.bartonswynnumfarizon.com.au/blog/is-the-farizon-v7e-right-for-your-brisbane-business"
+                ]
+            },
+            "lowConfidenceFields": ["acChargeKw", "dcChargeKw", "seats", "drive"]
+        },
+        {
+            "model": "V7E",
+            "variant": "Extended Range",
+            "bodyType": "van",
+            "segment": "van",
+            "batteryUsableKwh": 66,
+            "batteryGrossKwh": null,
+            "rangeKm": 329,
+            "rangeCycle": "WLTP",
+            "consumptionWhPerKm": null,
+            "acChargeKw": null,
+            "dcChargeKw": null,
+            "drive": "FWD",
+            "powerKw": 110,
+            "torqueNm": 230,
+            "zeroTo100s": null,
+            "seats": null,
+            "towingBrakedKg": null,
+            "v2l": true,
+            "priceAud": 53990,
+            "priceBasis": "Drive-away",
+            "availability": "current",
+            "fieldSources": {
+                "*": [
+                    "https://www.trucksales.com.au/editorial/details/farizon-v7e-van-priced-for-australia-151762/",
+                    "https://www.carsales.com.au/editorial/details/2026-farizon-v7e-electric-commercial-van-coming-to-australia-151616/",
+                    "https://www.bartonswynnumfarizon.com.au/blog/is-the-farizon-v7e-right-for-your-brisbane-business"
+                ]
+            },
+            "lowConfidenceFields": ["acChargeKw", "dcChargeKw", "seats", "drive"]
+        }
+    ]
 }

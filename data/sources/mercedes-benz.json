@@ -12,9 +12,9 @@
     "https://www.mercedes-benz.com.au/passengercars/buy/new-car/product.html/N465_0590168665_AU_2072188",
     "https://www.mercedes-benz.com.au/passengercars/buy/new-car/product.html/X296_0390147361_AU_1612053"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "Mercedes-Benz Australia's own model pages rarely publish full technical-data tables or pricing in a scrapeable form (most figures are rendered via JS widgets), so most numeric specs below had to be corroborated via AU motoring press (CarExpert, carsales, Chasing Cars, WhichCar, carsorted.ai, evdrives.com.au, electriccaradviceaustralia.com.au, cartell.tv). Secondary sources frequently disagree with each other on price and range for the same variant (e.g. EQE300 quoted at both $135,200 and $149,900 before on-roads; EQE trims all showing an identical 571km WLTP figure on carsorted.ai, which looks like a templating bug). Where sources conflicted I selected the figure from the source that appeared most internally consistent and flagged the field as low-confidence; unresolved conflicts are called out per-variant below. EQC is confirmed discontinued in Australia (orders closed 2023, no longer listed as a current model family by CarExpert as of 2026) and is excluded. The updated EQS sedan (800V architecture, up to 925km WLTP) is confirmed for Australian launch in Q4 2026 (Oct-Dec) but pricing/final AU spec was still unconfirmed as of the April 2026 CarExpert report, so those four variants are marked availability=announced with null pricing; the current EQS450 4MATIC and AMG EQS53 4MATIC+ sedans remain the orderable current-generation variants until that changeover. For the EQS SUV range, sources disagree on whether the standard EQS450/EQS580 4MATIC SUV grades are still sold in Australia alongside the Maybach models as of 2026 (cartell.tv says yes, three AWD grades plus Maybach; a 2026 CarExpert model page states only 2 variants remain, both Maybach) - both are represented below with the standard grades flagged low-confidence; verify directly with Mercedes-Benz Australia before relying on this for the standard EQS SUV grades. The Mercedes-AMG EQE SUV 53 4MATIC+ is confirmed to exist on the AU site but no numeric specs or pricing could be verified, so most fields are null. Full-electric AMG models (EQE53, EQS53, Maybach EQS680) are genuine BEVs and are included; mild-hybrid AMG/EQ Boost ICE models are excluded per task scope.",
+  "notes": "V2L (Sept 2026 pass): the EQV 300's V2L status could not be confirmed with a single quotable AU review (CHOICE gates its spec table behind membership, and several review sites returned no mention of the feature at all), but multiple independent searches converge on 'no V2L/V2G/V2H' for this model, consistent with it predating Mercedes' EQ V2L rollout on newer platforms; v2l set to false and flagged low-confidence pending a stronger citation. Mercedes-Benz Australia's own model pages rarely publish full technical-data tables or pricing in a scrapeable form (most figures are rendered via JS widgets), so most numeric specs below had to be corroborated via AU motoring press (CarExpert, carsales, Chasing Cars, WhichCar, carsorted.ai, evdrives.com.au, electriccaradviceaustralia.com.au, cartell.tv). Secondary sources frequently disagree with each other on price and range for the same variant (e.g. EQE300 quoted at both $135,200 and $149,900 before on-roads; EQE trims all showing an identical 571km WLTP figure on carsorted.ai, which looks like a templating bug). Where sources conflicted I selected the figure from the source that appeared most internally consistent and flagged the field as low-confidence; unresolved conflicts are called out per-variant below. EQC is confirmed discontinued in Australia (orders closed 2023, no longer listed as a current model family by CarExpert as of 2026) and is excluded. The updated EQS sedan (800V architecture, up to 925km WLTP) is confirmed for Australian launch in Q4 2026 (Oct-Dec) but pricing/final AU spec was still unconfirmed as of the April 2026 CarExpert report, so those four variants are marked availability=announced with null pricing; the current EQS450 4MATIC and AMG EQS53 4MATIC+ sedans remain the orderable current-generation variants until that changeover. For the EQS SUV range, sources disagree on whether the standard EQS450/EQS580 4MATIC SUV grades are still sold in Australia alongside the Maybach models as of 2026 (cartell.tv says yes, three AWD grades plus Maybach; a 2026 CarExpert model page states only 2 variants remain, both Maybach) - both are represented below with the standard grades flagged low-confidence; verify directly with Mercedes-Benz Australia before relying on this for the standard EQS SUV grades. The Mercedes-AMG EQE SUV 53 4MATIC+ is confirmed to exist on the AU site but no numeric specs or pricing could be verified, so most fields are null. Full-electric AMG models (EQE53, EQS53, Maybach EQS680) are genuine BEVs and are included; mild-hybrid AMG/EQ Boost ICE models are excluded per task scope.",
   "variants": [
     {
       "model": "EQA",
@@ -687,7 +687,7 @@
       "zeroTo100s": 12.1,
       "seats": 7,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 167723,
       "priceBasis": "MSRP before on-road costs",
       "availability": "current",
@@ -702,7 +702,7 @@
         "priceAud": "https://www.carexpert.com.au/car-news/2025-mercedes-benz-eqv-price-and-specs",
         "seats": "https://www.mercedes-benz.com.au/"
       },
-      "lowConfidenceFields": []
+      "lowConfidenceFields": ["v2l"]
     }
   ]
 }

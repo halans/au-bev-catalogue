@@ -14,9 +14,9 @@
     "https://www.easifleet.com.au/cars/skywell-ec11/e-crew-12-seat",
     "https://thedriven.io/2022/05/15/ev-review-skywell-ec11-the-first-all-electric-cargo-van-in-australia/"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "Skywell IS genuinely sold new in Australia, but only as a single model, the EC11 electric van (in E-Cargo and E-Crew body variants), imported and distributed by an independent Australian importer, EV Automotive (ev-a.com.au), rather than by a Skywell-badged factory-backed distributor. This is corroborated by multiple independent commercial channels: fleetplan.com.au and easifleet.com.au both list the EC11 as a current new/novated-lease vehicle in 2026, and carsales.com.au / carsguide.com.au / drive.com.au all carry EC11 research/showroom pages. No other Skywell model (e.g. BE11, EV9, ET5) was found confirmed as on sale new in Australia as of Sept 2026 - the EC11 is the only current Skywell nameplate in market. Pricing is genuinely unclear/unverifiable: Drive.com.au's showroom page lists a 2025 E-Cargo RWD at $59,990 (MRLP, GST-inclusive, excl. on-roads), while CarsGuide cites third-party (Glass's Information Services) pricing of $89,990-$120,000 for the 2026 range, and carsales.com.au's own research pages say price is simply 'not available' for both the E-Cargo and E-Crew. EV Automotive's own official site (ev-a.com.au) does not publish a price at all. Given this scale of disagreement across sources (a >$30k spread) and the complete absence of a price on the importer's own site, priceAud is recorded as null for both variants rather than guessed. Technical specifications for the E-Cargo variant are well documented on ev-a.com.au's own specification table and are used directly; the E-Crew (12-seat people-mover) variant shares the same underlying platform/powertrain per Drive.com.au and BitAuto but EV Automotive's site does not carry a dedicated detailed spec sheet for it, so several E-Crew fields are recorded as null pending a dedicated spec page.",
+  "notes": "V2L (Sept 2026 pass): no V2L/V2X capability found for the EC11 in any manufacturer or press material reviewed (importer spec sheet, CarsGuide, AEVA-derived light-commercial fact sheet summaries); v2l set to false for both E-Cargo and E-Crew and flagged low-confidence given the sparse documentation for this independently-imported model. Skywell IS genuinely sold new in Australia, but only as a single model, the EC11 electric van (in E-Cargo and E-Crew body variants), imported and distributed by an independent Australian importer, EV Automotive (ev-a.com.au), rather than by a Skywell-badged factory-backed distributor. This is corroborated by multiple independent commercial channels: fleetplan.com.au and easifleet.com.au both list the EC11 as a current new/novated-lease vehicle in 2026, and carsales.com.au / carsguide.com.au / drive.com.au all carry EC11 research/showroom pages. No other Skywell model (e.g. BE11, EV9, ET5) was found confirmed as on sale new in Australia as of Sept 2026 - the EC11 is the only current Skywell nameplate in market. Pricing is genuinely unclear/unverifiable: Drive.com.au's showroom page lists a 2025 E-Cargo RWD at $59,990 (MRLP, GST-inclusive, excl. on-roads), while CarsGuide cites third-party (Glass's Information Services) pricing of $89,990-$120,000 for the 2026 range, and carsales.com.au's own research pages say price is simply 'not available' for both the E-Cargo and E-Crew. EV Automotive's own official site (ev-a.com.au) does not publish a price at all. Given this scale of disagreement across sources (a >$30k spread) and the complete absence of a price on the importer's own site, priceAud is recorded as null for both variants rather than guessed. Technical specifications for the E-Cargo variant are well documented on ev-a.com.au's own specification table and are used directly; the E-Crew (12-seat people-mover) variant shares the same underlying platform/powertrain per Drive.com.au and BitAuto but EV Automotive's site does not carry a dedicated detailed spec sheet for it, so several E-Crew fields are recorded as null pending a dedicated spec page.",
   "variants": [
     {
       "model": "EC11",
@@ -36,7 +36,7 @@
       "zeroTo100s": null,
       "seats": 2,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": false,
       "priceAud": null,
       "priceBasis": null,
       "availability": "current",
@@ -49,7 +49,7 @@
         "torqueNm": "https://ev-a.com.au/models/skywell-vans/ec11-e-cargo (rated/peak torque given as 350/750Nm; 750Nm recorded as peak)",
         "drive": "https://ev-a.com.au/models/skywell-vans/ec11-e-cargo, corroborated by https://www.drive.com.au/showrooms/skywell/ec11/aa134e910ecaad60/"
       },
-      "lowConfidenceFields": ["rangeKm", "priceAud"]
+      "lowConfidenceFields": ["rangeKm", "priceAud", "v2l"]
     },
     {
       "model": "EC11",
@@ -69,7 +69,7 @@
       "zeroTo100s": null,
       "seats": 12,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": false,
       "priceAud": null,
       "priceBasis": null,
       "availability": "current",
@@ -79,7 +79,7 @@
         "seats": "https://www.easifleet.com.au/cars/skywell-ec11/e-crew-12-seat, corroborated by https://thedriven.io/2022/05/15/ev-review-skywell-ec11-the-first-all-electric-cargo-van-in-australia/",
         "drive": "https://fleetplan.com.au/trucks/skywell/ec11"
       },
-      "lowConfidenceFields": ["batteryUsableKwh", "rangeKm", "priceAud"]
+      "lowConfidenceFields": ["batteryUsableKwh", "rangeKm", "priceAud", "v2l"]
     }
   ]
 }

@@ -6,9 +6,9 @@
     "https://www.renault.com.au/vehicles/megane-e-tech/",
     "https://www.renault.com.au/vehicles/kangoo-e-tech/"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "Megane E-Tech Techno EV60 specs/price sourced primarily from electriccaradvice.com.au (secondary, medium confidence) as the official site's full spec table was not directly extracted. A facelifted Megane E-Tech (new 67kWh LFP battery, up to 500km WLTP, 164kW motor) is confirmed by press reports for an Australian launch in H1 2027; it is included as a separate 'announced' row with only the confirmed battery/range/power figures populated and price/other fields left null, since it is not yet orderable. Kangoo E-Tech van price could not be confirmed from any source and is left null rather than guessed.",
+  "notes": "Megane E-Tech Techno EV60 specs/price sourced primarily from electriccaradvice.com.au (secondary, medium confidence) as the official site's full spec table was not directly extracted. A facelifted Megane E-Tech (new 67kWh LFP battery, up to 500km WLTP, 164kW motor) is confirmed by press reports for an Australian launch in H1 2027; it is included as a separate 'announced' row with only the confirmed battery/range/power figures populated and price/other fields left null, since it is not yet orderable. Kangoo E-Tech van price could not be confirmed from any source and is left null rather than guessed. V2L (Sept 2026 pass): Renault's own Kangoo E-Tech page makes no mention of V2L/vehicle-to-load, and no reviewer coverage found claims otherwise; v2l set to false and flagged low-confidence (absence-of-evidence).",
   "variants": [
     {
       "model": "Megane E-Tech",
@@ -87,12 +87,14 @@
       "zeroTo100s": null,
       "seats": 3,
       "towingBrakedKg": 1500,
-      "v2l": null,
+      "v2l": false,
       "priceAud": null,
       "priceBasis": "MSRP before on-road costs",
       "availability": "current",
-      "fieldSources": {},
-      "lowConfidenceFields": ["priceAud", "seats"]
+      "fieldSources": {
+        "v2l": "https://www.renault.com.au/vehicles/kangoo-e-tech/"
+      },
+      "lowConfidenceFields": ["priceAud", "seats", "v2l"]
     }
   ]
 }

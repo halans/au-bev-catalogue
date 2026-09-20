@@ -4,11 +4,13 @@
   "publisher": "Kia Australia",
   "sourceUrls": [
     "https://www.kia.com/content/dam/kwcms/au/en/images/pdf/ev5/kia-ev5-brochure.pdf",
-    "https://www.kia.com/au/shopping-tools/offers/car-offers/ev5.html"
+    "https://www.kia.com/au/shopping-tools/offers/car-offers/ev5.html",
+    "https://www.carexpert.com.au/car-reviews/2026-kia-pv5-cargo-review",
+    "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-kia-pv5-electric-van-price-specs-release-date.html"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "EV5 data is high-confidence, sourced from Kia's official MY26 brochure PDF and AU offers page (drive-away pricing only). EV6 pricing/specs sourced from a detailed CarExpert article on the facelifted MY26 range because Kia's own AU offer pages for EV6 returned 404 errors when fetched directly. EV9 could not be confirmed against an official Kia AU page in this pass; specs are sourced from ev-wiki.org/thebeep.com.au aggregator data and are lower confidence, and MY26 pricing was not confirmed so priceAud is left null for all EV9 variants rather than guessed.",
+  "notes": "EV5 data is high-confidence, sourced from Kia's official MY26 brochure PDF and AU offers page (drive-away pricing only). EV6 pricing/specs sourced from a detailed CarExpert article on the facelifted MY26 range because Kia's own AU offer pages for EV6 returned 404 errors when fetched directly. EV9 could not be confirmed against an official Kia AU page in this pass; specs are sourced from ev-wiki.org/thebeep.com.au aggregator data and are lower confidence, and MY26 pricing was not confirmed so priceAud is left null for all EV9 variants rather than guessed. PV5 Cargo added Sept 2026: Kia Australia's electric van (built on the new PBV platform) launched in market from May 2026 as a single 'Cargo S Long Range' configuration ($55,990 before on-road costs); specs are high-confidence, corroborated across CarExpert's Australian first-drive review, RACV and Chasing Cars. V2L is confirmed standard, with both an exterior V2L adaptor and an interior outlet in the cargo area, rated up to 3.68kW/3.6kW.",
   "variants": [
     {
       "model": "EV5",
@@ -309,6 +311,34 @@
       "availability": "current",
       "fieldSources": { "*": ["https://thebeep.com.au/cars/kia/ev9/", "https://ev-wiki.org/kia"] },
       "lowConfidenceFields": ["batteryUsableKwh", "rangeKm", "acChargeKw", "dcChargeKw", "powerKw", "torqueNm", "seats", "towingBrakedKg", "v2l", "priceAud"]
+    },
+    {
+      "model": "PV5",
+      "variant": "Cargo S Long Range",
+      "bodyType": "van",
+      "segment": "van",
+      "batteryUsableKwh": 71.2,
+      "batteryGrossKwh": null,
+      "rangeKm": 416,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": null,
+      "acChargeKw": 11,
+      "dcChargeKw": 150,
+      "drive": "FWD",
+      "powerKw": 120,
+      "torqueNm": 250,
+      "zeroTo100s": null,
+      "seats": 2,
+      "towingBrakedKg": null,
+      "v2l": true,
+      "priceAud": 55990,
+      "priceBasis": "Before on-road costs (Kia Australia launch pricing, on sale from May 2026)",
+      "availability": "current",
+      "fieldSources": {
+        "*": ["https://www.carexpert.com.au/car-reviews/2026-kia-pv5-cargo-review", "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-kia-pv5-electric-van-price-specs-release-date.html"],
+        "v2l": "https://www.chasingcars.com.au/news/new-car-prices/australias-cheapest-electric-van-kia-pv5-2026-arrives-to-undercut-volkswagen-id-buzz-farizon-supervan/"
+      },
+      "lowConfidenceFields": []
     }
   ]
 }

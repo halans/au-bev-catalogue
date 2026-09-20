@@ -7,9 +7,9 @@
     "https://www.peugeot.com.au/models/expert-van/e-expert.html",
     "https://www.peugeot.com.au/models/new-e-partner-van.html"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "e-2008 numeric specs (50kWh battery, 100kW/260Nm, WLTP 328km, $59,990) are from its 2023 Australian launch article (CarExpert) since the current official site page returned only navigation/comparison content, not a spec table; treated as medium confidence pending re-confirmation that these figures still apply unchanged in 2026. Peugeot's official electric van page still actively promotes e-Partner and e-Expert (including an e-Expert cashback offer running to 31 July 2026), confirming both remain currently orderable. e-Partner's official page does not publish a battery/power/range spec table (only payload/towing/dimensions), so those fields are null. An all-electric E-408 sedan/wagon has been discussed by Peugeot Australia as under consideration for the market but was NOT confirmed as launched or orderable, so it is excluded entirely per the instruction to omit anything not confirmed for Australia.",
+  "notes": "e-2008 numeric specs (50kWh battery, 100kW/260Nm, WLTP 328km, $59,990) are from its 2023 Australian launch article (CarExpert) since the current official site page returned only navigation/comparison content, not a spec table; treated as medium confidence pending re-confirmation that these figures still apply unchanged in 2026. Peugeot's official electric van page still actively promotes e-Partner and e-Expert (including an e-Expert cashback offer running to 31 July 2026), confirming both remain currently orderable. e-Partner's official page does not publish a battery/power/range spec table (only payload/towing/dimensions), so those fields are null. An all-electric E-408 sedan/wagon has been discussed by Peugeot Australia as under consideration for the market but was NOT confirmed as launched or orderable, so it is excluded entirely per the instruction to omit anything not confirmed for Australia. V2L (Sept 2026 pass): neither Peugeot's own e-Partner page nor an EV Central range-test review of the Australian e-Partner mention any V2L/vehicle-to-load feature, despite Peugeot marketing V2L on other (EMP2-platform) electric models; v2l set to false and flagged low-confidence. e-Expert's V2L status could not be confirmed either way (its MY23 spec-sheet PDF was unreachable) and is left null rather than guessed.",
   "variants": [
     {
       "model": "e-2008",
@@ -59,12 +59,14 @@
       "zeroTo100s": null,
       "seats": 2,
       "towingBrakedKg": 750,
-      "v2l": null,
+      "v2l": false,
       "priceAud": null,
       "priceBasis": "MSRP before on-road costs",
       "availability": "current",
-      "fieldSources": {},
-      "lowConfidenceFields": ["seats", "drive"]
+      "fieldSources": {
+        "v2l": "https://evcentral.com.au/peugeot-e-partner-electric-van-loaded-vs-empty-range-test/"
+      },
+      "lowConfidenceFields": ["seats", "drive", "v2l"]
     },
     {
       "model": "e-Expert",

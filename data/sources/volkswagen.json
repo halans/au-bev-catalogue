@@ -9,9 +9,9 @@
     "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/ID4-MY26-Brochure.pdf",
     "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "Only BEV models in current AU lineup are ID.4, ID.5 and ID.Buzz (incl. ID.Buzz Cargo commercial van). ID.3 and ID.7 are NOT sold in Australia (ID.7 has been repeatedly ruled out by VW Australia spokespeople in press statements from 2023 through 2026, citing focus on the electric SUV range). VW Australia's own model pages predominantly advertise driveaway campaign pricing rather than MSRP before on-road costs; priceAud below uses the manufacturer list price (before on-road costs) as reported in VW's own price-cut announcements and corroborated by CarExpert/GoAuto/CarsGuide, per each variant's priceBasis field. Several ID.Buzz technical figures (GTX torque: 590Nm per CarExpert vs 560Nm per CarsGuide; Pro LWB power: 210kW assumed vs a conflicting 120kW figure in one CarsGuide table; AC charge rate assumed at VW's standard 11kW where not separately confirmed; towing capacity for ID.5 assumed identical to the equivalent-drivetrain ID.4 per AEVA, and largely unpublished for ID.Buzz Pro/GTX variants) show conflicts across secondary sources or were not published by VW Australia at all; these are flagged per-variant in lowConfidenceFields. VW's AEVA fact sheet confirms the ID.4 (and by extension the MEB-based ID.5) has no V2X/V2L capability in the Australian market, despite one aggregator (evdbau) claiming V2L support for the ID.5 -- the AEVA figure was preferred as the more EV-specialist, dated source.",
+  "notes": "Only BEV models in current AU lineup are ID.4, ID.5 and ID.Buzz (incl. ID.Buzz Cargo commercial van). ID.3 and ID.7 are NOT sold in Australia (ID.7 has been repeatedly ruled out by VW Australia spokespeople in press statements from 2023 through 2026, citing focus on the electric SUV range). VW Australia's own model pages predominantly advertise driveaway campaign pricing rather than MSRP before on-road costs; priceAud below uses the manufacturer list price (before on-road costs) as reported in VW's own price-cut announcements and corroborated by CarExpert/GoAuto/CarsGuide, per each variant's priceBasis field. Several ID.Buzz technical figures (GTX torque: 590Nm per CarExpert vs 560Nm per CarsGuide; Pro LWB power: 210kW assumed vs a conflicting 120kW figure in one CarsGuide table; AC charge rate assumed at VW's standard 11kW where not separately confirmed; towing capacity for ID.5 assumed identical to the equivalent-drivetrain ID.4 per AEVA, and largely unpublished for ID.Buzz Pro/GTX variants) show conflicts across secondary sources or were not published by VW Australia at all; these are flagged per-variant in lowConfidenceFields. VW's AEVA fact sheet confirms the ID.4 (and by extension the MEB-based ID.5) has no V2X/V2L capability in the Australian market, despite one aggregator (evdbau) claiming V2L support for the ID.5 -- the AEVA figure was preferred as the more EV-specialist, dated source. V2L (Sept 2026 pass): all four ID.Buzz variants (same MEB platform as ID.4/ID.5) previously had v2l left null; VW Commercial Vehicles has announced a 2.0kW V2L function arriving via a 'Summer 2026' software update, but reporting is explicit that this rollout is currently Europe/UK-only with no confirmed Australian timing, so the current AU-market ID.Buzz (incl. Cargo) is set to v2l:false, flagged low-confidence pending confirmation of if/when the update reaches Australia.",
   "variants": [
     {
       "model": "ID.4",
@@ -147,7 +147,7 @@
       "zeroTo100s": null,
       "seats": 2,
       "towingBrakedKg": 1200,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 69990,
       "priceBasis": "MSRP before on-road costs (VW AU list price after Feb 2026 price cut)",
       "availability": "current",
@@ -156,9 +156,10 @@
         "torqueNm": "https://www.carsguide.com.au/car-news/family-ev-keeps-low-price-2026-volkswagen-id-buzz-electric-van-keeps-sharp-drive-away",
         "dcChargeKw": "https://www.carsguide.com.au/car-news/family-ev-keeps-low-price-2026-volkswagen-id-buzz-electric-van-keeps-sharp-drive-away",
         "towingBrakedKg": "https://www.carexpert.com.au/volkswagen/id-buzz/2026-cargo-panel-van-rwd-electric-jsggms5f20260202",
-        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts"
+        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts",
+        "v2l": "https://insideevs.com/news/793839/volkswagen-id-buzz-2026-v2l-4motion-europe/"
       },
-      "lowConfidenceFields": ["acChargeKw", "consumptionWhPerKm"]
+      "lowConfidenceFields": ["acChargeKw", "consumptionWhPerKm", "v2l"]
     },
     {
       "model": "ID.Buzz",
@@ -178,16 +179,17 @@
       "zeroTo100s": null,
       "seats": 5,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 75990,
       "priceBasis": "MSRP before on-road costs (VW AU list price after Feb 2026 price cut)",
       "availability": "current",
       "fieldSources": {
         "rangeKm": "https://www.carsguide.com.au/car-news/family-ev-keeps-low-price-2026-volkswagen-id-buzz-electric-van-keeps-sharp-drive-away",
         "torqueNm": "https://www.carsguide.com.au/car-news/family-ev-keeps-low-price-2026-volkswagen-id-buzz-electric-van-keeps-sharp-drive-away",
-        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts"
+        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts",
+        "v2l": "https://insideevs.com/news/793839/volkswagen-id-buzz-2026-v2l-4motion-europe/"
       },
-      "lowConfidenceFields": ["acChargeKw"]
+      "lowConfidenceFields": ["acChargeKw", "v2l"]
     },
     {
       "model": "ID.Buzz",
@@ -207,16 +209,17 @@
       "zeroTo100s": null,
       "seats": 7,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 80990,
       "priceBasis": "MSRP before on-road costs (VW AU list price after Feb 2026 price cut)",
       "availability": "current",
       "fieldSources": {
         "rangeKm": "https://www.carsguide.com.au/car-news/family-ev-keeps-low-price-2026-volkswagen-id-buzz-electric-van-keeps-sharp-drive-away",
         "dcChargeKw": "https://www.carsguide.com.au/car-news/family-ev-keeps-low-price-2026-volkswagen-id-buzz-electric-van-keeps-sharp-drive-away",
-        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts"
+        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts",
+        "v2l": "https://insideevs.com/news/793839/volkswagen-id-buzz-2026-v2l-4motion-europe/"
       },
-      "lowConfidenceFields": ["powerKw", "acChargeKw"]
+      "lowConfidenceFields": ["powerKw", "acChargeKw", "v2l"]
     },
     {
       "model": "ID.Buzz",
@@ -236,7 +239,7 @@
       "zeroTo100s": 6.4,
       "seats": 5,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 104990,
       "priceBasis": "MSRP before on-road costs",
       "availability": "current",
@@ -244,9 +247,10 @@
         "rangeKm": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts",
         "torqueNm": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts",
         "zeroTo100s": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts",
-        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts"
+        "priceAud": "https://www.carexpert.com.au/car-news/volkswagen-id-buzz-gets-another-round-of-price-cuts",
+        "v2l": "https://insideevs.com/news/793839/volkswagen-id-buzz-2026-v2l-4motion-europe/"
       },
-      "lowConfidenceFields": ["torqueNm", "seats", "acChargeKw"]
+      "lowConfidenceFields": ["torqueNm", "seats", "acChargeKw", "v2l"]
     }
   ]
 }
