@@ -4,11 +4,12 @@
   "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
   "sourceUrls": [
     "https://kgm.com.au/models/torres",
-    "https://kgm.com.au/models/musso-ev"
+    "https://kgm.com.au/models/musso-ev",
+    "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review"
   ],
-  "fetchedAt": "2026-09-13",
+  "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields.",
+  "notes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields. V2L (Sept 2026 pass): confirmed high-confidence for all Musso EV variants -- CarExpert's Australian review states the Musso EV supports V2L at up to 3.5kW (15A) via an adaptor on the charge port; added as fieldSources citation (was previously uncited despite already being recorded as true).",
   "variants": [
     {
       "model": "Torres EVX",
@@ -60,7 +61,9 @@
       "priceAud": 60000,
       "priceBasis": "Driveaway price only per kgm.com.au current official range ($60,000-$64,700)",
       "availability": "current",
-      "fieldSources": {},
+      "fieldSources": {
+        "v2l": "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review"
+      },
       "lowConfidenceFields": []
     },
     {
@@ -86,7 +89,8 @@
       "priceBasis": "Driveaway; launch price of $62,000 - current official site gives only range endpoints ($60,000-$64,700) without itemizing this trim, medium confidence carried from launch pricing",
       "availability": "current",
       "fieldSources": {
-        "priceAud": "https://kgm.com.au/news/kgm-presents-its-first-electric-ute-the-musso-ev (launch press release, medium confidence for current price)"
+        "priceAud": "https://kgm.com.au/news/kgm-presents-its-first-electric-ute-the-musso-ev (launch press release, medium confidence for current price)",
+        "v2l": "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review"
       },
       "lowConfidenceFields": ["priceAud"]
     },
@@ -112,7 +116,9 @@
       "priceAud": 64700,
       "priceBasis": "Driveaway price per kgm.com.au current official top-of-range figure (launch price was $64,000)",
       "availability": "current",
-      "fieldSources": {},
+      "fieldSources": {
+        "v2l": "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review"
+      },
       "lowConfidenceFields": []
     }
   ]

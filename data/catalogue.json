@@ -37,9 +37,9 @@
       "isuzu.json": "4754a5d0256a847b789a94b3778e5de1cbf1256cc92e571e3b07ae0ab146340f",
       "jaguar.json": "5e8d2c0032fc499591a71861d0f4a90ee878e0135dbd5b80d0dc3d4c24cffb01",
       "jeep.json": "57889072d0cbea1281f2c37e67db98685331dcc8d07d1e51c7616a152684639f",
-      "kgm.json": "c2567e1196f82e16fb38e80d286fa6cad678542578ab8e92603085edbda16fc2",
+      "kgm.json": "293450c72a2226ef009911f3cbff295dbb364a3056c7f08fb9994b6acb49f3fa",
       "kia.json": "b4f610efa8837c3671d2c9c5ac1491858a1ea50d7eaa330021444fa341c0b1fd",
-      "ldv.json": "1386992869cba7dabe38e87be62d9fea078d9e1cbbedd354f20ed1eeb0660483",
+      "ldv.json": "fc7982edfa3721e0534ae770bc8310397e19089f22a314aa82d387671264af33",
       "leapmotor.json": "4ee561bd51151157ebb55d4e71fdf9587c119b871a551f69a40343c3da44bf0a",
       "lexus.json": "6f504e5d551ffdd5f85db76a21506b07b18afd41349aebf1716b7215372e5ef3",
       "lotus.json": "6f5b869b332ae5b16992b832be11f978223cbe69ef66f1bdec7178931316deec",
@@ -18678,7 +18678,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18687,7 +18687,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18696,7 +18696,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18705,7 +18705,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18714,7 +18714,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18723,7 +18723,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18732,7 +18732,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18741,7 +18741,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18750,7 +18750,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18759,7 +18759,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18768,7 +18768,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18777,7 +18777,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18786,7 +18786,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18795,7 +18795,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18804,7 +18804,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18813,7 +18813,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18822,17 +18822,17 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
         "v2l": {
-          "sourceKind": "manufacturer",
-          "url": "https://kgm.com.au/models/torres",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-20",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "priceAud": {
@@ -18840,7 +18840,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18849,13 +18849,13 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "kgm",
-      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields.",
+      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields. V2L (Sept 2026 pass): confirmed high-confidence for all Musso EV variants -- CarExpert's Australian review states the Musso EV supports V2L at up to 3.5kW (15A) via an adaptor on the charge port; added as fieldSources citation (was previously uncited despite already being recorded as true).",
       "lowConfidenceFields": []
     },
     {
@@ -18890,7 +18890,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18899,7 +18899,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18908,7 +18908,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18917,7 +18917,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18926,7 +18926,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18935,7 +18935,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18944,7 +18944,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18953,7 +18953,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18962,7 +18962,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18971,7 +18971,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18980,7 +18980,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18989,7 +18989,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -18998,7 +18998,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19007,7 +19007,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19016,7 +19016,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19025,7 +19025,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19034,17 +19034,17 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
         "v2l": {
-          "sourceKind": "manufacturer",
-          "url": "https://kgm.com.au/models/torres",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-20",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "priceAud": {
@@ -19052,7 +19052,7 @@
           "url": "https://kgm.com.au/news/kgm-presents-its-first-electric-ute-the-musso-ev (launch press release, medium confidence for current price)",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -19061,13 +19061,13 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "kgm",
-      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields.",
+      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields. V2L (Sept 2026 pass): confirmed high-confidence for all Musso EV variants -- CarExpert's Australian review states the Musso EV supports V2L at up to 3.5kW (15A) via an adaptor on the charge port; added as fieldSources citation (was previously uncited despite already being recorded as true).",
       "lowConfidenceFields": [
         "priceAud"
       ]
@@ -19104,7 +19104,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19113,7 +19113,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19122,7 +19122,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19131,7 +19131,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19140,7 +19140,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19149,7 +19149,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19158,7 +19158,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19167,7 +19167,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19176,7 +19176,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19185,7 +19185,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19194,7 +19194,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19203,7 +19203,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19212,7 +19212,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19221,7 +19221,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19230,7 +19230,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19239,7 +19239,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19248,17 +19248,17 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
         "v2l": {
-          "sourceKind": "manufacturer",
-          "url": "https://kgm.com.au/models/torres",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-20",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "priceAud": {
@@ -19266,7 +19266,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19275,13 +19275,13 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "kgm",
-      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields.",
+      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields. V2L (Sept 2026 pass): confirmed high-confidence for all Musso EV variants -- CarExpert's Australian review states the Musso EV supports V2L at up to 3.5kW (15A) via an adaptor on the charge port; added as fieldSources citation (was previously uncited despite already being recorded as true).",
       "lowConfidenceFields": []
     },
     {
@@ -19316,7 +19316,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19325,7 +19325,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19334,7 +19334,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19343,7 +19343,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19352,7 +19352,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19361,7 +19361,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19370,7 +19370,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19379,7 +19379,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19388,7 +19388,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19397,7 +19397,7 @@
           "url": "https://www.carexpert.com.au/car-reviews/2026-kgm-torres-evx-review (medium confidence, converted from brand press-release convention)",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -19406,7 +19406,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19415,7 +19415,7 @@
           "url": "https://www.drive.com.au (150kW); CarExpert road-test spec table separately calculated a 164kW theoretical maximum - conflict noted, 150kW used as brand-stated figure",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -19424,7 +19424,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19433,7 +19433,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19442,7 +19442,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19451,7 +19451,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19460,7 +19460,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19469,7 +19469,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         },
@@ -19478,7 +19478,7 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "low",
           "adapter": "snapshot"
         },
@@ -19487,13 +19487,13 @@
           "url": "https://kgm.com.au/models/torres",
           "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
+          "fetchedAt": "2026-09-20",
           "confidence": "high",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "kgm",
-      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields.",
+      "brandNotes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields. V2L (Sept 2026 pass): confirmed high-confidence for all Musso EV variants -- CarExpert's Australian review states the Musso EV supports V2L at up to 3.5kW (15A) via an adaptor on the charge port; added as fieldSources citation (was previously uncited despite already being recorded as true).",
       "lowConfidenceFields": [
         "consumptionWhPerKm",
         "dcChargeKw",
@@ -22355,7 +22355,7 @@
         }
       },
       "brandSlug": "ldv",
-      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial).",
+      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial). eT60 (Sept 2026 pass): CarExpert's Australian review explicitly wishes for 'a Ford-style vehicle-to-load (V2L) system' to be added, confirming it is not fitted; the ute does have 12V and 220V interior sockets, but that is not full V2L. No later coverage through the 2026 model year indicates this has changed, so v2l is set to false with medium confidence.",
       "lowConfidenceFields": [
         "v2l"
       ]
@@ -22470,7 +22470,7 @@
         }
       },
       "brandSlug": "ldv",
-      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial).",
+      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial). eT60 (Sept 2026 pass): CarExpert's Australian review explicitly wishes for 'a Ford-style vehicle-to-load (V2L) system' to be added, confirming it is not fitted; the ute does have 12V and 220V interior sockets, but that is not full V2L. No later coverage through the 2026 model year indicates this has changed, so v2l is set to false with medium confidence.",
       "lowConfidenceFields": [
         "v2l"
       ]
@@ -22675,7 +22675,7 @@
         }
       },
       "brandSlug": "ldv",
-      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial).",
+      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial). eT60 (Sept 2026 pass): CarExpert's Australian review explicitly wishes for 'a Ford-style vehicle-to-load (V2L) system' to be added, confirming it is not fitted; the ute does have 12V and 220V interior sockets, but that is not full V2L. No later coverage through the 2026 model year indicates this has changed, so v2l is set to false with medium confidence.",
       "lowConfidenceFields": [
         "priceAud",
         "seats",
@@ -22891,7 +22891,7 @@
         }
       },
       "brandSlug": "ldv",
-      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial).",
+      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial). eT60 (Sept 2026 pass): CarExpert's Australian review explicitly wishes for 'a Ford-style vehicle-to-load (V2L) system' to be added, confirming it is not fitted; the ute does have 12V and 220V interior sockets, but that is not full V2L. No later coverage through the 2026 model year indicates this has changed, so v2l is set to false with medium confidence.",
       "lowConfidenceFields": [
         "seats",
         "v2l"
@@ -23106,7 +23106,7 @@
         }
       },
       "brandSlug": "ldv",
-      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial).",
+      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial). eT60 (Sept 2026 pass): CarExpert's Australian review explicitly wishes for 'a Ford-style vehicle-to-load (V2L) system' to be added, confirming it is not fitted; the ute does have 12V and 220V interior sockets, but that is not full V2L. No later coverage through the 2026 model year indicates this has changed, so v2l is set to false with medium confidence.",
       "lowConfidenceFields": [
         "priceAud",
         "seats",
@@ -23134,7 +23134,7 @@
       "zeroTo100s": null,
       "seats": 5,
       "towingBrakedKg": 1000,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 92990,
       "priceBasis": "Before on-road costs (MSRP)",
       "efficiencyWhPerKm": null,
@@ -23257,6 +23257,15 @@
           "confidence": "high",
           "adapter": "snapshot"
         },
+        "v2l": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-reviews/2023-ldv-et60-review-quick-drive",
+          "publisher": "LDV Australia (Ateco Automotive)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-20",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
         "priceAud": {
           "sourceKind": "press",
           "url": "https://www.chasingcars.com.au/news/future-cars/ldv-e-terron-9-and-terron-9-electric-and-diesel-dual-cab-utes-on-sale-mid-2025/",
@@ -23277,7 +23286,7 @@
         }
       },
       "brandSlug": "ldv",
-      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial).",
+      "brandNotes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial). eT60 (Sept 2026 pass): CarExpert's Australian review explicitly wishes for 'a Ford-style vehicle-to-load (V2L) system' to be added, confirming it is not fitted; the ute does have 12V and 220V interior sockets, but that is not full V2L. No later coverage through the 2026 model year indicates this has changed, so v2l is set to false with medium confidence.",
       "lowConfidenceFields": [
         "seats"
       ]
@@ -53962,11 +53971,12 @@
       "publisher": "KGM Australia (kgm.com.au) - rebrand of SsangYong",
       "sourceUrls": [
         "https://kgm.com.au/models/torres",
-        "https://kgm.com.au/models/musso-ev"
+        "https://kgm.com.au/models/musso-ev",
+        "https://www.carexpert.com.au/car-reviews/2026-kgm-musso-ev-review"
       ],
-      "fetchedAt": "2026-09-13",
+      "fetchedAt": "2026-09-20",
       "licence": "proprietary-factual",
-      "notes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields.",
+      "notes": "SsangYong has rebranded to KGM in Australia; kgm.com.au is the current official storefront. Only two BEV nameplates exist in the AU lineup: Torres EVX (SUV, single trim) and Musso EV (ute, 3 variants). The Actyon is confirmed hybrid/petrol only in Australia - no BEV Actyon exists; excluded. Korando e-Motion was never sold in Australia; excluded. KGM AU publishes drive-away pricing only; no official MSRP-before-on-roads figure exists (before-on-road figures are CarExpert back-calculations, medium confidence). Battery capacity (80.6kWh) is never split into usable vs gross by KGM for either model. 0-100km/h acceleration is not officially published by KGM for either model; low-confidence secondary figures exist but are not corroborated and are excluded from the main fields. V2L (Sept 2026 pass): confirmed high-confidence for all Musso EV variants -- CarExpert's Australian review states the Musso EV supports V2L at up to 3.5kW (15A) via an adaptor on the charge port; added as fieldSources citation (was previously uncited despite already being recorded as true).",
       "variantCount": 4,
       "sourceFile": "kgm.json"
     },
@@ -53999,7 +54009,7 @@
       ],
       "fetchedAt": "2026-09-20",
       "licence": "proprietary-factual",
-      "notes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial).",
+      "notes": "LDV's only current-generation electric ute (eT60) is included with reasonably solid figures. The eT60's successor, the eTerron 9 (Maxus eTerron 9 globally), has been repeatedly delayed since an original 'early 2025' target; as of Aug 2026 press coverage LDV Australia says it 'continues to work with the factory' with no confirmed on-sale date, so it is EXCLUDED from variants per the 'omit anything not confirmed for Australia' rule (see notes for spec preview). eDeliver 7 pricing is highly inconsistent across sources: LDV's own site advertises a promotional drive-away price for MY23 SWB Low Roof ($54,990 driveaway, ABN-holder offer ending 30 Sept 2026), while CarExpert's 2026 pricing tool shows a base drive-away price of $46,305-$48,411 for one configuration and a wider drive-away band of $61,042-$82,009 across ~12 listed configurations that appear to mix diesel and electric drivetrains inconsistently in the underlying data. Given this inconsistency, eDeliver 7 priceAud is set to null and flagged low-confidence; only body/battery/range specs believed reliable are included. eDeliver 9 pricing and specs are consistent across CarExpert (2022-2023) and LDV's own site and are treated as higher-confidence, though the RRP figures originate from a 2023 launch report un-updated for potential 2026 changes. V2L (Sept 2026 pass): a CarsGuide reviewer's Australian eDeliver 7 test drive explicitly states 'a big disappointment is the lack of V2L or an internal three-pin outlet', so v2l is set to false for both eDeliver 7 variants (flagged low-confidence: single-reviewer source). No V2L feature is mentioned anywhere on LDV Australia's own eDeliver 9 page or in CarExpert's/CarsGuide's eDeliver 9 coverage, consistent with the eDeliver 7 finding for the same manufacturer/generation, so v2l is set to false there too (flagged low-confidence: absence-of-evidence rather than an explicit manufacturer denial). eT60 (Sept 2026 pass): CarExpert's Australian review explicitly wishes for 'a Ford-style vehicle-to-load (V2L) system' to be added, confirming it is not fitted; the ute does have 12V and 220V interior sockets, but that is not full V2L. No later coverage through the 2026 model year indicates this has changed, so v2l is set to false with medium confidence.",
       "variantCount": 6,
       "sourceFile": "ldv.json"
     },
@@ -54522,7 +54532,7 @@
       "brandsWithVariants": 50,
       "brandsChecked": 56,
       "brandsWithNoBev": 6,
-      "populatedFields": 4823,
+      "populatedFields": 4824,
       "coreCompleteness": 90.3,
       "conflicts": 5
     },
@@ -54536,8 +54546,8 @@
       "newestSnapshot": "2026-09-20"
     },
     "provenanceMix": {
-      "manufacturer": 3773,
-      "press": 1050
+      "manufacturer": 3770,
+      "press": 1054
     },
     "byField": [
       {
@@ -54791,13 +54801,13 @@
         "field": "v2l",
         "label": "V2L",
         "core": false,
-        "present": 113,
-        "missing": 169,
-        "completeness": 40.1,
+        "present": 114,
+        "missing": 168,
+        "completeness": 40.4,
         "lowConfidence": 24,
         "bySourceKind": {
-          "manufacturer": 81,
-          "press": 32
+          "manufacturer": 78,
+          "press": 36
         }
       },
       {
@@ -55106,7 +55116,7 @@
         "availability": {
           "current": 4
         },
-        "fetchedAt": "2026-09-13"
+        "fetchedAt": "2026-09-20"
       },
       {
         "brand": "Lexus",
