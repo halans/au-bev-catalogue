@@ -9,11 +9,12 @@
     "https://www.volvocars.com/au/cars/ex40-electric/",
     "https://www.carexpert.com.au/car-news/2026-volvo-ex30-cross-country-pricing-baby-ev-gets-rugged-makeover",
     "https://www.chasingcars.com.au/reviews/large-suvs/volvo-ex90-ultra-performance-2025-review/",
-    "https://thebeep.com.au/cars/volvo/ex90"
+    "https://thebeep.com.au/cars/volvo/ex90",
+    "https://www.carexpert.com.au/car-news/2026-volvo-ex30-ev-update-set-to-debut-new-charging-tech-in-australia"
   ],
   "fetchedAt": "2026-09-20",
   "licence": "proprietary-factual",
-  "notes": "Volvo AU's own EX30/EX90 spec pages label the consumption figure as 'NEDC' even though Volvo AU markets its range figures elsewhere as WLTP; this looks like a site labelling artefact rather than a genuine NEDC test, so rangeCycle is recorded as null for EX30/EX90 rather than guessed. The dedicated EC40 specifications sub-page returned 404 at fetch time, so EC40 numeric specs (battery, power, range) could not be confirmed from the primary source; only a price figure from a secondary source (CarsGuide) is included, flagged low-confidence. Community-sourced ev-wiki.org mentions of an 'ES90' for Volvo Australia was NOT corroborated by any official or reputable press source and has been excluded entirely rather than included as a speculative row. EX40 (the renamed XC40 Recharge — previously wrongly excluded from this file as an unconfirmed 'community-sourced' claim; it is in fact a genuine, currently-sold model) has now been added. Its /specifications/ sub-page returned 403 at fetch time, so EX40 figures below are press-sourced (CarExpert, thebeep) rather than manufacturer-confirmed, and are flagged low-confidence accordingly. Press sources disagreed materially on price by ~$5,000-13,000 depending on state/promo/drive-away timing; the figures used here come from CarExpert's 2026-03-31 report of a $7,000 national MSRP price cut, which is the most specific and recent single data point found. PRICE AND SPEC CORRECTIONS (Sept 2026 pass): volvocars.com.au's own /specifications/ pages for EX30 and EX90 return 403 to automated fetches (Volvo's own bot-blocking, not a client-side network/VPN issue — confirmed by retrying after ruling out a local Cloudflare WARP/DNS cause), so this pass is press-sourced. EX30 priceAud filled from CarExpert's dedicated Plus/Ultra spec pages and its EX30 Cross Country pricing article, which gives a clean one-page table of all four current EX30 configurations. EX90 priceAud filled from a Chasing Cars review giving both Plus ($124,990) and Ultra Performance ($134,990) prices with matching power/torque figures. While researching EX90 pricing, multiple independent sources (CarsGuide's own Plus Twin Motor spec page, thebeep.com.au, Chasing Cars, general press) consistently gave power/torque/range/0-100 figures materially different from what this file previously recorded (300kW/770Nm/5.9s for Twin Motor vs the previous 330kW/670Nm/5.5s; 380kW/910Nm/4.9s for Twin Motor Performance vs the previous 500kW/870Nm/4.2s; 570km WLTP for both vs the previous 521km) — these look like a genuine prior data error rather than a source disagreement, since every current source agrees with each other and disagrees with the old figures, so they have been corrected rather than left as a documented conflict. EX30's existing power/torque/battery/range figures were re-checked against CarExpert's dedicated Plus/Ultra spec pages during this pass and found to match exactly (200kW/343Nm/69kWh gross/64kWh usable/462km WLTP for Single Motor Extended Range), so those fields were left unchanged.",
+  "notes": "Volvo AU's own EX30/EX90 spec pages label the consumption figure as 'NEDC' even though Volvo AU markets its range figures elsewhere as WLTP; this looks like a site labelling artefact rather than a genuine NEDC test, so rangeCycle is recorded as null for EX30/EX90 rather than guessed. The dedicated EC40 specifications sub-page returned 404 at fetch time, so EC40 numeric specs (battery, power, range) could not be confirmed from the primary source; only a price figure from a secondary source (CarsGuide) is included, flagged low-confidence. Community-sourced ev-wiki.org mentions of an 'ES90' for Volvo Australia was NOT corroborated by any official or reputable press source and has been excluded entirely rather than included as a speculative row. EX40 (the renamed XC40 Recharge — previously wrongly excluded from this file as an unconfirmed 'community-sourced' claim; it is in fact a genuine, currently-sold model) has now been added. Its /specifications/ sub-page returned 403 at fetch time, so EX40 figures below are press-sourced (CarExpert, thebeep) rather than manufacturer-confirmed, and are flagged low-confidence accordingly. Press sources disagreed materially on price by ~$5,000-13,000 depending on state/promo/drive-away timing; the figures used here come from CarExpert's 2026-03-31 report of a $7,000 national MSRP price cut, which is the most specific and recent single data point found. PRICE AND SPEC CORRECTIONS (Sept 2026 pass): volvocars.com.au's own /specifications/ pages for EX30 and EX90 return 403 to automated fetches (Volvo's own bot-blocking, not a client-side network/VPN issue — confirmed by retrying after ruling out a local Cloudflare WARP/DNS cause), so this pass is press-sourced. EX30 priceAud filled from CarExpert's dedicated Plus/Ultra spec pages and its EX30 Cross Country pricing article, which gives a clean one-page table of all four current EX30 configurations. EX90 priceAud filled from a Chasing Cars review giving both Plus ($124,990) and Ultra Performance ($134,990) prices with matching power/torque figures. While researching EX90 pricing, multiple independent sources (CarsGuide's own Plus Twin Motor spec page, thebeep.com.au, Chasing Cars, general press) consistently gave power/torque/range/0-100 figures materially different from what this file previously recorded (300kW/770Nm/5.9s for Twin Motor vs the previous 330kW/670Nm/5.5s; 380kW/910Nm/4.9s for Twin Motor Performance vs the previous 500kW/870Nm/4.2s; 570km WLTP for both vs the previous 521km) — these look like a genuine prior data error rather than a source disagreement, since every current source agrees with each other and disagrees with the old figures, so they have been corrected rather than left as a documented conflict. EX30's existing power/torque/battery/range figures were re-checked against CarExpert's dedicated Plus/Ultra spec pages during this pass and found to match exactly (200kW/343Nm/69kWh gross/64kWh usable/462km WLTP for Single Motor Extended Range), so those fields were left unchanged. V2L (2026-09-21 addition): CarExpert reports Volvo Australia has confirmed V2L (up to 3kW/16A via a charge-port adapter) is coming to the EX30 as a free OTA update expected in the second half of 2026, and describes it as making EX30 'the first Volvo to offer the technology' — so v2l is set to false (not yet live) for both EX30 variants pending that rollout, and false for EX90/EX40 since the same article implies no other current Volvo AU model has it. Not set for EC40 given its other specs are already unconfirmed/missing from a 404'd source page.",
   "variants": [
     {
       "model": "EX30",
@@ -33,15 +34,16 @@
       "zeroTo100s": 5.3,
       "seats": 5,
       "towingBrakedKg": 1600,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 59990,
       "priceBasis": "MSRP before on-road costs (Plus trim, the entry price for this powertrain; the Ultra trim of the same Single Motor Extended Range powertrain is $66,290)",
       "availability": "current",
       "sourceUrl": "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
       "fieldSources": {
-        "priceAud": "https://www.carexpert.com.au/volvo/ex30/2026-plus-jsfokff820250905"
+        "priceAud": "https://www.carexpert.com.au/volvo/ex30/2026-plus-jsfokff820250905",
+        "v2l": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-ev-update-set-to-debut-new-charging-tech-in-australia"
       },
-      "lowConfidenceFields": ["acChargeKw", "rangeCycle"]
+      "lowConfidenceFields": ["acChargeKw", "rangeCycle", "v2l"]
     },
     {
       "model": "EX30",
@@ -61,15 +63,16 @@
       "zeroTo100s": 3.7,
       "seats": 5,
       "towingBrakedKg": 1600,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 71290,
       "priceBasis": "MSRP before on-road costs (Ultra trim — the only trim offered with this powertrain)",
       "availability": "current",
       "sourceUrl": "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
       "fieldSources": {
-        "priceAud": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-cross-country-pricing-baby-ev-gets-rugged-makeover"
+        "priceAud": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-cross-country-pricing-baby-ev-gets-rugged-makeover",
+        "v2l": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-ev-update-set-to-debut-new-charging-tech-in-australia"
       },
-      "lowConfidenceFields": ["acChargeKw", "rangeCycle"]
+      "lowConfidenceFields": ["acChargeKw", "rangeCycle", "v2l"]
     },
     {
       "model": "EX90",
@@ -89,7 +92,7 @@
       "zeroTo100s": 5.9,
       "seats": 7,
       "towingBrakedKg": 2200,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 124990,
       "priceBasis": "MSRP before on-road costs (Plus trim)",
       "availability": "current",
@@ -99,9 +102,10 @@
         "powerKw": "https://www.carsguide.com.au/volvo/ex90/price/2026/plus-twin-motor",
         "torqueNm": "https://www.carsguide.com.au/volvo/ex90/price/2026/plus-twin-motor",
         "rangeKm": "https://thebeep.com.au/cars/volvo/ex90",
-        "zeroTo100s": "https://thebeep.com.au/cars/volvo/ex90"
+        "zeroTo100s": "https://thebeep.com.au/cars/volvo/ex90",
+        "v2l": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-ev-update-set-to-debut-new-charging-tech-in-australia"
       },
-      "lowConfidenceFields": ["acChargeKw", "rangeCycle"]
+      "lowConfidenceFields": ["acChargeKw", "rangeCycle", "v2l"]
     },
     {
       "model": "EX90",
@@ -121,7 +125,7 @@
       "zeroTo100s": 4.9,
       "seats": 7,
       "towingBrakedKg": 2200,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 134990,
       "priceBasis": "MSRP before on-road costs (Ultra trim)",
       "availability": "current",
@@ -131,9 +135,10 @@
         "powerKw": "https://www.chasingcars.com.au/reviews/large-suvs/volvo-ex90-ultra-performance-2025-review/",
         "torqueNm": "https://www.chasingcars.com.au/reviews/large-suvs/volvo-ex90-ultra-performance-2025-review/",
         "rangeKm": "https://thebeep.com.au/cars/volvo/ex90",
-        "zeroTo100s": "https://thebeep.com.au/cars/volvo/ex90"
+        "zeroTo100s": "https://thebeep.com.au/cars/volvo/ex90",
+        "v2l": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-ev-update-set-to-debut-new-charging-tech-in-australia"
       },
-      "lowConfidenceFields": ["acChargeKw", "rangeCycle"]
+      "lowConfidenceFields": ["acChargeKw", "rangeCycle", "v2l"]
     },
     {
       "model": "EC40",
@@ -183,7 +188,7 @@
       "zeroTo100s": 7.3,
       "seats": 5,
       "towingBrakedKg": 1800,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 69990,
       "priceBasis": "MSRP before on-road costs (secondary source)",
       "availability": "current",
@@ -200,9 +205,10 @@
         "zeroTo100s": "https://www.carexpert.com.au/volvo/ex40/2026-ultra-suv-rwd-electric-jsf5fogs20250623",
         "seats": "https://www.carexpert.com.au/volvo/ex40/2026-ultra-suv-rwd-electric-jsf5fogs20250623",
         "towingBrakedKg": "https://www.carexpert.com.au/volvo/ex40/2026-ultra-suv-rwd-electric-jsf5fogs20250623",
-        "priceAud": "https://www.carexpert.com.au/car-news/volvo-slashes-pricing-of-ex30-and-ex40-electric-suvs"
+        "priceAud": "https://www.carexpert.com.au/car-news/volvo-slashes-pricing-of-ex30-and-ex40-electric-suvs",
+        "v2l": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-ev-update-set-to-debut-new-charging-tech-in-australia"
       },
-      "lowConfidenceFields": ["batteryUsableKwh", "batteryGrossKwh", "consumptionWhPerKm", "towingBrakedKg", "priceAud"]
+      "lowConfidenceFields": ["batteryUsableKwh", "batteryGrossKwh", "consumptionWhPerKm", "towingBrakedKg", "priceAud", "v2l"]
     },
     {
       "model": "EX40",
@@ -223,7 +229,7 @@
       "zeroTo100s": 4.8,
       "seats": 5,
       "towingBrakedKg": 1800,
-      "v2l": null,
+      "v2l": false,
       "priceAud": 74990,
       "priceBasis": "MSRP before on-road costs (secondary source)",
       "availability": "current",
@@ -239,9 +245,10 @@
         "zeroTo100s": "https://thebeep.com.au/cars/volvo/ex40",
         "seats": "https://thebeep.com.au/cars/volvo/ex40",
         "towingBrakedKg": "https://thebeep.com.au/cars/volvo/ex40",
-        "priceAud": "https://www.carexpert.com.au/car-news/volvo-slashes-pricing-of-ex30-and-ex40-electric-suvs"
+        "priceAud": "https://www.carexpert.com.au/car-news/volvo-slashes-pricing-of-ex30-and-ex40-electric-suvs",
+        "v2l": "https://www.carexpert.com.au/car-news/2026-volvo-ex30-ev-update-set-to-debut-new-charging-tech-in-australia"
       },
-      "lowConfidenceFields": ["batteryUsableKwh", "batteryGrossKwh", "acChargeKw", "dcChargeKw", "torqueNm", "priceAud"]
+      "lowConfidenceFields": ["batteryUsableKwh", "batteryGrossKwh", "acChargeKw", "dcChargeKw", "torqueNm", "priceAud", "v2l"]
     }
   ]
 }
