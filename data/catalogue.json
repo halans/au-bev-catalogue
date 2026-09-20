@@ -3,7 +3,7 @@
     "name": "Australian Battery-Electric Vehicle Directory",
     "builtAt": "2026-09-20",
     "schemaVersion": 1,
-    "recordCount": 282,
+    "recordCount": 285,
     "brandsChecked": 56,
     "adapters": [
       "snapshot"
@@ -17,7 +17,7 @@
       "audi.json": "b73a0c8a9de16eb33028d5bd00ea5d92a7529c16ea8c7c336827c581728cbbec",
       "bmw.json": "be69c47c7955a32c3c117b5c4e0483b6229550fa196bbaa18150d641ca77ec41",
       "byd.json": "d81bd9e9c140ffeae59e4b6697c65ee122cc6474f4f9499fb7550aae9cf3b6ed",
-      "cadillac.json": "a2f87aee68c083a4e86c0af6ec1ea9e5d928073f4c8fc354c2d3fde2931a65d4",
+      "cadillac.json": "9917fc52d286ae7a0fadc96f3b4d819d5789ece10319f39db2b71548f5cc332c",
       "chery.json": "957f17398c4e3982079db48a62c72c0c6ff853b3d8e2416245b1fc9762723883",
       "citroen.json": "c518b771e0c9eb5dd33fe58f913fe6b2195922f7da3da36acc07c6a07f178ab8",
       "cupra.json": "55fd18a671ec5ccf79ef08d76f84cf5e248ee2b70e5fc29842eb4b92fcb796fa",
@@ -7866,164 +7866,822 @@
       "lowConfidenceFields": []
     },
     {
-      "id": "cadillac__lyriq__luxury-my27-single-trim-lineup-awd",
+      "id": "cadillac__lyriq-v__v-awd",
       "brand": "Cadillac",
-      "model": "Lyriq",
-      "variant": "Luxury (MY27 single-trim lineup, AWD)",
+      "model": "Lyriq-V",
+      "variant": "V (AWD)",
       "bodyType": "suv",
       "segment": "suv-large",
       "availability": "current",
-      "batteryUsableKwh": 102,
+      "batteryUsableKwh": 92,
       "batteryGrossKwh": null,
-      "rangeKm": 530,
+      "rangeKm": 471,
       "rangeCycle": "WLTP",
-      "consumptionWhPerKm": null,
-      "acChargeKw": 11.5,
-      "dcChargeKw": 190,
+      "consumptionWhPerKm": 216,
+      "acChargeKw": 22,
+      "dcChargeKw": 130,
       "drive": "AWD",
-      "powerKw": null,
-      "torqueNm": null,
-      "zeroTo100s": null,
+      "powerKw": 459,
+      "torqueNm": 880,
+      "zeroTo100s": 3.6,
       "seats": 5,
       "towingBrakedKg": null,
       "v2l": null,
-      "priceAud": null,
-      "priceBasis": "Conflicting figures across sources: launch-era reports cite approx. $117,000-$122,000 drive-away; later secondary sources suggest $90,000-$95,000 drive-away following price adjustments. Could not be reconciled with confidence; set to null rather than guessed.",
-      "efficiencyWhPerKm": 192,
-      "dollarsPerKmRange": null,
+      "priceAud": 99000,
+      "priceBasis": "MSRP before on-road costs (~$108,400 drive-away per thebeep.com.au)",
+      "efficiencyWhPerKm": 195,
+      "dollarsPerKmRange": 210.19,
       "provenance": {
         "brand": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "model": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "variant": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "bodyType": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "segment": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "availability": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "batteryUsableKwh": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "rangeKm": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "low",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "rangeCycle": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "consumptionWhPerKm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "acChargeKw": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "dcChargeKw": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "drive": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "powerKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "torqueNm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "zeroTo100s": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "seats": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceAud": {
+          "sourceKind": "press",
+          "url": "https://www.goauto.com.au/new-models/cadillac/lyriq/v/2026-09-18/100457.html",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         },
         "priceBasis": {
-          "sourceKind": "manufacturer",
-          "url": "https://www.cadillac.com.au/lyriq",
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
           "publisher": "Cadillac Australia (GM Specialty Vehicles)",
           "licence": "proprietary-factual (specification facts restated with attribution)",
-          "fetchedAt": "2026-09-13",
-          "confidence": "high",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
           "adapter": "snapshot"
         }
       },
       "brandSlug": "cadillac",
-      "brandNotes": "Cadillac Australia sells a single BEV model, the Lyriq (right-hand-drive, imported/converted by GM Specialty Vehicles). Battery capacity (102kWh) and AC/DC charging figures (11.5kW AC / 190kW DC) are consistent across sources and treated as reliable. However, pricing and power-output figures show real conflict: launch-era press (2024/early 2025) cited approx. $117,000-$122,000 drive-away for the Luxury variant, while later 2025/2026 secondary sources (dealer/aggregator listings) show substantially lower drive-away figures in the $90,000-$95,000 range, consistent with reported price cuts and a shift to a single-trim MY27 lineup. Power output is also inconsistently reported: 272kW (single-motor RWD figure per some specs) vs 388kW (dual-motor AWD figure per others), and it is not clear from available sources which figure corresponds to the actual current-model-year AU-market variant. Because these conflicts could not be reconciled with confidence, priceAud and powerKw are set to null and flagged low-confidence rather than guessing which figure is current.",
+      "brandNotes": "2026-09-21 update: Cadillac Australia's BEV lineup has expanded from a single model (Lyriq) to four - Optiq, Lyriq, Vistiq and the newly launched Lyriq-V - after the cadillac.com.au page kept returning crawl failures on the earlier fetch. Optiq and Vistiq are AU/NZ-market right-hand-drive models confirmed for 2026 (single-grade lineups: Optiq Sport AWD, Vistiq Platinum AWD 6-seat), corroborated consistently across CarExpert, Drive, GoAuto, RACV, thebeep.com.au and Man of Many. Lyriq-V launched 18 Sept 2026 (GoAuto, CarExpert) as Cadillac's first V-Series model in Australia, alongside a resolved price for the base Lyriq range (previously null here due to conflicting launch-era vs later pricing) - Lyriq Sport and Luxury are now both $90,000 before on-road costs / ~$95,000 drive-away, mechanically identical, differing only in trim. Lyriq/Lyriq-V battery is corrected to the AU-market-specific 92kWh usable pack (130kW DC / 22kW AC) rather than the US-market 102kWh/190kW figures previously recorded here in error - Cadillac AU fits smaller packs than the US domestic market across its whole EV range (also seen in Optiq 75kWh vs US and Vistiq 91kWh vs US 102kWh). Lyriq powerKw/torqueNm/zeroTo100s remain flagged low-confidence: CarExpert's Lyriq-V comparison piece states 384kW/720Nm/4.9s for Sport, but an earlier CarExpert price-cut article states 388kW/610Nm for the same car - not reconciled, so both are treated as uncertain even though a value is recorded. V2L (vehicle-to-load, a portable AC outlet) is not confirmed as built into any current Cadillac EV; GM instead sells V2H (vehicle-to-home backup, different technology, dedicated hardware) as an accessory not confirmed as offered in Australia - v2l set to null rather than guessed for all four variants. Towing capacity not confirmed for the Australian-market (post RHD-conversion) rating of any of the four models - set to null.",
+      "lowConfidenceFields": []
+    },
+    {
+      "id": "cadillac__lyriq__sport-luxury-awd",
+      "brand": "Cadillac",
+      "model": "Lyriq",
+      "variant": "Sport / Luxury (AWD)",
+      "bodyType": "suv",
+      "segment": "suv-large",
+      "availability": "current",
+      "batteryUsableKwh": 92,
+      "batteryGrossKwh": null,
+      "rangeKm": 503,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": 216,
+      "acChargeKw": 22,
+      "dcChargeKw": 130,
+      "drive": "AWD",
+      "powerKw": 384,
+      "torqueNm": 720,
+      "zeroTo100s": 4.9,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 90000,
+      "priceBasis": "MSRP before on-road costs (~$95,000 drive-away nationally); price cut from launch-era $117,000-$122,000 drive-away, same for both Sport and Luxury trims which are mechanically identical",
+      "efficiencyWhPerKm": 183,
+      "dollarsPerKmRange": 178.93,
+      "provenance": {
+        "brand": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "model": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "variant": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "bodyType": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "segment": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "availability": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "batteryUsableKwh": {
+          "sourceKind": "press",
+          "url": "https://thebeep.com.au/cars/cadillac/lyriq/",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeKm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeCycle": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "consumptionWhPerKm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "acChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.carsguide.com.au/cadillac/lyriq/towing-capacity",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "dcChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "drive": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "powerKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "torqueNm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "zeroTo100s": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "seats": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceAud": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceBasis": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        }
+      },
+      "brandSlug": "cadillac",
+      "brandNotes": "2026-09-21 update: Cadillac Australia's BEV lineup has expanded from a single model (Lyriq) to four - Optiq, Lyriq, Vistiq and the newly launched Lyriq-V - after the cadillac.com.au page kept returning crawl failures on the earlier fetch. Optiq and Vistiq are AU/NZ-market right-hand-drive models confirmed for 2026 (single-grade lineups: Optiq Sport AWD, Vistiq Platinum AWD 6-seat), corroborated consistently across CarExpert, Drive, GoAuto, RACV, thebeep.com.au and Man of Many. Lyriq-V launched 18 Sept 2026 (GoAuto, CarExpert) as Cadillac's first V-Series model in Australia, alongside a resolved price for the base Lyriq range (previously null here due to conflicting launch-era vs later pricing) - Lyriq Sport and Luxury are now both $90,000 before on-road costs / ~$95,000 drive-away, mechanically identical, differing only in trim. Lyriq/Lyriq-V battery is corrected to the AU-market-specific 92kWh usable pack (130kW DC / 22kW AC) rather than the US-market 102kWh/190kW figures previously recorded here in error - Cadillac AU fits smaller packs than the US domestic market across its whole EV range (also seen in Optiq 75kWh vs US and Vistiq 91kWh vs US 102kWh). Lyriq powerKw/torqueNm/zeroTo100s remain flagged low-confidence: CarExpert's Lyriq-V comparison piece states 384kW/720Nm/4.9s for Sport, but an earlier CarExpert price-cut article states 388kW/610Nm for the same car - not reconciled, so both are treated as uncertain even though a value is recorded. V2L (vehicle-to-load, a portable AC outlet) is not confirmed as built into any current Cadillac EV; GM instead sells V2H (vehicle-to-home backup, different technology, dedicated hardware) as an accessory not confirmed as offered in Australia - v2l set to null rather than guessed for all four variants. Towing capacity not confirmed for the Australian-market (post RHD-conversion) rating of any of the four models - set to null.",
       "lowConfidenceFields": [
-        "rangeKm"
+        "powerKw",
+        "torqueNm",
+        "zeroTo100s"
       ]
+    },
+    {
+      "id": "cadillac__optiq__sport-awd",
+      "brand": "Cadillac",
+      "model": "Optiq",
+      "variant": "Sport (AWD)",
+      "bodyType": "suv",
+      "segment": "suv-medium",
+      "availability": "current",
+      "batteryUsableKwh": 75,
+      "batteryGrossKwh": null,
+      "rangeKm": 425,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": 199,
+      "acChargeKw": 22.1,
+      "dcChargeKw": 110,
+      "drive": "AWD",
+      "powerKw": 224,
+      "torqueNm": 480,
+      "zeroTo100s": 6.3,
+      "seats": 5,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 80000,
+      "priceBasis": "MSRP before on-road costs",
+      "efficiencyWhPerKm": 176,
+      "dollarsPerKmRange": 188.24,
+      "provenance": {
+        "brand": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "model": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "variant": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "bodyType": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "segment": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "availability": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "batteryUsableKwh": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeKm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeCycle": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "consumptionWhPerKm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "acChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "dcChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "drive": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "powerKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "torqueNm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "zeroTo100s": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "low",
+          "adapter": "snapshot"
+        },
+        "seats": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceAud": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceBasis": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        }
+      },
+      "brandSlug": "cadillac",
+      "brandNotes": "2026-09-21 update: Cadillac Australia's BEV lineup has expanded from a single model (Lyriq) to four - Optiq, Lyriq, Vistiq and the newly launched Lyriq-V - after the cadillac.com.au page kept returning crawl failures on the earlier fetch. Optiq and Vistiq are AU/NZ-market right-hand-drive models confirmed for 2026 (single-grade lineups: Optiq Sport AWD, Vistiq Platinum AWD 6-seat), corroborated consistently across CarExpert, Drive, GoAuto, RACV, thebeep.com.au and Man of Many. Lyriq-V launched 18 Sept 2026 (GoAuto, CarExpert) as Cadillac's first V-Series model in Australia, alongside a resolved price for the base Lyriq range (previously null here due to conflicting launch-era vs later pricing) - Lyriq Sport and Luxury are now both $90,000 before on-road costs / ~$95,000 drive-away, mechanically identical, differing only in trim. Lyriq/Lyriq-V battery is corrected to the AU-market-specific 92kWh usable pack (130kW DC / 22kW AC) rather than the US-market 102kWh/190kW figures previously recorded here in error - Cadillac AU fits smaller packs than the US domestic market across its whole EV range (also seen in Optiq 75kWh vs US and Vistiq 91kWh vs US 102kWh). Lyriq powerKw/torqueNm/zeroTo100s remain flagged low-confidence: CarExpert's Lyriq-V comparison piece states 384kW/720Nm/4.9s for Sport, but an earlier CarExpert price-cut article states 388kW/610Nm for the same car - not reconciled, so both are treated as uncertain even though a value is recorded. V2L (vehicle-to-load, a portable AC outlet) is not confirmed as built into any current Cadillac EV; GM instead sells V2H (vehicle-to-home backup, different technology, dedicated hardware) as an accessory not confirmed as offered in Australia - v2l set to null rather than guessed for all four variants. Towing capacity not confirmed for the Australian-market (post RHD-conversion) rating of any of the four models - set to null.",
+      "lowConfidenceFields": [
+        "zeroTo100s"
+      ]
+    },
+    {
+      "id": "cadillac__vistiq__platinum-awd-6-seat",
+      "brand": "Cadillac",
+      "model": "Vistiq",
+      "variant": "Platinum (AWD, 6-seat)",
+      "bodyType": "suv",
+      "segment": "suv-large",
+      "availability": "current",
+      "batteryUsableKwh": 91,
+      "batteryGrossKwh": null,
+      "rangeKm": 461,
+      "rangeCycle": "WLTP",
+      "consumptionWhPerKm": 220,
+      "acChargeKw": 22.1,
+      "dcChargeKw": 130,
+      "drive": "AWD",
+      "powerKw": 459,
+      "torqueNm": 880,
+      "zeroTo100s": 4.2,
+      "seats": 6,
+      "towingBrakedKg": null,
+      "v2l": null,
+      "priceAud": 116000,
+      "priceBasis": "MSRP before on-road costs",
+      "efficiencyWhPerKm": 197,
+      "dollarsPerKmRange": 251.63,
+      "provenance": {
+        "brand": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "model": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "variant": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "bodyType": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "segment": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "availability": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "batteryUsableKwh": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeKm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "rangeCycle": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "consumptionWhPerKm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "acChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "dcChargeKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "drive": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "powerKw": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "torqueNm": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "zeroTo100s": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "seats": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceAud": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        },
+        "priceBasis": {
+          "sourceKind": "press",
+          "url": "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+          "publisher": "Cadillac Australia (GM Specialty Vehicles)",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-21",
+          "confidence": "medium",
+          "adapter": "snapshot"
+        }
+      },
+      "brandSlug": "cadillac",
+      "brandNotes": "2026-09-21 update: Cadillac Australia's BEV lineup has expanded from a single model (Lyriq) to four - Optiq, Lyriq, Vistiq and the newly launched Lyriq-V - after the cadillac.com.au page kept returning crawl failures on the earlier fetch. Optiq and Vistiq are AU/NZ-market right-hand-drive models confirmed for 2026 (single-grade lineups: Optiq Sport AWD, Vistiq Platinum AWD 6-seat), corroborated consistently across CarExpert, Drive, GoAuto, RACV, thebeep.com.au and Man of Many. Lyriq-V launched 18 Sept 2026 (GoAuto, CarExpert) as Cadillac's first V-Series model in Australia, alongside a resolved price for the base Lyriq range (previously null here due to conflicting launch-era vs later pricing) - Lyriq Sport and Luxury are now both $90,000 before on-road costs / ~$95,000 drive-away, mechanically identical, differing only in trim. Lyriq/Lyriq-V battery is corrected to the AU-market-specific 92kWh usable pack (130kW DC / 22kW AC) rather than the US-market 102kWh/190kW figures previously recorded here in error - Cadillac AU fits smaller packs than the US domestic market across its whole EV range (also seen in Optiq 75kWh vs US and Vistiq 91kWh vs US 102kWh). Lyriq powerKw/torqueNm/zeroTo100s remain flagged low-confidence: CarExpert's Lyriq-V comparison piece states 384kW/720Nm/4.9s for Sport, but an earlier CarExpert price-cut article states 388kW/610Nm for the same car - not reconciled, so both are treated as uncertain even though a value is recorded. V2L (vehicle-to-load, a portable AC outlet) is not confirmed as built into any current Cadillac EV; GM instead sells V2H (vehicle-to-home backup, different technology, dedicated hardware) as an accessory not confirmed as offered in Australia - v2l set to null rather than guessed for all four variants. Towing capacity not confirmed for the Australian-market (post RHD-conversion) rating of any of the four models - set to null.",
+      "lowConfidenceFields": []
     },
     {
       "id": "chery__e5__ultimate",
@@ -53733,12 +54391,15 @@
       "brandSlug": "cadillac",
       "publisher": "Cadillac Australia (GM Specialty Vehicles)",
       "sourceUrls": [
-        "https://www.cadillac.com.au/lyriq"
+        "https://www.cadillac.com.au/lyriq",
+        "https://www.carexpert.com.au/car-news/2026-cadillac-optiq-price-and-specs",
+        "https://www.carexpert.com.au/car-news/2026-cadillac-vistiq-price-and-specs",
+        "https://www.carexpert.com.au/car-news/2027-cadillac-lyriq-v-quickest-caddy-ever-priced-for-australia"
       ],
-      "fetchedAt": "2026-09-13",
+      "fetchedAt": "2026-09-21",
       "licence": "proprietary-factual",
-      "notes": "Cadillac Australia sells a single BEV model, the Lyriq (right-hand-drive, imported/converted by GM Specialty Vehicles). Battery capacity (102kWh) and AC/DC charging figures (11.5kW AC / 190kW DC) are consistent across sources and treated as reliable. However, pricing and power-output figures show real conflict: launch-era press (2024/early 2025) cited approx. $117,000-$122,000 drive-away for the Luxury variant, while later 2025/2026 secondary sources (dealer/aggregator listings) show substantially lower drive-away figures in the $90,000-$95,000 range, consistent with reported price cuts and a shift to a single-trim MY27 lineup. Power output is also inconsistently reported: 272kW (single-motor RWD figure per some specs) vs 388kW (dual-motor AWD figure per others), and it is not clear from available sources which figure corresponds to the actual current-model-year AU-market variant. Because these conflicts could not be reconciled with confidence, priceAud and powerKw are set to null and flagged low-confidence rather than guessing which figure is current.",
-      "variantCount": 1,
+      "notes": "2026-09-21 update: Cadillac Australia's BEV lineup has expanded from a single model (Lyriq) to four - Optiq, Lyriq, Vistiq and the newly launched Lyriq-V - after the cadillac.com.au page kept returning crawl failures on the earlier fetch. Optiq and Vistiq are AU/NZ-market right-hand-drive models confirmed for 2026 (single-grade lineups: Optiq Sport AWD, Vistiq Platinum AWD 6-seat), corroborated consistently across CarExpert, Drive, GoAuto, RACV, thebeep.com.au and Man of Many. Lyriq-V launched 18 Sept 2026 (GoAuto, CarExpert) as Cadillac's first V-Series model in Australia, alongside a resolved price for the base Lyriq range (previously null here due to conflicting launch-era vs later pricing) - Lyriq Sport and Luxury are now both $90,000 before on-road costs / ~$95,000 drive-away, mechanically identical, differing only in trim. Lyriq/Lyriq-V battery is corrected to the AU-market-specific 92kWh usable pack (130kW DC / 22kW AC) rather than the US-market 102kWh/190kW figures previously recorded here in error - Cadillac AU fits smaller packs than the US domestic market across its whole EV range (also seen in Optiq 75kWh vs US and Vistiq 91kWh vs US 102kWh). Lyriq powerKw/torqueNm/zeroTo100s remain flagged low-confidence: CarExpert's Lyriq-V comparison piece states 384kW/720Nm/4.9s for Sport, but an earlier CarExpert price-cut article states 388kW/610Nm for the same car - not reconciled, so both are treated as uncertain even though a value is recorded. V2L (vehicle-to-load, a portable AC outlet) is not confirmed as built into any current Cadillac EV; GM instead sells V2H (vehicle-to-home backup, different technology, dedicated hardware) as an accessory not confirmed as offered in Australia - v2l set to null rather than guessed for all four variants. Towing capacity not confirmed for the Australian-market (post RHD-conversion) rating of any of the four models - set to null.",
+      "variantCount": 4,
       "sourceFile": "cadillac.json"
     },
     {
@@ -54594,117 +55255,117 @@
   "coverage": {
     "generatedAt": "2026-09-20",
     "totals": {
-      "variants": 282,
+      "variants": 285,
       "brandsWithVariants": 50,
       "brandsChecked": 56,
       "brandsWithNoBev": 6,
-      "populatedFields": 4831,
-      "coreCompleteness": 90.5,
+      "populatedFields": 4893,
+      "coreCompleteness": 90.6,
       "conflicts": 5
     },
     "availability": {
       "runout": 10,
-      "current": 254,
+      "current": 257,
       "announced": 18
     },
     "freshness": {
       "oldestSnapshot": "2026-09-13",
-      "newestSnapshot": "2026-09-20"
+      "newestSnapshot": "2026-09-21"
     },
     "provenanceMix": {
-      "manufacturer": 3765,
-      "press": 1066
+      "manufacturer": 3751,
+      "press": 1142
     },
     "byField": [
       {
         "field": "brand",
         "label": "Brand",
         "core": true,
-        "present": 282,
+        "present": 285,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 0,
         "bySourceKind": {
-          "manufacturer": 252,
-          "press": 30
+          "manufacturer": 251,
+          "press": 34
         }
       },
       {
         "field": "model",
         "label": "Model",
         "core": true,
-        "present": 282,
+        "present": 285,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 0,
         "bySourceKind": {
-          "manufacturer": 252,
-          "press": 30
+          "manufacturer": 251,
+          "press": 34
         }
       },
       {
         "field": "variant",
         "label": "Variant",
         "core": true,
-        "present": 282,
+        "present": 285,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 3,
         "bySourceKind": {
-          "manufacturer": 252,
-          "press": 30
+          "manufacturer": 251,
+          "press": 34
         }
       },
       {
         "field": "bodyType",
         "label": "Body",
         "core": true,
-        "present": 282,
+        "present": 285,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 0,
         "bySourceKind": {
-          "manufacturer": 252,
-          "press": 30
+          "manufacturer": 251,
+          "press": 34
         }
       },
       {
         "field": "segment",
         "label": "Segment",
         "core": false,
-        "present": 282,
+        "present": 285,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 3,
         "bySourceKind": {
-          "manufacturer": 252,
-          "press": 30
+          "manufacturer": 251,
+          "press": 34
         }
       },
       {
         "field": "availability",
         "label": "Availability",
         "core": true,
-        "present": 282,
+        "present": 285,
         "missing": 0,
         "completeness": 100,
         "lowConfidence": 7,
         "bySourceKind": {
-          "manufacturer": 252,
-          "press": 30
+          "manufacturer": 251,
+          "press": 34
         }
       },
       {
         "field": "batteryUsableKwh",
         "label": "Battery (usable)",
         "core": true,
-        "present": 199,
+        "present": 202,
         "missing": 83,
-        "completeness": 70.6,
+        "completeness": 70.9,
         "lowConfidence": 50,
         "bySourceKind": {
-          "manufacturer": 121,
-          "press": 78
+          "manufacturer": 120,
+          "press": 82
         }
       },
       {
@@ -54712,8 +55373,8 @@
         "label": "Battery (gross)",
         "core": false,
         "present": 90,
-        "missing": 192,
-        "completeness": 31.9,
+        "missing": 195,
+        "completeness": 31.6,
         "lowConfidence": 28,
         "bySourceKind": {
           "manufacturer": 72,
@@ -54724,130 +55385,130 @@
         "field": "rangeKm",
         "label": "Range",
         "core": true,
-        "present": 230,
+        "present": 233,
         "missing": 52,
-        "completeness": 81.6,
-        "lowConfidence": 51,
+        "completeness": 81.8,
+        "lowConfidence": 50,
         "bySourceKind": {
-          "press": 95,
-          "manufacturer": 135
+          "press": 99,
+          "manufacturer": 134
         }
       },
       {
         "field": "rangeCycle",
         "label": "Range cycle",
         "core": true,
-        "present": 250,
+        "present": 253,
         "missing": 32,
-        "completeness": 88.7,
+        "completeness": 88.8,
         "lowConfidence": 4,
         "bySourceKind": {
-          "manufacturer": 220,
-          "press": 30
+          "manufacturer": 219,
+          "press": 34
         }
       },
       {
         "field": "consumptionWhPerKm",
         "label": "Consumption",
         "core": false,
-        "present": 64,
-        "missing": 218,
-        "completeness": 22.7,
+        "present": 68,
+        "missing": 217,
+        "completeness": 23.9,
         "lowConfidence": 12,
         "bySourceKind": {
           "manufacturer": 45,
-          "press": 19
+          "press": 23
         }
       },
       {
         "field": "acChargeKw",
         "label": "AC charge",
         "core": false,
-        "present": 206,
+        "present": 209,
         "missing": 76,
-        "completeness": 73,
+        "completeness": 73.3,
         "lowConfidence": 45,
         "bySourceKind": {
-          "manufacturer": 158,
-          "press": 48
+          "manufacturer": 157,
+          "press": 52
         }
       },
       {
         "field": "dcChargeKw",
         "label": "DC charge",
         "core": true,
-        "present": 203,
+        "present": 206,
         "missing": 79,
-        "completeness": 72,
+        "completeness": 72.3,
         "lowConfidence": 61,
         "bySourceKind": {
-          "manufacturer": 136,
-          "press": 67
+          "manufacturer": 135,
+          "press": 71
         }
       },
       {
         "field": "drive",
         "label": "Drive",
         "core": true,
-        "present": 273,
+        "present": 276,
         "missing": 9,
         "completeness": 96.8,
         "lowConfidence": 5,
         "bySourceKind": {
-          "manufacturer": 240,
-          "press": 33
+          "manufacturer": 239,
+          "press": 37
         }
       },
       {
         "field": "powerKw",
         "label": "Power",
         "core": true,
-        "present": 254,
-        "missing": 28,
-        "completeness": 90.1,
-        "lowConfidence": 37,
+        "present": 258,
+        "missing": 27,
+        "completeness": 90.5,
+        "lowConfidence": 38,
         "bySourceKind": {
           "manufacturer": 179,
-          "press": 75
+          "press": 79
         }
       },
       {
         "field": "torqueNm",
         "label": "Torque",
         "core": false,
-        "present": 216,
-        "missing": 66,
-        "completeness": 76.6,
-        "lowConfidence": 42,
+        "present": 220,
+        "missing": 65,
+        "completeness": 77.2,
+        "lowConfidence": 43,
         "bySourceKind": {
           "manufacturer": 139,
-          "press": 77
+          "press": 81
         }
       },
       {
         "field": "zeroTo100s",
         "label": "0–100 km/h",
         "core": false,
-        "present": 161,
-        "missing": 121,
-        "completeness": 57.1,
-        "lowConfidence": 25,
+        "present": 165,
+        "missing": 120,
+        "completeness": 57.9,
+        "lowConfidence": 27,
         "bySourceKind": {
           "manufacturer": 116,
-          "press": 45
+          "press": 49
         }
       },
       {
         "field": "seats",
         "label": "Seats",
         "core": false,
-        "present": 269,
+        "present": 272,
         "missing": 13,
         "completeness": 95.4,
         "lowConfidence": 23,
         "bySourceKind": {
-          "manufacturer": 235,
-          "press": 34
+          "manufacturer": 234,
+          "press": 38
         }
       },
       {
@@ -54855,8 +55516,8 @@
         "label": "Towing (braked)",
         "core": false,
         "present": 113,
-        "missing": 169,
-        "completeness": 40.1,
+        "missing": 172,
+        "completeness": 39.6,
         "lowConfidence": 34,
         "bySourceKind": {
           "press": 45,
@@ -54868,8 +55529,8 @@
         "label": "V2L",
         "core": false,
         "present": 116,
-        "missing": 166,
-        "completeness": 41.1,
+        "missing": 169,
+        "completeness": 40.7,
         "lowConfidence": 24,
         "bySourceKind": {
           "manufacturer": 80,
@@ -54880,26 +55541,26 @@
         "field": "priceAud",
         "label": "Price",
         "core": true,
-        "present": 242,
-        "missing": 40,
-        "completeness": 85.8,
+        "present": 246,
+        "missing": 39,
+        "completeness": 86.3,
         "lowConfidence": 79,
         "bySourceKind": {
           "manufacturer": 83,
-          "press": 159
+          "press": 163
         }
       },
       {
         "field": "priceBasis",
         "label": "Price basis",
         "core": false,
-        "present": 253,
+        "present": 256,
         "missing": 29,
-        "completeness": 89.7,
+        "completeness": 89.8,
         "lowConfidence": 0,
         "bySourceKind": {
-          "manufacturer": 226,
-          "press": 27
+          "manufacturer": 225,
+          "press": 31
         }
       }
     ],
@@ -55143,6 +55804,16 @@
         "fetchedAt": "2026-09-13"
       },
       {
+        "brand": "Cadillac",
+        "variants": 4,
+        "coreCompleteness": 100,
+        "lowConfidenceFields": 4,
+        "availability": {
+          "current": 4
+        },
+        "fetchedAt": "2026-09-21"
+      },
+      {
         "brand": "Deepal",
         "variants": 4,
         "coreCompleteness": 91.7,
@@ -55353,16 +56024,6 @@
         "variants": 1,
         "coreCompleteness": 100,
         "lowConfidenceFields": 0,
-        "availability": {
-          "current": 1
-        },
-        "fetchedAt": "2026-09-13"
-      },
-      {
-        "brand": "Cadillac",
-        "variants": 1,
-        "coreCompleteness": 83.3,
-        "lowConfidenceFields": 1,
         "availability": {
           "current": 1
         },
