@@ -16,7 +16,7 @@
       "alfa-romeo.json": "263c3d8283135eaaffab9bf55828c9e5670b68368b4920879aae01532b64a194",
       "audi.json": "b73a0c8a9de16eb33028d5bd00ea5d92a7529c16ea8c7c336827c581728cbbec",
       "bmw.json": "be69c47c7955a32c3c117b5c4e0483b6229550fa196bbaa18150d641ca77ec41",
-      "byd.json": "dcb71df867c579d0c185e51fb37f40c6fd60db54c5bab8b8dd41facd2ff4d835",
+      "byd.json": "d81bd9e9c140ffeae59e4b6697c65ee122cc6474f4f9499fb7550aae9cf3b6ed",
       "cadillac.json": "a2f87aee68c083a4e86c0af6ec1ea9e5d928073f4c8fc354c2d3fde2931a65d4",
       "chery.json": "957f17398c4e3982079db48a62c72c0c6ff853b3d8e2416245b1fc9762723883",
       "citroen.json": "c518b771e0c9eb5dd33fe58f913fe6b2195922f7da3da36acc07c6a07f178ab8",
@@ -5507,7 +5507,7 @@
       "zeroTo100s": 11.1,
       "seats": 5,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": true,
       "priceAud": 19990,
       "priceBasis": "Drive-away promotional price nationally (standard $23,990 before on-road costs); offer had no stated end date as of Sept 2026",
       "efficiencyWhPerKm": 136,
@@ -5657,6 +5657,15 @@
           "confidence": "medium",
           "adapter": "snapshot"
         },
+        "v2l": {
+          "sourceKind": "manufacturer",
+          "url": "https://bydautomotive.com.au/atto-1",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "high",
+          "adapter": "snapshot"
+        },
         "priceAud": {
           "sourceKind": "press",
           "url": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
@@ -5677,7 +5686,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -5693,7 +5702,7 @@
       "rangeKm": 310,
       "rangeCycle": "WLTP",
       "consumptionWhPerKm": null,
-      "acChargeKw": null,
+      "acChargeKw": 11,
       "dcChargeKw": null,
       "drive": "FWD",
       "powerKw": 115,
@@ -5701,7 +5710,7 @@
       "zeroTo100s": 9.1,
       "seats": 5,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": true,
       "priceAud": 31213,
       "priceBasis": "Drive-away (NSW) per thebeep.com.au; not corroborated against a second source and predates confirmation of any Essential-style promotional discount on this grade",
       "efficiencyWhPerKm": 139,
@@ -5788,6 +5797,15 @@
           "confidence": "medium",
           "adapter": "snapshot"
         },
+        "acChargeKw": {
+          "sourceKind": "manufacturer",
+          "url": "https://bydautomotive.com.au/atto-1",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "high",
+          "adapter": "snapshot"
+        },
         "drive": {
           "sourceKind": "press",
           "url": "https://thebeep.com.au/cars/byd/atto-1/",
@@ -5833,6 +5851,15 @@
           "confidence": "medium",
           "adapter": "snapshot"
         },
+        "v2l": {
+          "sourceKind": "manufacturer",
+          "url": "https://bydautomotive.com.au/atto-1",
+          "publisher": "BYD Australia",
+          "licence": "proprietary-factual (specification facts restated with attribution)",
+          "fetchedAt": "2026-09-15",
+          "confidence": "high",
+          "adapter": "snapshot"
+        },
         "priceAud": {
           "sourceKind": "press",
           "url": "https://thebeep.com.au/cars/byd/atto-1/",
@@ -5853,7 +5880,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": [
         "batteryUsableKwh",
         "powerKw",
@@ -6063,7 +6090,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -6284,7 +6311,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -6505,7 +6532,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -6681,7 +6708,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": [
         "rangeCycle",
         "rangeKm"
@@ -6860,7 +6887,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": [
         "rangeCycle",
         "rangeKm"
@@ -7057,7 +7084,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -7251,7 +7278,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -7445,7 +7472,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": [
         "acChargeKw"
       ]
@@ -7641,7 +7668,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -7835,7 +7862,7 @@
         }
       },
       "brandSlug": "byd",
-      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "brandNotes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "lowConfidenceFields": []
     },
     {
@@ -53697,7 +53724,7 @@
       ],
       "fetchedAt": "2026-09-15",
       "licence": "proprietary-factual",
-      "notes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+      "notes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
       "variantCount": 12,
       "sourceFile": "byd.json"
     },
@@ -54571,7 +54598,7 @@
       "brandsWithVariants": 50,
       "brandsChecked": 56,
       "brandsWithNoBev": 6,
-      "populatedFields": 4828,
+      "populatedFields": 4831,
       "coreCompleteness": 90.5,
       "conflicts": 5
     },
@@ -54585,7 +54612,7 @@
       "newestSnapshot": "2026-09-20"
     },
     "provenanceMix": {
-      "manufacturer": 3762,
+      "manufacturer": 3765,
       "press": 1066
     },
     "byField": [
@@ -54736,12 +54763,12 @@
         "field": "acChargeKw",
         "label": "AC charge",
         "core": false,
-        "present": 205,
-        "missing": 77,
-        "completeness": 72.7,
+        "present": 206,
+        "missing": 76,
+        "completeness": 73,
         "lowConfidence": 45,
         "bySourceKind": {
-          "manufacturer": 157,
+          "manufacturer": 158,
           "press": 48
         }
       },
@@ -54840,12 +54867,12 @@
         "field": "v2l",
         "label": "V2L",
         "core": false,
-        "present": 114,
-        "missing": 168,
-        "completeness": 40.4,
+        "present": 116,
+        "missing": 166,
+        "completeness": 41.1,
         "lowConfidence": 24,
         "bySourceKind": {
-          "manufacturer": 78,
+          "manufacturer": 80,
           "press": 36
         }
       },

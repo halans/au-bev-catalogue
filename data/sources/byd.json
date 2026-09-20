@@ -9,7 +9,7 @@
   ],
   "fetchedAt": "2026-09-15",
   "licence": "proprietary-factual",
-  "notes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. AC/DC charge rate, towing and V2L not found for Atto 1 Premium.",
+  "notes": "BYD AU model-specific pages failed to load via ExaContents and browser URL guesses. All pricing and most specs sourced from CarExpert AU and Drive.com.au as secondary sources; brand website (byd.com/au) confirmed model lineup only. Sealion 6 (PHEV) and Shark 6 (PHEV ute) excluded — both have petrol engines. Atto 3 transitioning to Evo nameplate Sept 2026; pre-Evo Essential listed as runout (leftover stock per CarExpert Aug 2026). Dolphin AC/DC charging rates not confirmed in any source reviewed — set to null. V2L confirmed for Atto 3 Evo variants only. Seal and Sealion 7 V2L not confirmed — set to null. Towing capacity not found for Dolphin and Sealion 7. Atto 1 added 2026-09-15: Essential grade corroborated across three press outlets (Chasing Cars, CarsGuide, Drive.com.au) reporting a $19,990 national drive-away promotional price (standard MSRP $23,990 before on-road costs, no stated offer end date); Premium grade specs come from a single aggregator (thebeep.com.au) only and are flagged low-confidence. 2026-09-21: confirmed V2L for both Atto 1 grades and 11kW AC charging for Premium via bydautomotive.com.au/atto-1 (official BYD AU page, previously unreachable). Atto 1 Essential AC/DC charge rates and Premium DC charge rate and towing still not found.",
   "variants": [
     {
       "model": "Atto 1",
@@ -29,15 +29,16 @@
       "zeroTo100s": 11.1,
       "seats": 5,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": true,
       "priceAud": 19990,
       "priceBasis": "Drive-away promotional price nationally (standard $23,990 before on-road costs); offer had no stated end date as of Sept 2026",
       "availability": "current",
       "sourceUrl": "https://www.chasingcars.com.au/news/new-car-prices/byd-atto-1-2026-new-19990-driveaway-price-makes-australias-thriftiest-ev-the-cheapest-car-on-saleon-road/",
       "fieldSources": {
-        "seats": "https://thebeep.com.au/cars/byd/atto-1/"
+        "seats": "https://thebeep.com.au/cars/byd/atto-1/",
+        "v2l": "https://bydautomotive.com.au/atto-1"
       },
-      "lowConfidenceFields": ["towingBrakedKg", "v2l"]
+      "lowConfidenceFields": ["towingBrakedKg"]
     },
     {
       "model": "Atto 1",
@@ -49,7 +50,7 @@
       "rangeKm": 310,
       "rangeCycle": "WLTP",
       "consumptionWhPerKm": null,
-      "acChargeKw": null,
+      "acChargeKw": 11,
       "dcChargeKw": null,
       "drive": "FWD",
       "powerKw": 115,
@@ -57,12 +58,16 @@
       "zeroTo100s": 9.1,
       "seats": 5,
       "towingBrakedKg": null,
-      "v2l": null,
+      "v2l": true,
       "priceAud": 31213,
       "priceBasis": "Drive-away (NSW) per thebeep.com.au; not corroborated against a second source and predates confirmation of any Essential-style promotional discount on this grade",
       "availability": "current",
       "sourceUrl": "https://thebeep.com.au/cars/byd/atto-1/",
-      "lowConfidenceFields": ["batteryUsableKwh", "rangeKm", "powerKw", "torqueNm", "zeroTo100s", "priceAud", "towingBrakedKg", "v2l"]
+      "fieldSources": {
+        "acChargeKw": "https://bydautomotive.com.au/atto-1",
+        "v2l": "https://bydautomotive.com.au/atto-1"
+      },
+      "lowConfidenceFields": ["batteryUsableKwh", "rangeKm", "powerKw", "torqueNm", "zeroTo100s", "priceAud", "towingBrakedKg"]
     },
     {
       "model": "Atto 3",
