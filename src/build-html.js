@@ -429,7 +429,7 @@ var RANGE_FILTERS = [
   { key:'batteryUsableKwh', label:'Battery (kWh)' }
 ];
 
-var state = { q:'', facets:{}, ranges:{}, sort:'name', direction:'asc', view:'table', compare:[], open:null };
+var state = { q:'', facets:{}, ranges:{}, sort:'name', direction:'asc', view:'cards', compare:[], open:null };
 var expanded = {};
 
 function el(id){ return document.getElementById(id); }
@@ -589,6 +589,10 @@ function renderResults(){
 
   el('sort').value = state.sort;
   el('dir').value = state.direction;
+  var viewButtons = document.querySelectorAll('.viewbtn');
+  for (var vb = 0; vb < viewButtons.length; vb++){
+    viewButtons[vb].setAttribute('aria-pressed', viewButtons[vb].getAttribute('data-view') === state.view ? 'true' : 'false');
+  }
   renderTray();
   syncUrl();
 }
@@ -831,8 +835,6 @@ function copyCurrentLink(button){
   }
 }
 
-if (window.matchMedia('(max-width: 640px)').matches){ state.view = 'cards'; }
-
 // Restore state from a shared link BEFORE the first render. decodeState only
 // returns keys actually present in the hash, so this layers "the link says"
 // on top of the defaults above rather than replacing them wholesale.
@@ -842,7 +844,7 @@ if (restored.facets) state.facets = restored.facets;
 if (restored.ranges) state.ranges = restored.ranges;
 if (restored.sort) state.sort = restored.sort;
 if (restored.direction) state.direction = restored.direction;
-if (restored.view) state.view = restored.view; // an explicit link wins over the mobile default above
+if (restored.view) state.view = restored.view; // an explicit link wins over the default above
 if (restored.compare) state.compare = restored.compare;
 if (restored.open) state.open = restored.open;
 
@@ -1252,8 +1254,8 @@ function buildHtml(catalogue) {
             <option value="asc">Ascending</option>
             <option value="desc">Descending</option>
           </select>
-          <button class="viewbtn" type="button" data-view="table" aria-pressed="true">Table</button>
-          <button class="viewbtn" type="button" data-view="cards" aria-pressed="false">Cards</button>
+          <button class="viewbtn" type="button" data-view="table" aria-pressed="false">Table</button>
+          <button class="viewbtn" type="button" data-view="cards" aria-pressed="true">Cards</button>
           <button class="rowbtn" type="button" data-copy-link title="Copy a link to this search">Copy link</button>
         </div>
       </div>
